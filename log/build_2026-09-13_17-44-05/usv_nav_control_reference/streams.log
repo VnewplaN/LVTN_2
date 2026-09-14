@@ -1,0 +1,17 @@
+[0.892s] Invoking command in '/home/olive/LVTN_2/build/usv_nav_control_reference': CMAKE_PREFIX_PATH=/home/olive/LVTN_2/install/usv_description:/home/olive/LVTN_2/install/usv_gazebo PYTHONPATH=/home/olive/LVTN_2/build/usv_nav_control_reference/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olive/LVTN_2/install/usv_nav_control_reference/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/olive/LVTN_2/build/usv_nav_control_reference/build --no-deps symlink_data
+[1.121s] running develop
+[1.300s] running egg_info
+[1.300s] writing usv_nav_control_reference.egg-info/PKG-INFO
+[1.300s] writing dependency_links to usv_nav_control_reference.egg-info/dependency_links.txt
+[1.300s] writing requirements to usv_nav_control_reference.egg-info/requires.txt
+[1.300s] writing top-level names to usv_nav_control_reference.egg-info/top_level.txt
+[1.301s] reading manifest file 'usv_nav_control_reference.egg-info/SOURCES.txt'
+[1.302s] writing manifest file 'usv_nav_control_reference.egg-info/SOURCES.txt'
+[1.303s] running build_ext
+[1.304s] Creating /home/olive/LVTN_2/install/usv_nav_control_reference/lib/python3.10/site-packages/usv-nav-control-reference.egg-link (link to .)
+[1.305s] Installing reference_guidance_controller.py script to /home/olive/LVTN_2/install/usv_nav_control_reference/lib/usv_nav_control_reference
+[1.306s] Installing reference_path_publisher.py script to /home/olive/LVTN_2/install/usv_nav_control_reference/lib/usv_nav_control_reference
+[1.306s] 
+[1.306s] Installed /home/olive/LVTN_2/build/usv_nav_control_reference
+[1.306s] running symlink_data
+[1.332s] Invoked command in '/home/olive/LVTN_2/build/usv_nav_control_reference' returned '0': CMAKE_PREFIX_PATH=/home/olive/LVTN_2/install/usv_description:/home/olive/LVTN_2/install/usv_gazebo PYTHONPATH=/home/olive/LVTN_2/build/usv_nav_control_reference/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/olive/LVTN_2/install/usv_nav_control_reference/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/olive/LVTN_2/build/usv_nav_control_reference/build --no-deps symlink_data

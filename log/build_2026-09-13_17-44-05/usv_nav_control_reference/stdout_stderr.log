@@ -1,0 +1,15 @@
+running develop
+running egg_info
+writing usv_nav_control_reference.egg-info/PKG-INFO
+writing dependency_links to usv_nav_control_reference.egg-info/dependency_links.txt
+writing requirements to usv_nav_control_reference.egg-info/requires.txt
+writing top-level names to usv_nav_control_reference.egg-info/top_level.txt
+reading manifest file 'usv_nav_control_reference.egg-info/SOURCES.txt'
+writing manifest file 'usv_nav_control_reference.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/olive/LVTN_2/install/usv_nav_control_reference/lib/python3.10/site-packages/usv-nav-control-reference.egg-link (link to .)
+Installing reference_guidance_controller.py script to /home/olive/LVTN_2/install/usv_nav_control_reference/lib/usv_nav_control_reference
+Installing reference_path_publisher.py script to /home/olive/LVTN_2/install/usv_nav_control_reference/lib/usv_nav_control_reference
+
+Installed /home/olive/LVTN_2/build/usv_nav_control_reference
+running symlink_data

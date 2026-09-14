@@ -1,0 +1,1 @@
+/home/olive/LVTN_2/build/usv_description/ament_cmake_environment_hooks/local_setup.bash

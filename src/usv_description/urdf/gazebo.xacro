@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="usv">
+  <!-- Allow the world WindEffects system to act on the main rigid body. -->
+  <gazebo reference="usv_body">
+    <enable_wind>false</enable_wind>
+  </gazebo>
+
+  <gazebo>
+    <plugin
+      filename="ignition-gazebo-hydrodynamics-system"
+      name="ignition::gazebo::systems::Hydrodynamics">
+      <link_name>usv_body</link_name>
+
+      <disable_added_mass>true</disable_added_mass>
+      <xDotU>-235.58</xDotU>
+      <yDotV>-750.00</yDotV>
+      <zDotW>-750.00</zDotW>
+
+      <kDotP>0.0</kDotP>
+      <mDotQ>-588.20</mDotQ>
+      <nDotR>-588.20</nDotR>
+
+      <xU>-147.12</xU>
+      <yV>-1250.00</yV>
+      <zW>-1500.00</zW>
+
+      <kP>-500.00</kP>
+      <mQ>-900.00</mQ>
+      <nR>-934.20</nR>
+
+      <xUabsU>-80.0</xUabsU>
+      <yVabsV>-300.0</yVabsV>
+      <zWabsW>-600.0</zWabsW>
+
+      <kPabsP>-200.0</kPabsP>
+      <mQabsQ>-300.0</mQabsQ>
+      <nRabsR>-250.0</nRabsR>
+    </plugin>
+  </gazebo>
+
+  <gazebo reference="lidar_front">
+    <sensor name="multiscan136_front" type="gpu_lidar">
+      <topic>lidar/front/scan</topic>
+      <update_rate>20</update_rate>
+      <always_on>true</always_on>
+      <visualize>true</visualize>
+
+      <lidar>
+        <scan>
+          <horizontal>
+            <samples>2880</samples>
+            <resolution>1</resolution>
+            <min_angle>-3.14159265</min_angle>
+            <max_angle>3.14159265</max_angle>
+          </horizontal>
+
+          <vertical>
+            <samples>16</samples>
+            <resolution>1</resolution>
+            <min_angle>-0.741765</min_angle>
+            <max_angle>0.392699</max_angle>
+          </vertical>
+        </scan>
+
+        <range>
+          <min>0.05</min>
+          <max>60.0</max>
+          <resolution>0.01</resolution>
+        </range>
+      </lidar>
+    </sensor>
+  </gazebo>
+
+  <gazebo reference="lidar_back">
+    <sensor name="multiscan136_back" type="gpu_lidar">
+      <topic>lidar/back/scan</topic>
+      <update_rate>20</update_rate>
+      <always_on>true</always_on>
+      <visualize>true</visualize>
+
+      <lidar>
+        <scan>
+          <horizontal>
+            <samples>2880</samples>
+            <resolution>1</resolution>
+            <min_angle>-3.14159265</min_angle>
+            <max_angle>3.14159265</max_angle>
+          </horizontal>
+
+          <vertical>
+            <samples>16</samples>
+            <resolution>1</resolution>
+            <min_angle>-0.741765</min_angle>
+            <max_angle>0.392699</max_angle>
+          </vertical>
+        </scan>
+
+        <range>
+          <min>0.05</min>
+          <max>60.0</max>
+          <resolution>0.01</resolution>
+        </range>
+      </lidar>
+    </sensor>
+  </gazebo>
+
+  <gazebo>
+  <plugin
+      filename="ignition-gazebo-odometry-publisher-system"
+      name="ignition::gazebo::systems::OdometryPublisher">
+    <odom_frame>odom</odom_frame>
+    <robot_base_frame>usv_body</robot_base_frame>
+    <dimensions>2</dimensions>
+    <odom_publish_frequency>20</odom_publish_frequency>
+  </plugin>
+</gazebo>
+
+<gazebo>
+  <plugin
+      filename="ignition-gazebo-joint-state-publisher-system"
+      name="ignition::gazebo::systems::JointStatePublisher">
+
+    <topic>/model/usv/joint_state</topic>
+
+    <joint_name>usv_body_to_pump</joint_name>
+
+    <update_rate>20</update_rate>
+  </plugin>
+</gazebo>
+
+</robot>

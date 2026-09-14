@@ -1,0 +1,328 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="usv">
+    <xacro:include filename="$(find usv_description)/urdf/gazebo.xacro"/>
+    
+    <!-- Useful XACRO Variables (Properties) -->
+    <xacro:property name="PI" value="3.14159265359" />
+    <xacro:property name="effort" value="30.0" />
+    <xacro:property name="velocity" value="10.0" />
+    <xacro:property name="body_cg_x" value="-0.0005"/>
+    <xacro:property name="body_cg_y" value="-0.2698"/>
+    <!-- Initial hydrostatic tuning value; replace with measured CAD CG later. -->
+    <xacro:property name="body_cg_z" value="-0.70"/>
+    <xacro:property name="pontoon_radius" value="0.25"/>
+    <xacro:property name="pontoon_length" value="1.9"/>
+    <xacro:property name="pontoon_section_length" value="${pontoon_length/3.0}"/>
+    <xacro:property name="pontoon_section_offset" value="${pontoon_length/3.0}"/>
+    <xacro:property name="pontoon_collision_z" value="-0.3832"/>
+
+    <!-- Technology-inspired RViz color palette (RGBA). -->
+    <material name="tech_navy">
+        <color rgba="0.18 0.55 0.85 1.0"/>
+    </material>
+    <material name="tech_silver">
+        <color rgba="0.82 0.88 0.95 1.0"/>
+    </material>
+    <material name="tech_cyan">
+        <color rgba="0.10 1.00 1.00 1.0"/>
+    </material>
+    <material name="tech_blue">
+        <color rgba="0.25 0.55 1.00 1.0"/>
+    </material>
+    <material name="tech_teal">
+        <color rgba="0.10 0.95 0.65 1.0"/>
+    </material>
+    <material name="tech_violet">
+        <color rgba="0.75 0.40 1.00 1.0"/>
+    </material>
+    <material name="tech_orange">
+        <color rgba="1.00 0.65 0.10 1.0"/>
+    </material>
+
+    <!-- Useful Macros -->
+    <xacro:macro name="default_inertial"
+                 params="mass ixx:=1e-6 iyy:=1e-6 izz:=1e-6">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="${mass}" />
+            <inertia ixx="${ixx}" ixy="0.0" ixz="0.0"
+                     iyy="${iyy}" iyz="0.0"
+                     izz="${izz}" />
+        </inertial>
+    </xacro:macro>
+
+    <xacro:macro name="pontoon_buoyancy_collisions" params="side yaw">
+        <!-- Three slices preserve pi*r^2*L and improve pitch buoyancy resolution. -->
+        <collision name="${side}_pontoon_front_buoyancy">
+            <origin xyz="0 ${pontoon_section_offset} ${pontoon_collision_z}" rpy="${PI/2} 0 ${yaw}"/>
+            <geometry><cylinder radius="${pontoon_radius}" length="${pontoon_section_length}"/></geometry>
+        </collision>
+        <collision name="${side}_pontoon_middle_buoyancy">
+            <origin xyz="0 0 ${pontoon_collision_z}" rpy="${PI/2} 0 ${yaw}"/>
+            <geometry><cylinder radius="${pontoon_radius}" length="${pontoon_section_length}"/></geometry>
+        </collision>
+        <collision name="${side}_pontoon_rear_buoyancy">
+            <origin xyz="0 ${-pontoon_section_offset} ${pontoon_collision_z}" rpy="${PI/2} 0 ${yaw}"/>
+            <geometry><cylinder radius="${pontoon_radius}" length="${pontoon_section_length}"/></geometry>
+        </collision>
+    </xacro:macro>
+
+    <!-- Links -->
+    <!-- Model -->
+    <link name="usv_body">
+        <!-- Approximate mass properties for buoyancy simulation. -->
+        <inertial>
+            <!-- 350*(-0.270) + 150*(+0.630) = 0 kg.m about body x. -->
+            <origin xyz="${body_cg_x} ${body_cg_y} ${body_cg_z}" rpy="0 0 0"/>
+
+            <mass value="350"/>
+
+            <inertia
+                ixx="134.49"
+                ixy="0.0"
+                ixz="0.0"
+                iyy="103.86"
+                iyz="0.0"
+                izz="179.96"/>
+        </inertial>
+
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+                <mesh filename="package://usv_description/meshes/STL_base.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="tech_navy"/>
+        </visual>
+
+    </link>
+
+    <link name="thruster_frame">
+        <xacro:default_inertial mass="0.001"/>
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+                <mesh filename="package://usv_description/meshes/STL_thruster_frame.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="tech_silver"/>
+        </visual>
+    </link>
+
+    <link name="pontoon_left">
+        <xacro:default_inertial mass="0.001"/>
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+                <mesh filename="package://usv_description/meshes/STL_pontoon.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="tech_silver"/>
+        </visual>
+        <xacro:pontoon_buoyancy_collisions side="left" yaw="0"/>
+    </link>
+
+    <link name="pontoon_right">
+        <xacro:default_inertial mass="0.001"/>
+        <visual>
+            <origin rpy="0 0 ${PI}" xyz="0 0 0"/>
+            <geometry>
+                <mesh filename="package://usv_description/meshes/STL_pontoon.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="tech_silver"/>
+        </visual>
+        <xacro:pontoon_buoyancy_collisions side="right" yaw="${PI}"/>
+    </link>
+
+    <link name="thruster_front_right">
+        <xacro:default_inertial mass="0.001"/>
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+                <mesh filename="package://usv_description/meshes/thruster.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="tech_cyan"/>
+        </visual>
+    </link>
+
+    <link name="thruster_front_left">
+        <xacro:default_inertial mass="0.001"/>
+        <visual>
+            <origin rpy=" 0 0 0" xyz="0 0 0"/>
+            <geometry>
+                <mesh filename="package://usv_description/meshes/thruster.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="tech_blue"/>
+        </visual>
+    </link>
+
+    <link name="thruster_rear_right">
+        <!-- Gazebo requires every dynamic link to have positive mass. -->
+        <xacro:default_inertial mass="0.001"/>
+        <visual>
+            <origin rpy=" 0 0 0" xyz="0 0 0"/>
+            <geometry>
+                <mesh filename="package://usv_description/meshes/thruster.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="tech_teal"/>
+        </visual>
+    </link>
+  
+    <link name="thruster_rear_left">
+        <!-- Keep the left / right mass distribution symmetric. -->
+        <xacro:default_inertial mass="0.001"/>
+        <visual>
+            <origin rpy=" 0 0 0" xyz="0 0 0"/>
+            <geometry>
+                <mesh filename="package://usv_description/meshes/thruster.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="tech_violet"/>
+        </visual>
+    </link>
+
+    <link name="pump">
+        <!--
+          Uniform-volume centroid calculated from the watertight pump STL.
+          Inertia uses its 0.457 x 0.404 x 1.074 m bounding-box approximation.
+        -->
+        <inertial>
+            <origin xyz="0.0012 -0.0005 -0.3762" rpy="0 0 0"/>
+            <mass value="150.0"/>
+            <inertia ixx="16.45" ixy="0" ixz="0"
+                     iyy="17.02" iyz="0" izz="4.65"/>
+        </inertial>
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+                <mesh filename="package://usv_description/meshes/STL_pump.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="tech_orange"/>
+        </visual>
+
+    </link>
+    <!-- Sensors -->
+    <link name="lidar_front">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0.1"/>
+            <inertia
+            ixx="0.001"
+            ixy="0.0"
+            ixz="0.0"
+            iyy="0.001"
+            iyz="0.0"
+            izz="0.001"/>
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+            <cylinder radius="0.05" length="0.08"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+            <cylinder radius="0.05" length="0.08"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="lidar_back">
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0.1"/>
+            <inertia
+            ixx="0.001"
+            ixy="0.0"
+            ixz="0.0"
+            iyy="0.001"
+            iyz="0.0"
+            izz="0.001"/>
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+            <cylinder radius="0.05" length="0.08"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+            <cylinder radius="0.05" length="0.08"/>
+            </geometry>
+        </collision>
+    </link>
+    <!-- Joints --> 
+    <!-- Model --> 
+     
+    <joint name="usv_body_to_frame" type="fixed">
+        <parent link="usv_body"/>
+        <child link="thruster_frame"/>
+        <origin xyz="0 0 -0.457" rpy="0 0 0"/>
+    </joint> 
+
+    <joint name="usv_body_to_pontoon_left" type="fixed">
+        <parent link="usv_body"/>
+        <child link="pontoon_left"/>
+        <origin xyz="0.75 0 -0.006" rpy="0 0 0"/>
+    </joint> 
+
+    <joint name="usv_body_to_pontoon_right" type="fixed">
+        <parent link="usv_body"/>
+        <child link="pontoon_right"/>
+        <origin xyz="-0.75 0 -0.006" rpy="0 0 0"/>
+    </joint> 
+    
+    <joint name="front_frame_to_right_thruster" type="fixed">
+        <parent link="thruster_frame"/>
+        <child link="thruster_front_right"/>
+        <origin xyz="0.427 -0.427 -0.055" rpy="0 0 ${PI/4}"/>
+    </joint> 
+
+    <joint name="front_frame_to_left_thruster" type="fixed">
+        <parent link="thruster_frame"/>
+        <child link="thruster_front_left"/>
+        <origin xyz="0.427 0.427 -0.055" rpy="0 0 -${PI/4}"/>
+    </joint> 
+
+     <joint name="rear_frame_to_right_thruster" type="fixed">
+        <parent link="thruster_frame"/>
+        <child link="thruster_rear_right"/>
+        <origin xyz="-0.427 -0.427 -0.055" rpy="0 0 -${PI+PI/4}"/>
+    </joint> 
+
+    <joint name="rear_frame_to_left_thruster" type="fixed">
+        <parent link="thruster_frame"/>
+        <child link="thruster_rear_left"/>
+        <origin xyz="-0.427 0.427 -0.055" rpy="0 0 ${PI+PI/4}"/>
+    </joint> 
+    <!-- Sensors --> 
+    <joint name="lidar_joint_front" type="fixed">
+        <parent link="usv_body"/>
+        <child link="lidar_front"/>
+        <origin xyz="-0.735 0.885 0.08" rpy="0 0 ${PI/4}"/>
+    </joint>
+
+    <joint name="lidar_joint_back" type="fixed">
+        <parent link="usv_body"/>
+        <child link="lidar_back"/>
+        <origin xyz="0.735 -0.885 0.08" rpy="0 0 ${PI/4}"/>
+    </joint>
+
+    <joint name="usv_body_to_pump" type="prismatic">
+         <parent link="usv_body"/>
+        <child link="pump"/>
+
+        <origin xyz="0 0.630 0.4875" rpy="0 0 0"/>
+
+        <axis xyz="0 0 1"/>
+
+        <limit
+            lower="-5.75"
+            upper="0.0"
+            effort="5000"
+            velocity="0.1"/>
+    </joint>
+
+</robot>

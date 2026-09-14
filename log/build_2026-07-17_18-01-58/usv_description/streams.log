@@ -1,0 +1,29 @@
+[0.020s] Invoking command in '/home/olive/LVTN_2/build/usv_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_description -- -j16 -l16
+[0.073s] Invoked command in '/home/olive/LVTN_2/build/usv_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_description -- -j16 -l16
+[0.084s] Invoking command in '/home/olive/LVTN_2/build/usv_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/olive/LVTN_2/build/usv_description
+[0.094s] -- Install configuration: ""
+[0.095s] -- Execute custom install script
+[0.095s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_description/share/usv_description/meshes/pump.stl
+[0.095s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_description/share/usv_description/meshes/thruster.stl
+[0.095s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_description/share/usv_description/meshes/thruster_frame.stl
+[0.095s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_description/share/usv_description/meshes/usv_body.stl
+[0.096s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_description/share/usv_description/rviz/display.rviz
+[0.096s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_description/share/usv_description/urdf/environment.sdf
+[0.096s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_description/share/usv_description/urdf/usv.urdf.xacro
+[0.097s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_description/share/usv_description/launch/environment.launch.py
+[0.097s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_description/share/ament_index/resource_index/package_run_dependencies/usv_description
+[0.097s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_description/share/ament_index/resource_index/parent_prefix_path/usv_description
+[0.097s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_description/share/usv_description/environment/ament_prefix_path.sh
+[0.097s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_description/share/usv_description/environment/ament_prefix_path.dsv
+[0.098s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_description/share/usv_description/environment/path.sh
+[0.099s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_description/share/usv_description/environment/path.dsv
+[0.099s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_description/share/usv_description/local_setup.bash
+[0.099s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_description/share/usv_description/local_setup.sh
+[0.099s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_description/share/usv_description/local_setup.zsh
+[0.099s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_description/share/usv_description/local_setup.dsv
+[0.099s] -- Symlinking: /home/olive/LVTN_2/install/usv_description/share/usv_description/package.dsv
+[0.109s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_description/share/ament_index/resource_index/packages/usv_description
+[0.110s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_description/share/usv_description/cmake/usv_descriptionConfig.cmake
+[0.110s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_description/share/usv_description/cmake/usv_descriptionConfig-version.cmake
+[0.110s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_description/share/usv_description/package.xml
+[0.124s] Invoked command in '/home/olive/LVTN_2/build/usv_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/olive/LVTN_2/build/usv_description

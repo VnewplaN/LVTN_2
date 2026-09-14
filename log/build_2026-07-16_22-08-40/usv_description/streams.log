@@ -1,0 +1,25 @@
+[0.008s] Invoking command in '/home/olive/LVTN_2/build/usv_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_description -- -j16 -l16
+[0.030s] Invoked command in '/home/olive/LVTN_2/build/usv_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_description -- -j16 -l16
+[0.036s] Invoking command in '/home/olive/LVTN_2/build/usv_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/olive/LVTN_2/build/usv_description
+[0.040s] -- Install configuration: ""
+[0.040s] -- Up-to-date: /home/olive/LVTN_2/install/usv_description/share/usv_description/meshes
+[0.040s] -- Up-to-date: /home/olive/LVTN_2/install/usv_description/share/usv_description/rviz
+[0.040s] -- Up-to-date: /home/olive/LVTN_2/install/usv_description/share/usv_description/urdf
+[0.040s] -- Installing: /home/olive/LVTN_2/install/usv_description/share/usv_description/urdf/environment.urdf.xacro
+[0.040s] -- Up-to-date: /home/olive/LVTN_2/install/usv_description/share/usv_description/launch
+[0.040s] -- Up-to-date: /home/olive/LVTN_2/install/usv_description/share/ament_index/resource_index/package_run_dependencies/usv_description
+[0.040s] -- Up-to-date: /home/olive/LVTN_2/install/usv_description/share/ament_index/resource_index/parent_prefix_path/usv_description
+[0.040s] -- Up-to-date: /home/olive/LVTN_2/install/usv_description/share/usv_description/environment/ament_prefix_path.sh
+[0.040s] -- Up-to-date: /home/olive/LVTN_2/install/usv_description/share/usv_description/environment/ament_prefix_path.dsv
+[0.040s] -- Up-to-date: /home/olive/LVTN_2/install/usv_description/share/usv_description/environment/path.sh
+[0.040s] -- Up-to-date: /home/olive/LVTN_2/install/usv_description/share/usv_description/environment/path.dsv
+[0.040s] -- Up-to-date: /home/olive/LVTN_2/install/usv_description/share/usv_description/local_setup.bash
+[0.041s] -- Up-to-date: /home/olive/LVTN_2/install/usv_description/share/usv_description/local_setup.sh
+[0.041s] -- Up-to-date: /home/olive/LVTN_2/install/usv_description/share/usv_description/local_setup.zsh
+[0.041s] -- Up-to-date: /home/olive/LVTN_2/install/usv_description/share/usv_description/local_setup.dsv
+[0.041s] -- Up-to-date: /home/olive/LVTN_2/install/usv_description/share/usv_description/package.dsv
+[0.041s] -- Up-to-date: /home/olive/LVTN_2/install/usv_description/share/ament_index/resource_index/packages/usv_description
+[0.041s] -- Up-to-date: /home/olive/LVTN_2/install/usv_description/share/usv_description/cmake/usv_descriptionConfig.cmake
+[0.041s] -- Up-to-date: /home/olive/LVTN_2/install/usv_description/share/usv_description/cmake/usv_descriptionConfig-version.cmake
+[0.041s] -- Up-to-date: /home/olive/LVTN_2/install/usv_description/share/usv_description/package.xml
+[0.042s] Invoked command in '/home/olive/LVTN_2/build/usv_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/olive/LVTN_2/build/usv_description
