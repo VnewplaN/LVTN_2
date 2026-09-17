@@ -1,0 +1,29 @@
+[0.014s] Invoking command in '/home/olive/LVTN_2/build/usv_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_controller -- -j16 -l16
+[0.048s] [35m[1mConsolidate compiler generated dependencies of target state_reader[0m
+[0.048s] [35m[1mConsolidate compiler generated dependencies of target thruster_controller[0m
+[0.060s] [ 50%] Built target thruster_controller
+[0.061s] [100%] Built target state_reader
+[0.069s] Invoked command in '/home/olive/LVTN_2/build/usv_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_controller -- -j16 -l16
+[0.071s] Invoking command in '/home/olive/LVTN_2/build/usv_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/olive/LVTN_2/build/usv_controller
+[0.076s] -- Install configuration: ""
+[0.076s] -- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/config
+[0.076s] -- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/config/config.yaml
+[0.076s] -- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/launch
+[0.077s] -- Up-to-date: /home/olive/LVTN_2/install/usv_controller/lib/usv_controller/state_reader
+[0.077s] -- Up-to-date: /home/olive/LVTN_2/install/usv_controller/lib/usv_controller/thruster_controller
+[0.077s] -- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/ament_index/resource_index/package_run_dependencies/usv_controller
+[0.077s] -- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/ament_index/resource_index/parent_prefix_path/usv_controller
+[0.077s] -- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/environment/ament_prefix_path.sh
+[0.077s] -- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/environment/ament_prefix_path.dsv
+[0.077s] -- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/environment/path.sh
+[0.077s] -- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/environment/path.dsv
+[0.077s] -- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/local_setup.bash
+[0.077s] -- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/local_setup.sh
+[0.077s] -- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/local_setup.zsh
+[0.077s] -- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/local_setup.dsv
+[0.077s] -- Installing: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/package.dsv
+[0.077s] -- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/ament_index/resource_index/packages/usv_controller
+[0.078s] -- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/cmake/usv_controllerConfig.cmake
+[0.078s] -- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/cmake/usv_controllerConfig-version.cmake
+[0.078s] -- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/package.xml
+[0.079s] Invoked command in '/home/olive/LVTN_2/build/usv_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/olive/LVTN_2/build/usv_controller

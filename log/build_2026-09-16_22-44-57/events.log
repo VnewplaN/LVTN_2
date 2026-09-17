@@ -1,0 +1,128 @@
+[0.000000] (-) TimerEvent: {}
+[0.000383] (-) JobUnselected: {'identifier': 'usv_description'}
+[0.000472] (usv_controller) JobQueued: {'identifier': 'usv_controller', 'dependencies': OrderedDict()}
+[0.000574] (usv_controller) JobStarted: {'identifier': 'usv_controller'}
+[0.006736] (usv_controller) JobProgress: {'identifier': 'usv_controller', 'progress': 'cmake'}
+[0.007175] (usv_controller) JobProgress: {'identifier': 'usv_controller', 'progress': 'build'}
+[0.007681] (usv_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/olive/LVTN_2/build/usv_controller', '--', '-j16', '-l16'], 'cwd': '/home/olive/LVTN_2/build/usv_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'olive'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'x11'), ('IDF_TOOLS_INSTALL_CMD', '/home/olive/esp/esp-idf/install.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/olive'), ('IDF_PY_COMP_WORDBREAKS', ' \t\n"\'@><=;|&(:'), ('OLDPWD', '/home/olive'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('MANAGERPID', '3594'), ('SYSTEMD_EXEC_PID', '4824'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7775'), ('OPENOCD_SCRIPTS', '/home/olive/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/share/openocd/scripts'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'olive'), ('JOURNAL_STREAM', '8:30575'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'olive'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('IDF_DEACTIVATE_FILE_PATH', '/tmp/tmp5hjszt5ridf_606942'), ('ROS_LOCALHOST_ONLY', '0'), ('IDF_PATH', '/home/olive/esp/esp-idf'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/olive/esp/esp-idf/components/espcoredump:/home/olive/esp/esp-idf/components/partition_table:/home/olive/esp/esp-idf/components/app_update:/home/olive/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin:/home/olive/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin:/home/olive/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin:/home/olive/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin:/home/olive/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin:/home/olive/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin:/home/olive/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin:/home/olive/.espressif/python_env/idf5.5_py3.10_env/bin:/home/olive/esp/esp-idf/tools:/home/olive/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/msi:@/tmp/.ICE-unix/4392,unix/msi:/tmp/.ICE-unix/4392'), ('INVOCATION_ID', '6715c3448c6d4eedb16a8f210e9188bf'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('ESP_IDF_VERSION', '5.5'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('TERMINATOR_UUID', 'urn:uuid:d0fc5920-471c-415e-9434-eb917028e5e3'), ('QT_ACCESSIBILITY', '1'), ('IDF_PYTHON_ENV_PATH', '/home/olive/.espressif/python_env/idf5.5_py3.10_env'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IDF_TOOLS_EXPORT_CMD', '/home/olive/esp/esp-idf/export.sh'), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/olive/LVTN_2/build/usv_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('ESP_ROM_ELF_DIR', '/home/olive/.espressif/tools/esp-rom-elfs/20241011/'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.039317] (usv_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target thruster_controller\x1b[0m\n'}
+[0.049362] (usv_controller) StdoutLine: {'line': b'[ 50%] Built target state_reader\n'}
+[0.052228] (usv_controller) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/thruster_controller.dir/src/thruster_controller.cpp.o\x1b[0m\n'}
+[0.099748] (-) TimerEvent: {}
+[0.200211] (-) TimerEvent: {}
+[0.300597] (-) TimerEvent: {}
+[0.401007] (-) TimerEvent: {}
+[0.501469] (-) TimerEvent: {}
+[0.601855] (-) TimerEvent: {}
+[0.702238] (-) TimerEvent: {}
+[0.802632] (-) TimerEvent: {}
+[0.903075] (-) TimerEvent: {}
+[1.003464] (-) TimerEvent: {}
+[1.103874] (-) TimerEvent: {}
+[1.204335] (-) TimerEvent: {}
+[1.304733] (-) TimerEvent: {}
+[1.405132] (-) TimerEvent: {}
+[1.505543] (-) TimerEvent: {}
+[1.605992] (-) TimerEvent: {}
+[1.706446] (-) TimerEvent: {}
+[1.806892] (-) TimerEvent: {}
+[1.907354] (-) TimerEvent: {}
+[2.007877] (-) TimerEvent: {}
+[2.108305] (-) TimerEvent: {}
+[2.208670] (-) TimerEvent: {}
+[2.309098] (-) TimerEvent: {}
+[2.409550] (-) TimerEvent: {}
+[2.489631] (usv_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:241:2:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 after class definition\n'}
+[2.489899] (usv_controller) StderrLine: {'line': b'  241 | }\n'}
+[2.489982] (usv_controller) StderrLine: {'line': b'      |  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.490042] (usv_controller) StderrLine: {'line': b'      |  \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[2.503812] (usv_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KThrusterController::ThrusterController()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.503979] (usv_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:71:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KControlLoop\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[KThrusterController\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.504041] (usv_controller) StderrLine: {'line': b'   71 |                                     &ThrusterController::\x1b[01;31m\x1b[KControlLoop\x1b[m\x1b[K,\n'}
+[2.504114] (usv_controller) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.509664] (-) TimerEvent: {}
+[2.510443] (usv_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid PublishWrench(double, double, double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.510656] (usv_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:247:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpsi_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.510764] (usv_controller) StderrLine: {'line': b'  247 |         q.setRPY(0.0, 0.0, \x1b[01;31m\x1b[Kpsi_\x1b[m\x1b[K+3.14/2);\n'}
+[2.510884] (usv_controller) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.510983] (usv_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:266:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[2.511084] (usv_controller) StderrLine: {'line': b'  266 |         msg.header.stamp = \x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->now();\n'}
+[2.511182] (usv_controller) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.513617] (usv_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:280:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpub\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.513783] (usv_controller) StderrLine: {'line': b'  280 |         \x1b[01;31m\x1b[Kpub\x1b[m\x1b[K->publish(msg);\n'}
+[2.513905] (usv_controller) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.520721] (usv_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid ControlLoop()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.520895] (usv_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:286:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kkeyboard_control_flag_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.521000] (usv_controller) StderrLine: {'line': b'  286 |     if (\x1b[01;31m\x1b[Kkeyboard_control_flag_\x1b[m\x1b[K)\n'}
+[2.521099] (usv_controller) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.525702] (usv_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:288:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KKeyboardControl\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.525798] (usv_controller) StderrLine: {'line': b'  288 |         \x1b[01;31m\x1b[KKeyboardControl\x1b[m\x1b[K();\n'}
+[2.525855] (usv_controller) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.529969] (usv_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:290:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KX_keyboard_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.530308] (usv_controller) StderrLine: {'line': b'  290 |             \x1b[01;31m\x1b[KX_keyboard_\x1b[m\x1b[K,\n'}
+[2.530515] (usv_controller) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.534826] (usv_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:291:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KY_keyboard_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.535010] (usv_controller) StderrLine: {'line': b'  291 |             \x1b[01;31m\x1b[KY_keyboard_\x1b[m\x1b[K,\n'}
+[2.535119] (usv_controller) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.539353] (usv_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:292:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KN_keyboard_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.539539] (usv_controller) StderrLine: {'line': b'  292 |             \x1b[01;31m\x1b[KN_keyboard_\x1b[m\x1b[K);\n'}
+[2.539647] (usv_controller) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.542243] (usv_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:297:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ku_d_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.542495] (usv_controller) StderrLine: {'line': b'  297 |     double error_u = \x1b[01;31m\x1b[Ku_d_\x1b[m\x1b[K - u_;\n'}
+[2.542607] (usv_controller) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.544537] (usv_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:297:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ku_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.544663] (usv_controller) StderrLine: {'line': b'  297 |     double error_u = u_d_ - \x1b[01;31m\x1b[Ku_\x1b[m\x1b[K;\n'}
+[2.544761] (usv_controller) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.547381] (usv_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:298:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kv_d_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.547573] (usv_controller) StderrLine: {'line': b'  298 |     double error_v = \x1b[01;31m\x1b[Kv_d_\x1b[m\x1b[K - v_;\n'}
+[2.547686] (usv_controller) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.549790] (usv_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:298:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kv_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.549934] (usv_controller) StderrLine: {'line': b'  298 |     double error_v = v_d_ - \x1b[01;31m\x1b[Kv_\x1b[m\x1b[K;\n'}
+[2.550086] (usv_controller) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.552738] (usv_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:300:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpsi_d_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.552998] (usv_controller) StderrLine: {'line': b'  300 |     double error_psi = \x1b[01;31m\x1b[Kpsi_d_\x1b[m\x1b[K - psi_;\n'}
+[2.553133] (usv_controller) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.555531] (usv_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:300:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpsi_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.555885] (usv_controller) StderrLine: {'line': b'  300 |     double error_psi = psi_d_ - \x1b[01;31m\x1b[Kpsi_\x1b[m\x1b[K;\n'}
+[2.556081] (usv_controller) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.556250] (usv_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:297:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kerror_u\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.556450] (usv_controller) StderrLine: {'line': b'  297 |     double \x1b[01;35m\x1b[Kerror_u\x1b[m\x1b[K = u_d_ - u_;\n'}
+[2.556570] (usv_controller) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.556731] (usv_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:298:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kerror_v\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.556881] (usv_controller) StderrLine: {'line': b'  298 |     double \x1b[01;35m\x1b[Kerror_v\x1b[m\x1b[K = v_d_ - v_;\n'}
+[2.556993] (usv_controller) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.557097] (usv_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:\x1b[m\x1b[K At global scope:\n'}
+[2.557199] (usv_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:310:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected declaration before \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.557298] (usv_controller) StderrLine: {'line': b'  310 | \x1b[01;31m\x1b[K}\x1b[m\x1b[K;\n'}
+[2.557394] (usv_controller) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.609764] (-) TimerEvent: {}
+[2.710083] (-) TimerEvent: {}
+[2.810510] (-) TimerEvent: {}
+[2.910950] (-) TimerEvent: {}
+[3.011292] (-) TimerEvent: {}
+[3.111651] (-) TimerEvent: {}
+[3.212019] (-) TimerEvent: {}
+[3.312504] (-) TimerEvent: {}
+[3.412950] (-) TimerEvent: {}
+[3.513309] (-) TimerEvent: {}
+[3.613728] (-) TimerEvent: {}
+[3.714238] (-) TimerEvent: {}
+[3.814652] (-) TimerEvent: {}
+[3.915075] (-) TimerEvent: {}
+[4.015589] (-) TimerEvent: {}
+[4.116101] (-) TimerEvent: {}
+[4.216564] (-) TimerEvent: {}
+[4.317035] (-) TimerEvent: {}
+[4.417367] (-) TimerEvent: {}
+[4.517879] (-) TimerEvent: {}
+[4.618352] (-) TimerEvent: {}
+[4.718793] (-) TimerEvent: {}
+[4.819333] (-) TimerEvent: {}
+[4.919713] (-) TimerEvent: {}
+[4.993145] (usv_controller) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/thruster_controller.dir/build.make:76: CMakeFiles/thruster_controller.dir/src/thruster_controller.cpp.o] Error 1\n'}
+[4.993459] (usv_controller) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/thruster_controller.dir/all] Error 2\n'}
+[4.993674] (usv_controller) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[4.997256] (usv_controller) CommandEnded: {'returncode': 2}
+[5.013102] (usv_controller) JobEnded: {'identifier': 'usv_controller', 'rc': 2}
+[5.019808] (-) TimerEvent: {}
+[5.023596] (-) EventReactorShutdown: {}

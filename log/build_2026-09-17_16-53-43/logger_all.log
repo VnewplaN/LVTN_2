@@ -1,0 +1,301 @@
+[0.100s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.100s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7d20ee311060>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7d20ee310760>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7d20ee310760>>)
+[0.301s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.301s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.301s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.301s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.301s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.301s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.301s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/olive/LVTN_2'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(STL) by extensions ['ignore', 'ignore_ament_install']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(STL) by extension 'ignore'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(STL) by extension 'ignore_ament_install'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(STL) by extensions ['colcon_pkg']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(STL) by extension 'colcon_pkg'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(STL) by extensions ['colcon_meta']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(STL) by extension 'colcon_meta'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(STL) by extensions ['ros']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(STL) by extension 'ros'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(STL) by extensions ['cmake', 'python']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(STL) by extension 'cmake'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(STL) by extension 'python'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(STL) by extensions ['python_setup_py']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(STL) by extension 'python_setup_py'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(backups) by extensions ['ignore', 'ignore_ament_install']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(backups) by extension 'ignore'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(backups) by extension 'ignore_ament_install'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(backups) by extensions ['colcon_pkg']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(backups) by extension 'colcon_pkg'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(backups) by extensions ['colcon_meta']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(backups) by extension 'colcon_meta'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(backups) by extensions ['ros']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(backups) by extension 'ros'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(backups) by extensions ['cmake', 'python']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(backups) by extension 'cmake'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(backups) by extension 'python'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(backups) by extensions ['python_setup_py']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(backups) by extension 'python_setup_py'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_controller) by extension 'ignore'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_controller) by extension 'ignore_ament_install'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_controller) by extensions ['colcon_pkg']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_controller) by extension 'colcon_pkg'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_controller) by extensions ['colcon_meta']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_controller) by extension 'colcon_meta'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_controller) by extensions ['ros']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_controller) by extension 'ros'
+[0.324s] DEBUG:colcon.colcon_core.package_identification:Package 'src/usv_controller' with type 'ros.ament_cmake' and name 'usv_controller'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_description) by extensions ['ignore', 'ignore_ament_install']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_description) by extension 'ignore'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_description) by extension 'ignore_ament_install'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_description) by extensions ['colcon_pkg']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_description) by extension 'colcon_pkg'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_description) by extensions ['colcon_meta']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_description) by extension 'colcon_meta'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_description) by extensions ['ros']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_description) by extension 'ros'
+[0.326s] DEBUG:colcon.colcon_core.package_identification:Package 'src/usv_description' with type 'ros.ament_cmake' and name 'usv_description'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_navigation) by extension 'ignore'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_navigation) by extension 'ignore_ament_install'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_navigation) by extensions ['colcon_pkg']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_navigation) by extension 'colcon_pkg'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_navigation) by extensions ['colcon_meta']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_navigation) by extension 'colcon_meta'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_navigation) by extensions ['ros']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/usv_navigation) by extension 'ros'
+[0.338s] DEBUG:colcon.colcon_core.package_identification:Package 'src/usv_navigation' with type 'ros.ament_cmake' and name 'usv_navigation'
+[0.338s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.338s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.338s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.339s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.339s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.364s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.364s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.366s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/olive/LVTN_2/install
+[0.368s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 430 installed packages in /opt/ros/humble
+[0.371s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'usv_controller' build argument 'cmake_args' from command line to 'None'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'usv_controller' build argument 'cmake_target' from command line to 'None'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'usv_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'usv_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'usv_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'usv_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'usv_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'usv_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'usv_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.421s] DEBUG:colcon.colcon_core.verb:Building package 'usv_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/olive/LVTN_2/build/usv_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/olive/LVTN_2/install/usv_controller', 'merge_install': False, 'path': '/home/olive/LVTN_2/src/usv_controller', 'symlink_install': False, 'test_result_base': None}
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'usv_description' build argument 'cmake_args' from command line to 'None'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'usv_description' build argument 'cmake_target' from command line to 'None'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'usv_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'usv_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'usv_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'usv_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'usv_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'usv_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'usv_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.421s] DEBUG:colcon.colcon_core.verb:Building package 'usv_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/olive/LVTN_2/build/usv_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/olive/LVTN_2/install/usv_description', 'merge_install': False, 'path': '/home/olive/LVTN_2/src/usv_description', 'symlink_install': False, 'test_result_base': None}
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'usv_navigation' build argument 'cmake_args' from command line to 'None'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'usv_navigation' build argument 'cmake_target' from command line to 'None'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'usv_navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'usv_navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'usv_navigation' build argument 'cmake_clean_first' from command line to 'False'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'usv_navigation' build argument 'cmake_force_configure' from command line to 'False'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'usv_navigation' build argument 'ament_cmake_args' from command line to 'None'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'usv_navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'usv_navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.422s] DEBUG:colcon.colcon_core.verb:Building package 'usv_navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/olive/LVTN_2/build/usv_navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/olive/LVTN_2/install/usv_navigation', 'merge_install': False, 'path': '/home/olive/LVTN_2/src/usv_navigation', 'symlink_install': False, 'test_result_base': None}
+[0.422s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.423s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.423s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/olive/LVTN_2/src/usv_controller' with build type 'ament_cmake'
+[0.423s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/olive/LVTN_2/src/usv_controller'
+[0.425s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.425s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.425s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.429s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/olive/LVTN_2/src/usv_description' with build type 'ament_cmake'
+[0.429s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/olive/LVTN_2/src/usv_description'
+[0.429s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.429s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.432s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/olive/LVTN_2/src/usv_navigation' with build type 'ament_cmake'
+[0.432s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/olive/LVTN_2/src/usv_navigation'
+[0.433s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.433s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.439s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/olive/LVTN_2/build/usv_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/olive/LVTN_2/src/usv_controller -DCMAKE_INSTALL_PREFIX=/home/olive/LVTN_2/install/usv_controller
+[0.441s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/olive/LVTN_2/build/usv_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/olive/LVTN_2/src/usv_description -DCMAKE_INSTALL_PREFIX=/home/olive/LVTN_2/install/usv_description
+[0.444s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/olive/LVTN_2/build/usv_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/olive/LVTN_2/src/usv_navigation -DCMAKE_INSTALL_PREFIX=/home/olive/LVTN_2/install/usv_navigation
+[0.770s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/olive/LVTN_2/build/usv_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/olive/LVTN_2/src/usv_description -DCMAKE_INSTALL_PREFIX=/home/olive/LVTN_2/install/usv_description
+[0.775s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/olive/LVTN_2/build/usv_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_description -- -j16 -l16
+[0.837s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/olive/LVTN_2/build/usv_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_description -- -j16 -l16
+[0.851s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/olive/LVTN_2/build/usv_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/olive/LVTN_2/build/usv_description
+[0.881s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(usv_description)
+[0.882s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/olive/LVTN_2/build/usv_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/olive/LVTN_2/build/usv_description
+[0.886s] Level 1:colcon.colcon_core.environment:checking '/home/olive/LVTN_2/install/usv_description' for CMake module files
+[0.887s] Level 1:colcon.colcon_core.environment:checking '/home/olive/LVTN_2/install/usv_description' for CMake config files
+[0.887s] Level 1:colcon.colcon_core.shell:create_environment_hook('usv_description', 'cmake_prefix_path')
+[0.887s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olive/LVTN_2/install/usv_description/share/usv_description/hook/cmake_prefix_path.ps1'
+[0.888s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olive/LVTN_2/install/usv_description/share/usv_description/hook/cmake_prefix_path.dsv'
+[0.889s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olive/LVTN_2/install/usv_description/share/usv_description/hook/cmake_prefix_path.sh'
+[0.890s] Level 1:colcon.colcon_core.environment:checking '/home/olive/LVTN_2/install/usv_description/bin'
+[0.890s] Level 1:colcon.colcon_core.environment:checking '/home/olive/LVTN_2/install/usv_description/lib/pkgconfig/usv_description.pc'
+[0.891s] Level 1:colcon.colcon_core.environment:checking '/home/olive/LVTN_2/install/usv_description/lib/python3.10/site-packages'
+[0.891s] Level 1:colcon.colcon_core.environment:checking '/home/olive/LVTN_2/install/usv_description/bin'
+[0.892s] INFO:colcon.colcon_core.shell:Creating package script '/home/olive/LVTN_2/install/usv_description/share/usv_description/package.ps1'
+[0.893s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/olive/LVTN_2/install/usv_description/share/usv_description/package.dsv'
+[0.894s] INFO:colcon.colcon_core.shell:Creating package script '/home/olive/LVTN_2/install/usv_description/share/usv_description/package.sh'
+[0.895s] INFO:colcon.colcon_core.shell:Creating package script '/home/olive/LVTN_2/install/usv_description/share/usv_description/package.bash'
+[0.896s] INFO:colcon.colcon_core.shell:Creating package script '/home/olive/LVTN_2/install/usv_description/share/usv_description/package.zsh'
+[0.897s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/olive/LVTN_2/install/usv_description/share/colcon-core/packages/usv_description)
+[0.897s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(usv_description)
+[0.898s] Level 1:colcon.colcon_core.environment:checking '/home/olive/LVTN_2/install/usv_description' for CMake module files
+[0.898s] Level 1:colcon.colcon_core.environment:checking '/home/olive/LVTN_2/install/usv_description' for CMake config files
+[0.899s] Level 1:colcon.colcon_core.shell:create_environment_hook('usv_description', 'cmake_prefix_path')
+[0.899s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olive/LVTN_2/install/usv_description/share/usv_description/hook/cmake_prefix_path.ps1'
+[0.900s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olive/LVTN_2/install/usv_description/share/usv_description/hook/cmake_prefix_path.dsv'
+[0.900s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olive/LVTN_2/install/usv_description/share/usv_description/hook/cmake_prefix_path.sh'
+[0.901s] Level 1:colcon.colcon_core.environment:checking '/home/olive/LVTN_2/install/usv_description/bin'
+[0.901s] Level 1:colcon.colcon_core.environment:checking '/home/olive/LVTN_2/install/usv_description/lib/pkgconfig/usv_description.pc'
+[0.901s] Level 1:colcon.colcon_core.environment:checking '/home/olive/LVTN_2/install/usv_description/lib/python3.10/site-packages'
+[0.901s] Level 1:colcon.colcon_core.environment:checking '/home/olive/LVTN_2/install/usv_description/bin'
+[0.902s] INFO:colcon.colcon_core.shell:Creating package script '/home/olive/LVTN_2/install/usv_description/share/usv_description/package.ps1'
+[0.903s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/olive/LVTN_2/install/usv_description/share/usv_description/package.dsv'
+[0.904s] INFO:colcon.colcon_core.shell:Creating package script '/home/olive/LVTN_2/install/usv_description/share/usv_description/package.sh'
+[0.904s] INFO:colcon.colcon_core.shell:Creating package script '/home/olive/LVTN_2/install/usv_description/share/usv_description/package.bash'
+[0.905s] INFO:colcon.colcon_core.shell:Creating package script '/home/olive/LVTN_2/install/usv_description/share/usv_description/package.zsh'
+[0.905s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/olive/LVTN_2/install/usv_description/share/colcon-core/packages/usv_description)
+[1.342s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/olive/LVTN_2/build/usv_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/olive/LVTN_2/src/usv_controller -DCMAKE_INSTALL_PREFIX=/home/olive/LVTN_2/install/usv_controller
+[1.344s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/olive/LVTN_2/build/usv_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_controller -- -j16 -l16
+[1.373s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/olive/LVTN_2/build/usv_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/olive/LVTN_2/src/usv_navigation -DCMAKE_INSTALL_PREFIX=/home/olive/LVTN_2/install/usv_navigation
+[1.376s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/olive/LVTN_2/build/usv_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_navigation -- -j16 -l16
+[1.430s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/olive/LVTN_2/build/usv_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_controller -- -j16 -l16
+[1.433s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/olive/LVTN_2/build/usv_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/olive/LVTN_2/build/usv_controller
+[1.460s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(usv_controller)
+[1.461s] Level 1:colcon.colcon_core.environment:checking '/home/olive/LVTN_2/install/usv_controller' for CMake module files
+[1.461s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/olive/LVTN_2/build/usv_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/olive/LVTN_2/build/usv_controller
+[1.462s] Level 1:colcon.colcon_core.environment:checking '/home/olive/LVTN_2/install/usv_controller' for CMake config files
+[1.462s] Level 1:colcon.colcon_core.shell:create_environment_hook('usv_controller', 'cmake_prefix_path')
+[1.463s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olive/LVTN_2/install/usv_controller/share/usv_controller/hook/cmake_prefix_path.ps1'
+[1.464s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olive/LVTN_2/install/usv_controller/share/usv_controller/hook/cmake_prefix_path.dsv'
+[1.464s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olive/LVTN_2/install/usv_controller/share/usv_controller/hook/cmake_prefix_path.sh'
+[1.465s] Level 1:colcon.colcon_core.environment:checking '/home/olive/LVTN_2/install/usv_controller/lib'
+[1.465s] Level 1:colcon.colcon_core.environment:checking '/home/olive/LVTN_2/install/usv_controller/bin'
+[1.465s] Level 1:colcon.colcon_core.environment:checking '/home/olive/LVTN_2/install/usv_controller/lib/pkgconfig/usv_controller.pc'
+[1.465s] Level 1:colcon.colcon_core.environment:checking '/home/olive/LVTN_2/install/usv_controller/lib/python3.10/site-packages'
+[1.466s] Level 1:colcon.colcon_core.environment:checking '/home/olive/LVTN_2/install/usv_controller/bin'
+[1.466s] INFO:colcon.colcon_core.shell:Creating package script '/home/olive/LVTN_2/install/usv_controller/share/usv_controller/package.ps1'
+[1.467s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/olive/LVTN_2/install/usv_controller/share/usv_controller/package.dsv'
+[1.468s] INFO:colcon.colcon_core.shell:Creating package script '/home/olive/LVTN_2/install/usv_controller/share/usv_controller/package.sh'
+[1.468s] INFO:colcon.colcon_core.shell:Creating package script '/home/olive/LVTN_2/install/usv_controller/share/usv_controller/package.bash'
+[1.469s] INFO:colcon.colcon_core.shell:Creating package script '/home/olive/LVTN_2/install/usv_controller/share/usv_controller/package.zsh'
+[1.469s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/olive/LVTN_2/install/usv_controller/share/colcon-core/packages/usv_controller)
+[1.470s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(usv_controller)
+[1.470s] Level 1:colcon.colcon_core.environment:checking '/home/olive/LVTN_2/install/usv_controller' for CMake module files
+[1.471s] Level 1:colcon.colcon_core.environment:checking '/home/olive/LVTN_2/install/usv_controller' for CMake config files
+[1.471s] Level 1:colcon.colcon_core.shell:create_environment_hook('usv_controller', 'cmake_prefix_path')
+[1.471s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olive/LVTN_2/install/usv_controller/share/usv_controller/hook/cmake_prefix_path.ps1'
+[1.472s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olive/LVTN_2/install/usv_controller/share/usv_controller/hook/cmake_prefix_path.dsv'
+[1.472s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olive/LVTN_2/install/usv_controller/share/usv_controller/hook/cmake_prefix_path.sh'
+[1.473s] Level 1:colcon.colcon_core.environment:checking '/home/olive/LVTN_2/install/usv_controller/lib'
+[1.473s] Level 1:colcon.colcon_core.environment:checking '/home/olive/LVTN_2/install/usv_controller/bin'
+[1.473s] Level 1:colcon.colcon_core.environment:checking '/home/olive/LVTN_2/install/usv_controller/lib/pkgconfig/usv_controller.pc'
+[1.474s] Level 1:colcon.colcon_core.environment:checking '/home/olive/LVTN_2/install/usv_controller/lib/python3.10/site-packages'
+[1.474s] Level 1:colcon.colcon_core.environment:checking '/home/olive/LVTN_2/install/usv_controller/bin'
+[1.474s] INFO:colcon.colcon_core.shell:Creating package script '/home/olive/LVTN_2/install/usv_controller/share/usv_controller/package.ps1'
+[1.475s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/olive/LVTN_2/install/usv_controller/share/usv_controller/package.dsv'
+[1.476s] INFO:colcon.colcon_core.shell:Creating package script '/home/olive/LVTN_2/install/usv_controller/share/usv_controller/package.sh'
+[1.476s] INFO:colcon.colcon_core.shell:Creating package script '/home/olive/LVTN_2/install/usv_controller/share/usv_controller/package.bash'
+[1.477s] INFO:colcon.colcon_core.shell:Creating package script '/home/olive/LVTN_2/install/usv_controller/share/usv_controller/package.zsh'
+[1.477s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/olive/LVTN_2/install/usv_controller/share/colcon-core/packages/usv_controller)
+[15.294s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/olive/LVTN_2/build/usv_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_navigation -- -j16 -l16
+[15.296s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/olive/LVTN_2/build/usv_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/olive/LVTN_2/build/usv_navigation
+[15.331s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(usv_navigation)
+[15.332s] Level 1:colcon.colcon_core.environment:checking '/home/olive/LVTN_2/install/usv_navigation' for CMake module files
+[15.334s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/olive/LVTN_2/build/usv_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/olive/LVTN_2/build/usv_navigation
+[15.334s] Level 1:colcon.colcon_core.environment:checking '/home/olive/LVTN_2/install/usv_navigation' for CMake config files
+[15.335s] Level 1:colcon.colcon_core.shell:create_environment_hook('usv_navigation', 'cmake_prefix_path')
+[15.336s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/hook/cmake_prefix_path.ps1'
+[15.337s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/hook/cmake_prefix_path.dsv'
+[15.337s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/hook/cmake_prefix_path.sh'
+[15.338s] Level 1:colcon.colcon_core.environment:checking '/home/olive/LVTN_2/install/usv_navigation/lib'
+[15.339s] Level 1:colcon.colcon_core.environment:checking '/home/olive/LVTN_2/install/usv_navigation/bin'
+[15.339s] Level 1:colcon.colcon_core.environment:checking '/home/olive/LVTN_2/install/usv_navigation/lib/pkgconfig/usv_navigation.pc'
+[15.339s] Level 1:colcon.colcon_core.environment:checking '/home/olive/LVTN_2/install/usv_navigation/lib/python3.10/site-packages'
+[15.340s] Level 1:colcon.colcon_core.environment:checking '/home/olive/LVTN_2/install/usv_navigation/bin'
+[15.340s] INFO:colcon.colcon_core.shell:Creating package script '/home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/package.ps1'
+[15.342s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/package.dsv'
+[15.342s] INFO:colcon.colcon_core.shell:Creating package script '/home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/package.sh'
+[15.344s] INFO:colcon.colcon_core.shell:Creating package script '/home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/package.bash'
+[15.344s] INFO:colcon.colcon_core.shell:Creating package script '/home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/package.zsh'
+[15.345s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/olive/LVTN_2/install/usv_navigation/share/colcon-core/packages/usv_navigation)
+[15.346s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(usv_navigation)
+[15.346s] Level 1:colcon.colcon_core.environment:checking '/home/olive/LVTN_2/install/usv_navigation' for CMake module files
+[15.347s] Level 1:colcon.colcon_core.environment:checking '/home/olive/LVTN_2/install/usv_navigation' for CMake config files
+[15.348s] Level 1:colcon.colcon_core.shell:create_environment_hook('usv_navigation', 'cmake_prefix_path')
+[15.348s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/hook/cmake_prefix_path.ps1'
+[15.349s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/hook/cmake_prefix_path.dsv'
+[15.350s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/hook/cmake_prefix_path.sh'
+[15.351s] Level 1:colcon.colcon_core.environment:checking '/home/olive/LVTN_2/install/usv_navigation/lib'
+[15.351s] Level 1:colcon.colcon_core.environment:checking '/home/olive/LVTN_2/install/usv_navigation/bin'
+[15.351s] Level 1:colcon.colcon_core.environment:checking '/home/olive/LVTN_2/install/usv_navigation/lib/pkgconfig/usv_navigation.pc'
+[15.351s] Level 1:colcon.colcon_core.environment:checking '/home/olive/LVTN_2/install/usv_navigation/lib/python3.10/site-packages'
+[15.352s] Level 1:colcon.colcon_core.environment:checking '/home/olive/LVTN_2/install/usv_navigation/bin'
+[15.353s] INFO:colcon.colcon_core.shell:Creating package script '/home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/package.ps1'
+[15.354s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/package.dsv'
+[15.355s] INFO:colcon.colcon_core.shell:Creating package script '/home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/package.sh'
+[15.355s] INFO:colcon.colcon_core.shell:Creating package script '/home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/package.bash'
+[15.356s] INFO:colcon.colcon_core.shell:Creating package script '/home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/package.zsh'
+[15.357s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/olive/LVTN_2/install/usv_navigation/share/colcon-core/packages/usv_navigation)
+[15.357s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[15.358s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[15.358s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[15.358s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[15.371s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[15.371s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[15.371s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[15.401s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[15.402s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/olive/LVTN_2/install/local_setup.ps1'
+[15.405s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/olive/LVTN_2/install/_local_setup_util_ps1.py'
+[15.408s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/olive/LVTN_2/install/setup.ps1'
+[15.411s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/olive/LVTN_2/install/local_setup.sh'
+[15.413s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/olive/LVTN_2/install/_local_setup_util_sh.py'
+[15.414s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/olive/LVTN_2/install/setup.sh'
+[15.417s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/olive/LVTN_2/install/local_setup.bash'
+[15.418s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/olive/LVTN_2/install/setup.bash'
+[15.420s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/olive/LVTN_2/install/local_setup.zsh'
+[15.421s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/olive/LVTN_2/install/setup.zsh'

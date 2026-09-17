@@ -1,0 +1,11 @@
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:3:3:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ has not been declared
+    3 |   [01;31m[Krclcpp[m[K::init(argc, argv);
+      |   [01;31m[K^~~~~~[m[K
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:5:3:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ has not been declared
+    5 |   [01;31m[Krclcpp[m[K::shutdown();
+      |   [01;31m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/thruster_controller.dir/build.make:76: CMakeFiles/thruster_controller.dir/src/thruster_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/thruster_controller.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

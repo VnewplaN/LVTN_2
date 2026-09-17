@@ -1,0 +1,202 @@
+[0.000000] (-) TimerEvent: {}
+[0.000171] (-) JobUnselected: {'identifier': 'usv_controller'}
+[0.000349] (-) JobUnselected: {'identifier': 'usv_description'}
+[0.000378] (usv_navigation) JobQueued: {'identifier': 'usv_navigation', 'dependencies': OrderedDict()}
+[0.000661] (usv_navigation) JobStarted: {'identifier': 'usv_navigation'}
+[0.013286] (usv_navigation) JobProgress: {'identifier': 'usv_navigation', 'progress': 'cmake'}
+[0.013857] (usv_navigation) JobProgress: {'identifier': 'usv_navigation', 'progress': 'build'}
+[0.014754] (usv_navigation) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/olive/LVTN_2/build/usv_navigation', '--', '-j16', '-l16'], 'cwd': '/home/olive/LVTN_2/build/usv_navigation', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/olive/LVTN_2'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('CODEX_CI', '1'), ('USER', 'olive'), ('LC_TIME', 'vi_VN'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'codex_vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/home/olive/.local/opt/vscode-deb/usr/share/code/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'x11'), ('IDF_TOOLS_INSTALL_CMD', '/home/olive/esp/esp-idf/install.sh'), ('DEBUG', 'release'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/olive'), ('IDF_PY_COMP_WORDBREAKS', ' \t\n"\'@><=;|&(:'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/olive'), ('DESKTOP_SESSION', 'ubuntu'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-fc1f0b6c-1.11-main.sock'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('LC_MONETARY', 'vi_VN'), ('MANAGERPID', '3594'), ('LC_CTYPE', 'C.UTF-8'), ('SYSTEMD_EXEC_PID', '4824'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7775'), ('OPENOCD_SCRIPTS', '/home/olive/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/share/openocd/scripts'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('CODEX_PERMISSION_PROFILE', ':danger-full-access'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'olive'), ('JOURNAL_STREAM', '8:30575'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('USERNAME', 'olive'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('IDF_DEACTIVATE_FILE_PATH', '/tmp/tmp5hjszt5ridf_606942'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('IDF_PATH', '/home/olive/esp/esp-idf'), ('WINDOWPATH', '2'), ('PATH', '/home/olive/.local/bin:/home/olive/.codex/tmp/arg0/codex-arg06hY8Ov:/opt/ros/humble/bin:/home/olive/esp/esp-idf/components/espcoredump:/home/olive/esp/esp-idf/components/partition_table:/home/olive/esp/esp-idf/components/app_update:/home/olive/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin:/home/olive/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin:/home/olive/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin:/home/olive/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin:/home/olive/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin:/home/olive/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin:/home/olive/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin:/home/olive/.espressif/python_env/idf5.5_py3.10_env/bin:/home/olive/esp/esp-idf/tools:/home/olive/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/olive/.vscode/extensions/openai.chatgpt-26.908.40401-linux-x64/bin/linux-x86_64'), ('SESSION_MANAGER', 'local/msi:@/tmp/.ICE-unix/4392,unix/msi:/tmp/.ICE-unix/4392'), ('CODEX_VERSION', '0.154.0-alpha.6.2'), ('CODEX_SESSION_ID', '01a0a7ef-a14e-7fd2-aeba-ea837983fbb3'), ('INVOCATION_ID', '6715c3448c6d4eedb16a8f210e9188bf'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('GH_PAGER', 'cat'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('ESP_IDF_VERSION', '5.5'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('TERMINATOR_UUID', 'urn:uuid:d0fc5920-471c-415e-9434-eb917028e5e3'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('NO_AT_BRIDGE', '1'), ('IDF_PYTHON_ENV_PATH', '/home/olive/.espressif/python_env/idf5.5_py3.10_env'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IDF_TOOLS_EXPORT_CMD', '/home/olive/esp/esp-idf/export.sh'), ('CODEX_THREAD_ID', '01a0a7ef-a14e-7fd2-aeba-ea837983fbb3'), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'vi_VN'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/olive/LVTN_2/build/usv_navigation'), ('VSCODE_CLI', '1'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('VSCODE_CODE_CACHE_PATH', '/home/olive/.config/Code/CachedData/560a9dba96f961efea7b1612916f89e5d5d4d679'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('ESP_ROM_ELF_DIR', '/home/olive/.espressif/tools/esp-rom-elfs/20241011/'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('ELECTRON_NO_ATTACH_CONSOLE', '1'), ('VSCODE_PID', '8003'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099641] (-) TimerEvent: {}
+[0.103908] (usv_navigation) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target mapping_route\n'}
+[0.135852] (usv_navigation) StdoutLine: {'line': b'[ 87%] Built target coverage_planner\n'}
+[0.136194] (usv_navigation) StdoutLine: {'line': b'[ 87%] Built target laser_scan_merger\n'}
+[0.136350] (usv_navigation) StdoutLine: {'line': b'[ 87%] Building CXX object CMakeFiles/mapping_route.dir/src/mapping_route.cpp.o\n'}
+[0.136479] (usv_navigation) StdoutLine: {'line': b'[ 87%] Built target trajectory_node\n'}
+[0.199844] (-) TimerEvent: {}
+[0.300159] (-) TimerEvent: {}
+[0.400453] (-) TimerEvent: {}
+[0.500754] (-) TimerEvent: {}
+[0.601100] (-) TimerEvent: {}
+[0.701425] (-) TimerEvent: {}
+[0.801690] (-) TimerEvent: {}
+[0.902012] (-) TimerEvent: {}
+[1.002313] (-) TimerEvent: {}
+[1.102606] (-) TimerEvent: {}
+[1.202890] (-) TimerEvent: {}
+[1.303254] (-) TimerEvent: {}
+[1.403604] (-) TimerEvent: {}
+[1.503929] (-) TimerEvent: {}
+[1.604544] (-) TimerEvent: {}
+[1.704934] (-) TimerEvent: {}
+[1.805182] (-) TimerEvent: {}
+[1.905508] (-) TimerEvent: {}
+[2.005942] (-) TimerEvent: {}
+[2.106247] (-) TimerEvent: {}
+[2.206548] (-) TimerEvent: {}
+[2.306859] (-) TimerEvent: {}
+[2.407210] (-) TimerEvent: {}
+[2.507553] (-) TimerEvent: {}
+[2.607919] (-) TimerEvent: {}
+[2.708260] (-) TimerEvent: {}
+[2.808570] (-) TimerEvent: {}
+[2.908880] (-) TimerEvent: {}
+[3.009150] (-) TimerEvent: {}
+[3.109432] (-) TimerEvent: {}
+[3.209685] (-) TimerEvent: {}
+[3.309973] (-) TimerEvent: {}
+[3.410273] (-) TimerEvent: {}
+[3.510569] (-) TimerEvent: {}
+[3.610824] (-) TimerEvent: {}
+[3.711112] (-) TimerEvent: {}
+[3.811417] (-) TimerEvent: {}
+[3.912143] (-) TimerEvent: {}
+[4.012500] (-) TimerEvent: {}
+[4.112821] (-) TimerEvent: {}
+[4.213156] (-) TimerEvent: {}
+[4.313479] (-) TimerEvent: {}
+[4.413788] (-) TimerEvent: {}
+[4.514107] (-) TimerEvent: {}
+[4.614409] (-) TimerEvent: {}
+[4.714793] (-) TimerEvent: {}
+[4.815132] (-) TimerEvent: {}
+[4.915413] (-) TimerEvent: {}
+[5.015778] (-) TimerEvent: {}
+[5.116124] (-) TimerEvent: {}
+[5.216372] (-) TimerEvent: {}
+[5.316650] (-) TimerEvent: {}
+[5.417061] (-) TimerEvent: {}
+[5.517358] (-) TimerEvent: {}
+[5.617720] (-) TimerEvent: {}
+[5.718112] (-) TimerEvent: {}
+[5.818422] (-) TimerEvent: {}
+[5.918962] (-) TimerEvent: {}
+[6.019286] (-) TimerEvent: {}
+[6.119590] (-) TimerEvent: {}
+[6.219914] (-) TimerEvent: {}
+[6.320221] (-) TimerEvent: {}
+[6.420566] (-) TimerEvent: {}
+[6.520932] (-) TimerEvent: {}
+[6.621241] (-) TimerEvent: {}
+[6.721571] (-) TimerEvent: {}
+[6.821871] (-) TimerEvent: {}
+[6.922204] (-) TimerEvent: {}
+[7.022522] (-) TimerEvent: {}
+[7.122798] (-) TimerEvent: {}
+[7.223125] (-) TimerEvent: {}
+[7.323432] (-) TimerEvent: {}
+[7.423752] (-) TimerEvent: {}
+[7.524193] (-) TimerEvent: {}
+[7.624526] (-) TimerEvent: {}
+[7.724849] (-) TimerEvent: {}
+[7.825176] (-) TimerEvent: {}
+[7.925670] (-) TimerEvent: {}
+[8.026016] (-) TimerEvent: {}
+[8.126303] (-) TimerEvent: {}
+[8.226552] (-) TimerEvent: {}
+[8.326863] (-) TimerEvent: {}
+[8.427252] (-) TimerEvent: {}
+[8.527575] (-) TimerEvent: {}
+[8.628070] (-) TimerEvent: {}
+[8.728366] (-) TimerEvent: {}
+[8.828617] (-) TimerEvent: {}
+[8.928878] (-) TimerEvent: {}
+[9.029139] (-) TimerEvent: {}
+[9.129452] (-) TimerEvent: {}
+[9.229744] (-) TimerEvent: {}
+[9.330026] (-) TimerEvent: {}
+[9.430364] (-) TimerEvent: {}
+[9.530754] (-) TimerEvent: {}
+[9.631089] (-) TimerEvent: {}
+[9.731381] (-) TimerEvent: {}
+[9.831652] (-) TimerEvent: {}
+[9.931920] (-) TimerEvent: {}
+[10.032205] (-) TimerEvent: {}
+[10.132471] (-) TimerEvent: {}
+[10.232770] (-) TimerEvent: {}
+[10.333075] (-) TimerEvent: {}
+[10.433365] (-) TimerEvent: {}
+[10.533862] (-) TimerEvent: {}
+[10.634131] (-) TimerEvent: {}
+[10.734397] (-) TimerEvent: {}
+[10.834665] (-) TimerEvent: {}
+[10.934938] (-) TimerEvent: {}
+[11.035292] (-) TimerEvent: {}
+[11.135897] (-) TimerEvent: {}
+[11.236217] (-) TimerEvent: {}
+[11.336489] (-) TimerEvent: {}
+[11.436779] (-) TimerEvent: {}
+[11.537061] (-) TimerEvent: {}
+[11.637292] (-) TimerEvent: {}
+[11.737557] (-) TimerEvent: {}
+[11.837816] (-) TimerEvent: {}
+[11.938109] (-) TimerEvent: {}
+[12.038435] (-) TimerEvent: {}
+[12.138714] (-) TimerEvent: {}
+[12.238978] (-) TimerEvent: {}
+[12.339259] (-) TimerEvent: {}
+[12.439549] (-) TimerEvent: {}
+[12.539861] (-) TimerEvent: {}
+[12.640243] (-) TimerEvent: {}
+[12.740497] (-) TimerEvent: {}
+[12.840847] (-) TimerEvent: {}
+[12.941236] (-) TimerEvent: {}
+[13.041549] (-) TimerEvent: {}
+[13.141766] (-) TimerEvent: {}
+[13.242078] (-) TimerEvent: {}
+[13.342378] (-) TimerEvent: {}
+[13.442687] (-) TimerEvent: {}
+[13.543216] (-) TimerEvent: {}
+[13.643843] (-) TimerEvent: {}
+[13.744364] (-) TimerEvent: {}
+[13.844677] (-) TimerEvent: {}
+[13.945065] (-) TimerEvent: {}
+[14.045449] (-) TimerEvent: {}
+[14.145755] (-) TimerEvent: {}
+[14.246104] (-) TimerEvent: {}
+[14.346407] (-) TimerEvent: {}
+[14.425826] (usv_navigation) StdoutLine: {'line': b'[100%] Linking CXX executable mapping_route\n'}
+[14.446519] (-) TimerEvent: {}
+[14.546776] (-) TimerEvent: {}
+[14.647099] (-) TimerEvent: {}
+[14.747435] (-) TimerEvent: {}
+[14.847815] (-) TimerEvent: {}
+[14.948160] (-) TimerEvent: {}
+[15.048477] (-) TimerEvent: {}
+[15.097790] (usv_navigation) StdoutLine: {'line': b'[100%] Built target mapping_route\n'}
+[15.115708] (usv_navigation) CommandEnded: {'returncode': 0}
+[15.116923] (usv_navigation) JobProgress: {'identifier': 'usv_navigation', 'progress': 'install'}
+[15.131464] (usv_navigation) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/olive/LVTN_2/build/usv_navigation'], 'cwd': '/home/olive/LVTN_2/build/usv_navigation', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/olive/LVTN_2'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('CODEX_CI', '1'), ('USER', 'olive'), ('LC_TIME', 'vi_VN'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'codex_vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/home/olive/.local/opt/vscode-deb/usr/share/code/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'x11'), ('IDF_TOOLS_INSTALL_CMD', '/home/olive/esp/esp-idf/install.sh'), ('DEBUG', 'release'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/olive'), ('IDF_PY_COMP_WORDBREAKS', ' \t\n"\'@><=;|&(:'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/olive'), ('DESKTOP_SESSION', 'ubuntu'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-fc1f0b6c-1.11-main.sock'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('LC_MONETARY', 'vi_VN'), ('MANAGERPID', '3594'), ('LC_CTYPE', 'C.UTF-8'), ('SYSTEMD_EXEC_PID', '4824'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7775'), ('OPENOCD_SCRIPTS', '/home/olive/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/share/openocd/scripts'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('CODEX_PERMISSION_PROFILE', ':danger-full-access'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'olive'), ('JOURNAL_STREAM', '8:30575'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('USERNAME', 'olive'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('IDF_DEACTIVATE_FILE_PATH', '/tmp/tmp5hjszt5ridf_606942'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('IDF_PATH', '/home/olive/esp/esp-idf'), ('WINDOWPATH', '2'), ('PATH', '/home/olive/.local/bin:/home/olive/.codex/tmp/arg0/codex-arg06hY8Ov:/opt/ros/humble/bin:/home/olive/esp/esp-idf/components/espcoredump:/home/olive/esp/esp-idf/components/partition_table:/home/olive/esp/esp-idf/components/app_update:/home/olive/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin:/home/olive/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin:/home/olive/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin:/home/olive/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin:/home/olive/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin:/home/olive/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin:/home/olive/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin:/home/olive/.espressif/python_env/idf5.5_py3.10_env/bin:/home/olive/esp/esp-idf/tools:/home/olive/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/olive/.vscode/extensions/openai.chatgpt-26.908.40401-linux-x64/bin/linux-x86_64'), ('SESSION_MANAGER', 'local/msi:@/tmp/.ICE-unix/4392,unix/msi:/tmp/.ICE-unix/4392'), ('CODEX_VERSION', '0.154.0-alpha.6.2'), ('CODEX_SESSION_ID', '01a0a7ef-a14e-7fd2-aeba-ea837983fbb3'), ('INVOCATION_ID', '6715c3448c6d4eedb16a8f210e9188bf'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('GH_PAGER', 'cat'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('ESP_IDF_VERSION', '5.5'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('TERMINATOR_UUID', 'urn:uuid:d0fc5920-471c-415e-9434-eb917028e5e3'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('NO_AT_BRIDGE', '1'), ('IDF_PYTHON_ENV_PATH', '/home/olive/.espressif/python_env/idf5.5_py3.10_env'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IDF_TOOLS_EXPORT_CMD', '/home/olive/esp/esp-idf/export.sh'), ('CODEX_THREAD_ID', '01a0a7ef-a14e-7fd2-aeba-ea837983fbb3'), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'vi_VN'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/olive/LVTN_2/build/usv_navigation'), ('VSCODE_CLI', '1'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('VSCODE_CODE_CACHE_PATH', '/home/olive/.config/Code/CachedData/560a9dba96f961efea7b1612916f89e5d5d4d679'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('ESP_ROM_ELF_DIR', '/home/olive/.espressif/tools/esp-rom-elfs/20241011/'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('ELECTRON_NO_ATTACH_CONSOLE', '1'), ('VSCODE_PID', '8003'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[15.146773] (usv_navigation) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[15.147398] (usv_navigation) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[15.147766] (usv_navigation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/lib/usv_navigation/laser_scan_merger\n'}
+[15.147961] (usv_navigation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/lib/usv_navigation/mapping_route\n'}
+[15.148154] (usv_navigation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/lib/usv_navigation/coverage_planner\n'}
+[15.148354] (usv_navigation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/lib/usv_navigation/trajectory_node\n'}
+[15.148481] (-) TimerEvent: {}
+[15.148797] (usv_navigation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/launch/coverage.launch.py\n'}
+[15.148989] (usv_navigation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/launch/saved_coverage.launch.py\n'}
+[15.149189] (usv_navigation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/launch/slam.launch.py\n'}
+[15.149400] (usv_navigation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/config/coverage.rviz\n'}
+[15.149595] (usv_navigation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/config/slam.yaml\n'}
+[15.149851] (usv_navigation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/maps/README.md\n'}
+[15.150062] (usv_navigation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/maps/usv_map.pgm\n'}
+[15.150258] (usv_navigation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/maps/usv_map.yaml\n'}
+[15.150475] (usv_navigation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/SLAM_NOTES.md\n'}
+[15.150702] (usv_navigation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/ament_index/resource_index/package_run_dependencies/usv_navigation\n'}
+[15.150976] (usv_navigation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/ament_index/resource_index/parent_prefix_path/usv_navigation\n'}
+[15.151252] (usv_navigation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/environment/ament_prefix_path.sh\n'}
+[15.151527] (usv_navigation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/environment/ament_prefix_path.dsv\n'}
+[15.151744] (usv_navigation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/environment/path.sh\n'}
+[15.151975] (usv_navigation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/environment/path.dsv\n'}
+[15.152407] (usv_navigation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/local_setup.bash\n'}
+[15.152644] (usv_navigation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/local_setup.sh\n'}
+[15.152794] (usv_navigation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/local_setup.zsh\n'}
+[15.152999] (usv_navigation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/local_setup.dsv\n'}
+[15.153114] (usv_navigation) StdoutLine: {'line': b'-- Symlinking: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/package.dsv\n'}
+[15.168454] (usv_navigation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/ament_index/resource_index/packages/usv_navigation\n'}
+[15.168886] (usv_navigation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/cmake/usv_navigationConfig.cmake\n'}
+[15.169071] (usv_navigation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/cmake/usv_navigationConfig-version.cmake\n'}
+[15.169192] (usv_navigation) StdoutLine: {'line': b'-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/package.xml\n'}
+[15.172964] (usv_navigation) CommandEnded: {'returncode': 0}
+[15.203570] (usv_navigation) JobEnded: {'identifier': 'usv_navigation', 'rc': 0}
+[15.204659] (-) EventReactorShutdown: {}

@@ -1,0 +1,34 @@
+[0.012s] Invoking command in '/home/olive/LVTN_2/build/usv_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_controller -- -j16 -l16
+[0.042s] [35m[1mConsolidate compiler generated dependencies of target state_reader[0m
+[0.052s] [ 50%] [32mBuilding CXX object CMakeFiles/state_reader.dir/src/state_reader.cpp.o[0m
+[1.731s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:[m[K In member function ‘[01m[Kvoid StateReader::subCallback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.731s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:28:61:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.731s]    28 | [01;35m[K:msg::Odometry::SharedPtr msg[m[K){
+[1.731s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[1.731s] 
+[3.312s] [100%] [32m[1mLinking CXX executable state_reader[0m
+[3.393s] [100%] Built target state_reader
+[3.402s] Invoked command in '/home/olive/LVTN_2/build/usv_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_controller -- -j16 -l16
+[3.404s] Invoking command in '/home/olive/LVTN_2/build/usv_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/olive/LVTN_2/build/usv_controller
+[3.408s] -- Install configuration: ""
+[3.408s] -- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/config
+[3.408s] -- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/config/config.yaml
+[3.408s] -- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/launch
+[3.408s] -- Installing: /home/olive/LVTN_2/install/usv_controller/lib/usv_controller/state_reader
+[3.409s] -- Set runtime path of "/home/olive/LVTN_2/install/usv_controller/lib/usv_controller/state_reader" to ""
+[3.409s] -- Installing: /home/olive/LVTN_2/install/usv_controller/share/ament_index/resource_index/package_run_dependencies/usv_controller
+[3.409s] -- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/ament_index/resource_index/parent_prefix_path/usv_controller
+[3.409s] -- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/environment/ament_prefix_path.sh
+[3.409s] -- Installing: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/environment/ament_prefix_path.dsv
+[3.409s] -- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/environment/path.sh
+[3.409s] -- Installing: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/environment/path.dsv
+[3.409s] -- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/local_setup.bash
+[3.409s] -- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/local_setup.sh
+[3.409s] -- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/local_setup.zsh
+[3.409s] -- Installing: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/local_setup.dsv
+[3.409s] -- Installing: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/package.dsv
+[3.409s] -- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/ament_index/resource_index/packages/usv_controller
+[3.409s] -- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/cmake/usv_controllerConfig.cmake
+[3.409s] -- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/cmake/usv_controllerConfig-version.cmake
+[3.409s] -- Installing: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/package.xml
+[3.410s] Invoked command in '/home/olive/LVTN_2/build/usv_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/olive/LVTN_2/build/usv_controller

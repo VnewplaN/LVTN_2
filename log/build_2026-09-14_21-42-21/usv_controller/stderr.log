@@ -1,0 +1,44 @@
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:30:55:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   30 | :Float64MultiArray> [01;31m[KSharedPtr[m[K pub;
+      |                     [01;31m[K^~~~~~~~~[m[K
+      |                              [32m[K;[m[K
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:30:65:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub[m[K’ does not name a type
+   30 | oat64MultiArray> SharedPtr [01;31m[Kpub[m[K;
+      |                            [01;31m[K^~~[m[K
+
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:[m[K In constructor ‘[01m[KStateReader::StateReader()[m[K’:
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:12:38:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Publisher<std_msgs::msg::Float64MultiArray_<std::allocator<void> > >::Publisher()[m[K’
+   12 | Reader() : Node("state_reader"[01;31m[K)[m[K
+      |                               [01;31m[K^[m[K
+
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:2[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:125:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Publisher<MessageT, AllocatorT>::Publisher(rclcpp::node_interfaces::NodeBaseInterface*, const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&) [with MessageT = std_msgs::msg::Float64MultiArray_<std::allocator<void> >; AllocatorT = std::allocator<void>; std::string = std::__cxx11::basic_string<char>][m[K’
+  125 |   [01;36m[KPublisher[m[K(
+      |   [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:125:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 0 provided
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:77:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Publisher<std_msgs::msg::Float64MultiArray_<std::allocator<void> > >::Publisher(const rclcpp::Publisher<std_msgs::msg::Float64MultiArray_<std::allocator<void> > >&)[m[K’
+   77 | class [01;36m[KPublisher[m[K : public PublisherBase
+      |       [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:77:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:26:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub[m[K’ was not declared in this scope; did you mean ‘[01m[Ksub[m[K’?
+   26 |     [01;31m[Kpub[m[K = this->create_publisher<std_msgs::msg::Float64MultiArray>(pub_topic_, 10);
+      |     [01;31m[K^~~[m[K
+      |     [32m[Ksub[m[K
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:[m[K In member function ‘[01m[Kvoid StateReader::subCallback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:62:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub[m[K’ was not declared in this scope; did you mean ‘[01m[Ksub[m[K’?
+   62 |     [01;31m[Kpub[m[K->publish(state_msg);
+      |     [01;31m[K^~~[m[K
+      |     [32m[Ksub[m[K
+gmake[2]: *** [CMakeFiles/state_reader.dir/build.make:76: CMakeFiles/state_reader.dir/src/state_reader.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/state_reader.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

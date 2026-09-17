@@ -1,0 +1,26 @@
+[0.021s] Invoking command in '/home/olive/LVTN_2/build/usv_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_navigation -- -j16 -l16
+[0.089s] Invoked command in '/home/olive/LVTN_2/build/usv_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_navigation -- -j16 -l16
+[0.092s] Invoking command in '/home/olive/LVTN_2/build/usv_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/olive/LVTN_2/build/usv_navigation
+[0.103s] -- Install configuration: ""
+[0.104s] -- Up-to-date: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/launch
+[0.104s] -- Up-to-date: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/launch/slam.launch.py
+[0.104s] -- Up-to-date: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/config
+[0.104s] -- Up-to-date: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/config/slam.yaml
+[0.104s] -- Up-to-date: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/maps
+[0.104s] -- Up-to-date: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/maps/README.md
+[0.104s] -- Up-to-date: /home/olive/LVTN_2/install/usv_navigation/share/ament_index/resource_index/package_run_dependencies/usv_navigation
+[0.105s] -- Up-to-date: /home/olive/LVTN_2/install/usv_navigation/share/ament_index/resource_index/parent_prefix_path/usv_navigation
+[0.105s] -- Up-to-date: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/environment/ament_prefix_path.sh
+[0.105s] -- Up-to-date: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/environment/ament_prefix_path.dsv
+[0.105s] -- Up-to-date: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/environment/path.sh
+[0.105s] -- Up-to-date: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/environment/path.dsv
+[0.105s] -- Up-to-date: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/local_setup.bash
+[0.105s] -- Up-to-date: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/local_setup.sh
+[0.105s] -- Up-to-date: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/local_setup.zsh
+[0.106s] -- Up-to-date: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/local_setup.dsv
+[0.106s] -- Installing: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/package.dsv
+[0.107s] -- Up-to-date: /home/olive/LVTN_2/install/usv_navigation/share/ament_index/resource_index/packages/usv_navigation
+[0.108s] -- Up-to-date: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/cmake/usv_navigationConfig.cmake
+[0.108s] -- Up-to-date: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/cmake/usv_navigationConfig-version.cmake
+[0.108s] -- Up-to-date: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/package.xml
+[0.108s] Invoked command in '/home/olive/LVTN_2/build/usv_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/olive/LVTN_2/build/usv_navigation

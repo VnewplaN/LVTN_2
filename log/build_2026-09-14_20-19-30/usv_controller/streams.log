@@ -1,0 +1,10 @@
+[0.010s] Invoking command in '/home/olive/LVTN_2/build/usv_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_controller -- -j16 -l16
+[0.047s] [ 50%] [32mBuilding CXX object CMakeFiles/state_reader.dir/src/state_reader.cpp.o[0m
+[0.052s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/rclcpp.hpp: No such file or directory
+[0.053s]     1 | #include [01;31m[K"rclcpp/rclcpp.hpp"[m[K
+[0.053s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[0.053s] compilation terminated.
+[0.053s] gmake[2]: *** [CMakeFiles/state_reader.dir/build.make:76: CMakeFiles/state_reader.dir/src/state_reader.cpp.o] Error 1
+[0.053s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/state_reader.dir/all] Error 2
+[0.053s] gmake: *** [Makefile:146: all] Error 2
+[0.055s] Invoked command in '/home/olive/LVTN_2/build/usv_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_controller -- -j16 -l16

@@ -1,0 +1,79 @@
+[0.024s] Invoking command in '/home/olive/LVTN_2/build/usv_navigation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_navigation -- -j16 -l16
+[0.073s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.387s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[0.499s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.517s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.549s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.581s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.622s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.762s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.771s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.020s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.108s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.221s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.261s] -- Looking for pthread.h
+[1.446s] -- Looking for pthread.h - found
+[1.448s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.606s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.609s] -- Found Threads: TRUE  
+[1.794s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.897s] -- Found tf2: 0.25.20 (/opt/ros/humble/share/tf2/cmake)
+[1.925s] -- Found tf2_ros: 0.25.20 (/opt/ros/humble/share/tf2_ros/cmake)
+[2.172s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.420s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.420s] -- Configured cppcheck include dirs: 
+[2.420s] -- Configured cppcheck exclude dirs and/or files: 
+[2.421s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.422s] -- Added test 'lint_cmake' to check CMake code style
+[2.424s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.426s] -- Added test 'uncrustify' to check C / C++ code style
+[2.426s] -- Configured uncrustify additional arguments: 
+[2.428s] -- Added test 'xmllint' to check XML markup files
+[2.431s] -- Configuring done
+[2.465s] -- Generating done
+[2.479s] -- Build files have been written to: /home/olive/LVTN_2/build/usv_navigation
+[2.561s] [ 50%] Building CXX object CMakeFiles/laser_scan_merger.dir/src/laser_scan_merger.cpp.o
+[6.243s] /home/olive/LVTN_2/src/usv_navigation/src/laser_scan_merger.cpp: In constructor ‘LaserScanMerger::LaserScanMerger()’:
+[6.243s] /home/olive/LVTN_2/src/usv_navigation/src/laser_scan_merger.cpp:33:31: error: no matching function for call to ‘max(int, long int)’
+[6.243s]    33 |     output_samples_ = std::max(360, this->declare_parameter<int>("output_samples", 2880));
+[6.243s]       |                       ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[6.244s] In file included from /usr/include/c++/11/algorithm:61,
+[6.244s]                  from /home/olive/LVTN_2/src/usv_navigation/src/laser_scan_merger.cpp:1:
+[6.244s] /usr/include/c++/11/bits/stl_algobase.h:254:5: note: candidate: ‘template<class _Tp> constexpr const _Tp& std::max(const _Tp&, const _Tp&)’
+[6.244s]   254 |     max(const _Tp& __a, const _Tp& __b)
+[6.244s]       |     ^~~
+[6.244s] /usr/include/c++/11/bits/stl_algobase.h:254:5: note:   template argument deduction/substitution failed:
+[6.244s] /home/olive/LVTN_2/src/usv_navigation/src/laser_scan_merger.cpp:33:31: note:   deduced conflicting types for parameter ‘const _Tp’ (‘int’ and ‘long int’)
+[6.244s]    33 |     output_samples_ = std::max(360, this->declare_parameter<int>("output_samples", 2880));
+[6.244s]       |                       ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[6.244s] In file included from /usr/include/c++/11/algorithm:61,
+[6.244s]                  from /home/olive/LVTN_2/src/usv_navigation/src/laser_scan_merger.cpp:1:
+[6.244s] /usr/include/c++/11/bits/stl_algobase.h:300:5: note: candidate: ‘template<class _Tp, class _Compare> constexpr const _Tp& std::max(const _Tp&, const _Tp&, _Compare)’
+[6.244s]   300 |     max(const _Tp& __a, const _Tp& __b, _Compare __comp)
+[6.245s]       |     ^~~
+[6.245s] /usr/include/c++/11/bits/stl_algobase.h:300:5: note:   template argument deduction/substitution failed:
+[6.245s] /home/olive/LVTN_2/src/usv_navigation/src/laser_scan_merger.cpp:33:31: note:   deduced conflicting types for parameter ‘const _Tp’ (‘int’ and ‘long int’)
+[6.245s]    33 |     output_samples_ = std::max(360, this->declare_parameter<int>("output_samples", 2880));
+[6.245s]       |                       ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[6.245s] In file included from /usr/include/c++/11/algorithm:62,
+[6.245s]                  from /home/olive/LVTN_2/src/usv_navigation/src/laser_scan_merger.cpp:1:
+[6.245s] /usr/include/c++/11/bits/stl_algo.h:3461:5: note: candidate: ‘template<class _Tp> constexpr _Tp std::max(std::initializer_list<_Tp>)’
+[6.245s]  3461 |     max(initializer_list<_Tp> __l)
+[6.245s]       |     ^~~
+[6.246s] /usr/include/c++/11/bits/stl_algo.h:3461:5: note:   template argument deduction/substitution failed:
+[6.246s] /home/olive/LVTN_2/src/usv_navigation/src/laser_scan_merger.cpp:33:31: note:   mismatched types ‘std::initializer_list<_Tp>’ and ‘int’
+[6.246s]    33 |     output_samples_ = std::max(360, this->declare_parameter<int>("output_samples", 2880));
+[6.246s]       |                       ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[6.246s] In file included from /usr/include/c++/11/algorithm:62,
+[6.246s]                  from /home/olive/LVTN_2/src/usv_navigation/src/laser_scan_merger.cpp:1:
+[6.246s] /usr/include/c++/11/bits/stl_algo.h:3467:5: note: candidate: ‘template<class _Tp, class _Compare> constexpr _Tp std::max(std::initializer_list<_Tp>, _Compare)’
+[6.246s]  3467 |     max(initializer_list<_Tp> __l, _Compare __comp)
+[6.246s]       |     ^~~
+[6.246s] /usr/include/c++/11/bits/stl_algo.h:3467:5: note:   template argument deduction/substitution failed:
+[6.246s] /home/olive/LVTN_2/src/usv_navigation/src/laser_scan_merger.cpp:33:31: note:   mismatched types ‘std::initializer_list<_Tp>’ and ‘int’
+[6.246s]    33 |     output_samples_ = std::max(360, this->declare_parameter<int>("output_samples", 2880));
+[6.246s]       |                       ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[9.755s] gmake[2]: *** [CMakeFiles/laser_scan_merger.dir/build.make:76: CMakeFiles/laser_scan_merger.dir/src/laser_scan_merger.cpp.o] Error 1
+[9.756s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/laser_scan_merger.dir/all] Error 2
+[9.756s] gmake: *** [Makefile:146: all] Error 2
+[9.759s] Invoked command in '/home/olive/LVTN_2/build/usv_navigation' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_navigation -- -j16 -l16

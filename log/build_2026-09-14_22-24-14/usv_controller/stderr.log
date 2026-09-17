@@ -1,0 +1,7 @@
+/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:4:10: fatal error: ros_gz_interfaces/msg/entity_wrench.hpp: No such file or directory
+    4 | #include "ros_gz_interfaces/msg/entity_wrench.hpp"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[2]: *** [CMakeFiles/thruster_controller.dir/build.make:76: CMakeFiles/thruster_controller.dir/src/thruster_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/thruster_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

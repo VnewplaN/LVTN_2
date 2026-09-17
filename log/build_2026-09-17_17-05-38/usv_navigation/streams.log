@@ -1,0 +1,40 @@
+[0.029s] Invoking command in '/home/olive/LVTN_2/build/usv_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_navigation -- -j16 -l16
+[0.135s] [ 80%] Built target coverage_planner
+[0.135s] [ 80%] Built target trajectory_node
+[0.135s] [ 80%] Built target mapping_route
+[0.135s] [ 80%] Built target coverage_playback
+[0.136s] [100%] Built target laser_scan_merger
+[0.160s] Invoked command in '/home/olive/LVTN_2/build/usv_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_navigation -- -j16 -l16
+[0.165s] Invoking command in '/home/olive/LVTN_2/build/usv_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/olive/LVTN_2/build/usv_navigation
+[0.179s] -- Install configuration: ""
+[0.179s] -- Execute custom install script
+[0.180s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/lib/usv_navigation/laser_scan_merger
+[0.181s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/lib/usv_navigation/mapping_route
+[0.181s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/lib/usv_navigation/coverage_planner
+[0.182s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/lib/usv_navigation/trajectory_node
+[0.182s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/lib/usv_navigation/coverage_playback
+[0.182s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/launch/coverage.launch.py
+[0.182s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/launch/saved_coverage.launch.py
+[0.183s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/launch/slam.launch.py
+[0.183s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/config/coverage.rviz
+[0.184s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/config/slam.yaml
+[0.185s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/maps/README.md
+[0.185s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/maps/usv_map.pgm
+[0.185s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/maps/usv_map.yaml
+[0.187s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/SLAM_NOTES.md
+[0.187s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/ament_index/resource_index/package_run_dependencies/usv_navigation
+[0.187s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/ament_index/resource_index/parent_prefix_path/usv_navigation
+[0.187s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/environment/ament_prefix_path.sh
+[0.187s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/environment/ament_prefix_path.dsv
+[0.187s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/environment/path.sh
+[0.189s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/environment/path.dsv
+[0.189s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/local_setup.bash
+[0.190s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/local_setup.sh
+[0.190s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/local_setup.zsh
+[0.190s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/local_setup.dsv
+[0.190s] -- Symlinking: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/package.dsv
+[0.205s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/ament_index/resource_index/packages/usv_navigation
+[0.205s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/cmake/usv_navigationConfig.cmake
+[0.205s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/cmake/usv_navigationConfig-version.cmake
+[0.207s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/package.xml
+[0.235s] Invoked command in '/home/olive/LVTN_2/build/usv_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/olive/LVTN_2/build/usv_navigation

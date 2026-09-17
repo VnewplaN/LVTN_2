@@ -55,10 +55,13 @@
           </horizontal>
 
           <vertical>
-            <samples>16</samples>
+            <!-- slam_toolbox consumes a 2D LaserScan. Keep one horizontal
+                 layer; ros_gz_bridge otherwise exposes the downward-most
+                 layer, which measures the water/pond surface at about 2.6 m. -->
+            <samples>1</samples>
             <resolution>1</resolution>
-            <min_angle>-0.741765</min_angle>
-            <max_angle>0.392699</max_angle>
+            <min_angle>0.0</min_angle>
+            <max_angle>0.0</max_angle>
           </vertical>
         </scan>
 
@@ -88,10 +91,10 @@
           </horizontal>
 
           <vertical>
-            <samples>16</samples>
+            <samples>1</samples>
             <resolution>1</resolution>
-            <min_angle>-0.741765</min_angle>
-            <max_angle>0.392699</max_angle>
+            <min_angle>0.0</min_angle>
+            <max_angle>0.0</max_angle>
           </vertical>
         </scan>
 

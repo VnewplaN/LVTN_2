@@ -1,0 +1,12 @@
+[0.009s] Invoking command in '/home/olive/LVTN_2/build/usv_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_controller -- -j16 -l16
+[0.038s] [35m[1mConsolidate compiler generated dependencies of target thruster_controller[0m
+[0.050s] [ 50%] Built target state_reader
+[0.052s] [ 75%] [32mBuilding CXX object CMakeFiles/thruster_controller.dir/src/thruster_controller.cpp.o[0m
+[2.106s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:31:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+[2.106s]    31 | }
+[2.106s]       |  [01;31m[K^[m[K
+[2.106s]       |  [32m[K;[m[K
+[2.493s] gmake[2]: *** [CMakeFiles/thruster_controller.dir/build.make:76: CMakeFiles/thruster_controller.dir/src/thruster_controller.cpp.o] Error 1
+[2.493s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/thruster_controller.dir/all] Error 2
+[2.493s] gmake: *** [Makefile:146: all] Error 2
+[2.495s] Invoked command in '/home/olive/LVTN_2/build/usv_controller' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_controller -- -j16 -l16

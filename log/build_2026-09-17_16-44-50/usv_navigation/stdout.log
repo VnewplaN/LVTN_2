@@ -1,0 +1,34 @@
+[ 25%] Built target laser_scan_merger
+[ 50%] Built target coverage_planner
+[ 75%] Built target trajectory_node
+[100%] Built target mapping_route
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/lib/usv_navigation/laser_scan_merger
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/lib/usv_navigation/mapping_route
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/lib/usv_navigation/coverage_planner
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/lib/usv_navigation/trajectory_node
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/launch/coverage.launch.py
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/launch/saved_coverage.launch.py
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/launch/slam.launch.py
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/config/coverage.rviz
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/config/slam.yaml
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/maps/README.md
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/maps/usv_map.pgm
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/maps/usv_map.yaml
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/SLAM_NOTES.md
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/ament_index/resource_index/package_run_dependencies/usv_navigation
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/ament_index/resource_index/parent_prefix_path/usv_navigation
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/environment/path.sh
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/environment/path.dsv
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/local_setup.bash
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/local_setup.sh
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/local_setup.zsh
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/local_setup.dsv
+-- Symlinking: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/package.dsv
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/ament_index/resource_index/packages/usv_navigation
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/cmake/usv_navigationConfig.cmake
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/cmake/usv_navigationConfig-version.cmake
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/package.xml

@@ -1,0 +1,7 @@
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:[m[K In member function ‘[01m[Kvoid ThrusterController::ControlLoop()[m[K’:
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:348:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kerror_u[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  348 |     double [01;35m[Kerror_u[m[K = u_d_ - u_;
+      |            [01;35m[K^~~~~~~[m[K
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:349:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kerror_v[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  349 |     double [01;35m[Kerror_v[m[K = v_d_ - v_;
+      |            [01;35m[K^~~~~~~[m[K

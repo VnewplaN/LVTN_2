@@ -1,0 +1,34 @@
+[35m[1mConsolidate compiler generated dependencies of target thruster_controller[0m
+[ 50%] Built target state_reader
+[ 75%] [32mBuilding CXX object CMakeFiles/thruster_controller.dir/src/thruster_controller.cpp.o[0m
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:[m[K In member function ‘[01m[Kvoid ThrusterController::ControlLoop()[m[K’:
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:297:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kerror_u[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  297 |     double [01;35m[Kerror_u[m[K = u_d_ - u_;
+      |            [01;35m[K^~~~~~~[m[K
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:298:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kerror_v[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  298 |     double [01;35m[Kerror_v[m[K = v_d_ - v_;
+      |            [01;35m[K^~~~~~~[m[K
+[100%] [32m[1mLinking CXX executable thruster_controller[0m
+[100%] Built target thruster_controller
+-- Install configuration: ""
+-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/config
+-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/config/config.yaml
+-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/launch
+-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/lib/usv_controller/state_reader
+-- Installing: /home/olive/LVTN_2/install/usv_controller/lib/usv_controller/thruster_controller
+-- Set runtime path of "/home/olive/LVTN_2/install/usv_controller/lib/usv_controller/thruster_controller" to ""
+-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/ament_index/resource_index/package_run_dependencies/usv_controller
+-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/ament_index/resource_index/parent_prefix_path/usv_controller
+-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/environment/ament_prefix_path.sh
+-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/environment/path.sh
+-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/environment/path.dsv
+-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/local_setup.bash
+-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/local_setup.sh
+-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/local_setup.zsh
+-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/local_setup.dsv
+-- Installing: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/package.dsv
+-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/ament_index/resource_index/packages/usv_controller
+-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/cmake/usv_controllerConfig.cmake
+-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/cmake/usv_controllerConfig-version.cmake
+-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/package.xml

@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/olive/LVTN_2/build/usv_controller/state_reader" "/home/olive/LVTN_2/build/usv_controller/thruster_controller" "TARGETS" "state_reader" "thruster_controller" "DESTINATION" "lib/usv_controller")

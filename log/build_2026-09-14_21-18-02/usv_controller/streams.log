@@ -1,0 +1,31 @@
+[0.012s] Invoking command in '/home/olive/LVTN_2/build/usv_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_controller -- -j16 -l16
+[0.042s] [35m[1mConsolidate compiler generated dependencies of target state_reader[0m
+[0.053s] [ 50%] [32mBuilding CXX object CMakeFiles/state_reader.dir/src/state_reader.cpp.o[0m
+[1.884s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:24:45:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.884s]    24 | av_msgs/msg/Odometry[01;31m[K>[m[K:: SharedPtr sub;
+[1.884s]       |                     [01;31m[K^[m[K
+[1.884s] 
+[1.884s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:24:45:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[1.885s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:24:45:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[1.885s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:24:45:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[1.885s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:24:49:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[1.885s]    24 | sgs/msg/Odometry>:: [01;31m[KSharedPtr[m[K sub;
+[1.885s]       |                     [01;31m[K^~~~~~~~~[m[K
+[1.885s]       |                              [32m[K;[m[K
+[1.885s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:24:59:[m[K [01;31m[Kerror: [m[K‘[01m[Ksub[m[K’ does not name a type
+[1.886s]    24 | /msg/Odometry>:: SharedPtr [01;31m[Ksub[m[K;
+[1.886s]       |                            [01;31m[K^~~[m[K
+[1.886s] 
+[1.891s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:[m[K In constructor ‘[01m[KStateReader::StateReader()[m[K’:
+[1.891s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:21:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksub[m[K’ was not declared in this scope; did you mean ‘[01m[Kfsub[m[K’?
+[1.891s]    21 |     [01;31m[Ksub[m[K = this->create_subscription<nav_msgs::msg::Odometry>(sub_topic_, 10, bind(&StateReader::subCallback(), this, _1));
+[1.891s]       |     [01;31m[K^~~[m[K
+[1.891s]       |     [32m[Kfsub[m[K
+[1.892s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:21:108:[m[K [01;31m[Kerror: [m[Klvalue required as unary ‘[01m[K&[m[K’ operand
+[1.892s]    21 | [01;31m[KeReader::subCallback()[m[K, this, _1));
+[1.892s]       | [01;31m[K~~~~~~~~~~~~~~~~~~~~^~[m[K
+[1.892s] 
+[2.234s] gmake[2]: *** [CMakeFiles/state_reader.dir/build.make:76: CMakeFiles/state_reader.dir/src/state_reader.cpp.o] Error 1
+[2.235s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/state_reader.dir/all] Error 2
+[2.235s] gmake: *** [Makefile:146: all] Error 2
+[2.237s] Invoked command in '/home/olive/LVTN_2/build/usv_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_controller -- -j16 -l16

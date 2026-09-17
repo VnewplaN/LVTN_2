@@ -1,0 +1,115 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-e2e37bdfbac36128f868.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "usv_navigation",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "coverage_planner::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-coverage_planner-6b5f68dd55ddce6431bf.json",
+					"name" : "coverage_planner",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "coverage_playback::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-coverage_playback-450f1034b0295f88b158.json",
+					"name" : "coverage_playback",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "laser_scan_merger::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-laser_scan_merger-81efbe5faa2bbf90d3bf.json",
+					"name" : "laser_scan_merger",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mapping_route::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mapping_route-0b43d23c230f87615820.json",
+					"name" : "mapping_route",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "trajectory_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-trajectory_node-f1c82d780ec5d987529c.json",
+					"name" : "trajectory_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-1ef4319dd754f11f881e.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "usv_navigation_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-usv_navigation_uninstall-ff166257713a5ce6802e.json",
+					"name" : "usv_navigation_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/olive/LVTN_2/build/usv_navigation",
+		"source" : "/home/olive/LVTN_2/src/usv_navigation"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

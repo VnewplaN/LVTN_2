@@ -1,0 +1,7 @@
+/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp: In member function ‘void ThrusterController::ControlLoop()’:
+/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:174:12: warning: unused variable ‘error_u’ [-Wunused-variable]
+  174 |     double error_u = u_d_ - u_;
+      |            ^~~~~~~
+/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:175:12: warning: unused variable ‘error_v’ [-Wunused-variable]
+  175 |     double error_v = v_d_ - v_;
+      |            ^~~~~~~

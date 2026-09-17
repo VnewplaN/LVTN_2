@@ -1,0 +1,11 @@
+[0.011s] Invoking command in '/home/olive/LVTN_2/build/usv_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_controller -- -j16 -l16
+[0.039s] [35m[1mConsolidate compiler generated dependencies of target state_reader[0m
+[0.050s] [ 50%] [32mBuilding CXX object CMakeFiles/state_reader.dir/src/state_reader.cpp.o[0m
+[6.100s] [100%] [32m[1mLinking CXX executable state_reader[0m
+[6.354s] /usr/bin/ld: CMakeFiles/state_reader.dir/src/state_reader.cpp.o: in function `tf2::impl::toQuaternion(geometry_msgs::msg::Quaternion_<std::allocator<void> > const&)':
+[6.354s] state_reader.cpp:(.text._ZN3tf24impl12toQuaternionERKN13geometry_msgs3msg11Quaternion_ISaIvEEE[_ZN3tf24impl12toQuaternionERKN13geometry_msgs3msg11Quaternion_ISaIvEEE]+0x2f): undefined reference to `tf2::fromMsg(geometry_msgs::msg::Quaternion_<std::allocator<void> > const&, tf2::Quaternion&)'
+[6.384s] collect2: error: ld returned 1 exit status
+[6.386s] gmake[2]: *** [CMakeFiles/state_reader.dir/build.make:176: state_reader] Error 1
+[6.386s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/state_reader.dir/all] Error 2
+[6.386s] gmake: *** [Makefile:146: all] Error 2
+[6.388s] Invoked command in '/home/olive/LVTN_2/build/usv_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_controller -- -j16 -l16

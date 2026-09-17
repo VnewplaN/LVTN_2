@@ -1,0 +1,22 @@
+[0.011s] Invoking command in '/home/olive/LVTN_2/build/usv_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_controller -- -j16 -l16
+[0.044s] [35m[1mConsolidate compiler generated dependencies of target thruster_controller[0m
+[0.054s] [ 50%] Built target state_reader
+[0.057s] [ 75%] [32mBuilding CXX object CMakeFiles/thruster_controller.dir/src/thruster_controller.cpp.o[0m
+[2.386s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:[m[K In member function ‘[01m[Kvoid ThrusterController::KeyboardControl()[m[K’:
+[2.387s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:216:24:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kelapsed_time[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.387s]   216 |                 double [01;35m[Kelapsed_time[m[K =
+[2.387s]       |                        [01;35m[K^~~~~~~~~~~~[m[K
+[2.394s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:222:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kelapsed_time[m[K’ was not declared in this scope
+[2.394s]   222 |             if ([01;31m[Kelapsed_time[m[K > key_timeout_)
+[2.394s]       |                 [01;31m[K^~~~~~~~~~~~[m[K
+[2.396s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:[m[K In member function ‘[01m[Kvoid ThrusterController::ControlLoop()[m[K’:
+[2.396s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:295:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kerror_u[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.396s]   295 |     double [01;35m[Kerror_u[m[K = u_d_ - u_;
+[2.396s]       |            [01;35m[K^~~~~~~[m[K
+[2.396s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:296:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kerror_v[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.396s]   296 |     double [01;35m[Kerror_v[m[K = v_d_ - v_;
+[2.397s]       |            [01;35m[K^~~~~~~[m[K
+[4.816s] gmake[2]: *** [CMakeFiles/thruster_controller.dir/build.make:76: CMakeFiles/thruster_controller.dir/src/thruster_controller.cpp.o] Error 1
+[4.816s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/thruster_controller.dir/all] Error 2
+[4.816s] gmake: *** [Makefile:146: all] Error 2
+[4.818s] Invoked command in '/home/olive/LVTN_2/build/usv_controller' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_controller -- -j16 -l16

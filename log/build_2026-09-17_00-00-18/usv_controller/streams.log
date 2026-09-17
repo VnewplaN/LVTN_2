@@ -1,0 +1,20 @@
+[0.010s] Invoking command in '/home/olive/LVTN_2/build/usv_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_controller -- -j16 -l16
+[0.045s] [35m[1mConsolidate compiler generated dependencies of target thruster_controller[0m
+[0.056s] [ 25%] [32mBuilding CXX object CMakeFiles/state_reader.dir/src/state_reader.cpp.o[0m
+[0.059s] [ 50%] [32mBuilding CXX object CMakeFiles/thruster_controller.dir/src/thruster_controller.cpp.o[0m
+[3.010s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:[m[K In member function ‘[01m[Kvoid ThrusterController::ControlLoop()[m[K’:
+[3.010s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:429:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontroller_initialized_[m[K’ was not declared in this scope
+[3.010s]   429 |         [01;31m[K}[m[K
+[3.010s]       |         [01;31m[K^[m[K                      
+[3.025s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:432:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kprevious_error_psi_[m[K’ was not declared in this scope
+[3.025s]   432 |     update_integral(
+[3.026s]       |                          [01;31m[K^[m[K                  
+[3.041s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:441:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kprevious_error_psi_[m[K’ was not declared in this scope
+[3.041s]   441 |     [01;31m[K// ----------------[m[K--------------------------
+[3.041s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[4.391s] gmake[2]: *** [CMakeFiles/thruster_controller.dir/build.make:76: CMakeFiles/thruster_controller.dir/src/thruster_controller.cpp.o] Interrupt
+[4.391s] gmake[2]: *** [CMakeFiles/state_reader.dir/build.make:76: CMakeFiles/state_reader.dir/src/state_reader.cpp.o] Interrupt
+[4.391s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/thruster_controller.dir/all] Interrupt
+[4.391s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/state_reader.dir/all] Interrupt
+[4.392s] gmake: *** [Makefile:146: all] Interrupt
+[4.429s] Invoked command in '/home/olive/LVTN_2/build/usv_controller' returned '-2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_controller -- -j16 -l16

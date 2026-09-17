@@ -1,0 +1,55 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/thruster_controller.dir/src/thruster_controller.cpp.o[0m
+[ 75%] Built target state_reader
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:89:25:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   89 |     ~ThrusterController([01;31m[K)[m[K
+      |                         [01;31m[K^[m[K
+      |                          [32m[K;[m[K
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:[m[K In constructor ‘[01m[KThrusterController::ThrusterController()[m[K’:
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:64:5:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator~[m[K’ (operand type is ‘[01m[KThrusterController[m[K’)
+   64 |     [01;31m[K~ThrusterController()[m[K
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:1[m[K:
+[01m[K/usr/include/c++/11/future:160:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr std::launch std::operator~(std::launch)[m[K’
+  160 |   constexpr launch [01;36m[Koperator[m[K~(launch __x) noexcept
+      |                    [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/future:160:37:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KThrusterController[m[K’ to ‘[01m[Kstd::launch[m[K’
+  160 |   constexpr launch operator~([01;36m[Klaunch __x[m[K) noexcept
+      |                              [01;36m[K~~~~~~~^~~[m[K
+In file included from [01m[K/usr/include/c++/11/ios:42[m[K,
+                 from [01m[K/usr/include/c++/11/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/11/iostream:39[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/ios_base.h:95:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr std::_Ios_Fmtflags std::operator~(std::_Ios_Fmtflags)[m[K’
+   95 |   [01;36m[Koperator[m[K~(_Ios_Fmtflags __a)
+      |   [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/ios_base.h:95:27:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KThrusterController[m[K’ to ‘[01m[Kstd::_Ios_Fmtflags[m[K’
+   95 |   operator~([01;36m[K_Ios_Fmtflags __a[m[K)
+      |             [01;36m[K~~~~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/c++/11/bits/ios_base.h:137:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr std::_Ios_Openmode std::operator~(std::_Ios_Openmode)[m[K’
+  137 |   [01;36m[Koperator[m[K~(_Ios_Openmode __a)
+      |   [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/ios_base.h:137:27:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KThrusterController[m[K’ to ‘[01m[Kstd::_Ios_Openmode[m[K’
+  137 |   operator~([01;36m[K_Ios_Openmode __a[m[K)
+      |             [01;36m[K~~~~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/c++/11/bits/ios_base.h:177:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr std::_Ios_Iostate std::operator~(std::_Ios_Iostate)[m[K’
+  177 |   [01;36m[Koperator[m[K~(_Ios_Iostate __a)
+      |   [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/ios_base.h:177:26:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KThrusterController[m[K’ to ‘[01m[Kstd::_Ios_Iostate[m[K’
+  177 |   operator~([01;36m[K_Ios_Iostate __a[m[K)
+      |             [01;36m[K~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:[m[K In member function ‘[01m[Kvoid ThrusterController::ControlLoop()[m[K’:
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:175:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kerror_u[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  175 |     double [01;35m[Kerror_u[m[K = u_d_ - u_;
+      |            [01;35m[K^~~~~~~[m[K
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:176:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kerror_v[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  176 |     double [01;35m[Kerror_v[m[K = v_d_ - v_;
+      |            [01;35m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/thruster_controller.dir/build.make:76: CMakeFiles/thruster_controller.dir/src/thruster_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/thruster_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

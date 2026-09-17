@@ -1,0 +1,56 @@
+[35m[1mConsolidate compiler generated dependencies of target state_reader[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/state_reader.dir/src/state_reader.cpp.o[0m
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:29:21:[m[K [01;31m[Kerror: [m[K‘[01m[KFloat64MultiArray[m[K’ was not declared in this scope
+   29 |   rclcpp::Publisher<[01;31m[KFloat64MultiArray[m[K> SharedPtr pub;
+      |                     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:29:38:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   29 | er<Float64MultiArray[01;31m[K>[m[K SharedPtr pub;
+      |                     [01;31m[K^[m[K
+
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:29:40:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   29 | <Float64MultiArray> [01;31m[KSharedPtr[m[K pub;
+      |                     [01;31m[K^~~~~~~~~[m[K
+      |                              [32m[K;[m[K
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:29:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub[m[K’ does not name a type
+   29 | oat64MultiArray> SharedPtr [01;31m[Kpub[m[K;
+      |                            [01;31m[K^~~[m[K
+
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:[m[K In constructor ‘[01m[KStateReader::StateReader()[m[K’:
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:25:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub[m[K’ was not declared in this scope; did you mean ‘[01m[Ksub[m[K’?
+   25 |     [01;31m[Kpub[m[K = this->create_publisher<std_msgs::msg::String>("topic", 10);
+      |     [01;31m[K^~~[m[K
+      |     [32m[Ksub[m[K
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:25:49:[m[K [01;31m[Kerror: [m[K‘[01m[KString[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+   25 | sher<std_msgs::msg::[01;31m[KString[m[K>("topic", 10);
+      |                     [01;31m[K^~~~~~[m[K
+
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:25:56:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KStateReader::create_publisher<<expression error> >(const char [6], int)[m[K’
+   25 | [01;31m[Kd_msgs::msg::String>("topic", 10)[m[K;
+      | [01;31m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:2[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+  195 |   [01;36m[Kcreate_publisher[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:25:56:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   25 | [01;31m[Kd_msgs::msg::String>("topic", 10)[m[K;
+      | [01;31m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:[m[K In member function ‘[01m[Kvoid StateReader::subCallback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:50:20:[m[K [01;31m[Kerror: [m[K‘[01m[KFloat64MultiArray[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+   50 |     std_msgs::msg::[01;31m[KFloat64MultiArray[m[K state_msg;
+      |                    [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:52:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_msg[m[K’ was not declared in this scope
+   52 |     [01;31m[Kstate_msg[m[K.data = {
+      |     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:61:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub[m[K’ was not declared in this scope; did you mean ‘[01m[Ksub[m[K’?
+   61 |     [01;31m[Kpub[m[K->publish(state_msg);
+      |     [01;31m[K^~~[m[K
+      |     [32m[Ksub[m[K
+gmake[2]: *** [CMakeFiles/state_reader.dir/build.make:76: CMakeFiles/state_reader.dir/src/state_reader.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/state_reader.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,24 @@
+[ 75%] Built target thruster_controller
+[100%] Built target state_reader
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/config/config.yaml
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/launch/controller.launch.py
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/launch/state.launch.py
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_controller/lib/usv_controller/state_reader
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_controller/lib/usv_controller/thruster_controller
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_controller/share/ament_index/resource_index/package_run_dependencies/usv_controller
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_controller/share/ament_index/resource_index/parent_prefix_path/usv_controller
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/environment/path.sh
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/environment/path.dsv
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/local_setup.bash
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/local_setup.sh
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/local_setup.zsh
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/local_setup.dsv
+-- Symlinking: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/package.dsv
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_controller/share/ament_index/resource_index/packages/usv_controller
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/cmake/usv_controllerConfig.cmake
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/cmake/usv_controllerConfig-version.cmake
+-- Up-to-date symlink: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/package.xml

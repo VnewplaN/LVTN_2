@@ -1,0 +1,27 @@
+[35m[1mConsolidate compiler generated dependencies of target thruster_controller[0m
+[ 50%] Built target state_reader
+[ 75%] [32mBuilding CXX object CMakeFiles/thruster_controller.dir/src/thruster_controller.cpp.o[0m
+[100%] [32m[1mLinking CXX executable thruster_controller[0m
+[100%] Built target thruster_controller
+-- Install configuration: ""
+-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/config
+-- Installing: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/config/config.yaml
+-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/launch
+-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/lib/usv_controller/state_reader
+-- Installing: /home/olive/LVTN_2/install/usv_controller/lib/usv_controller/thruster_controller
+-- Set runtime path of "/home/olive/LVTN_2/install/usv_controller/lib/usv_controller/thruster_controller" to ""
+-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/ament_index/resource_index/package_run_dependencies/usv_controller
+-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/ament_index/resource_index/parent_prefix_path/usv_controller
+-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/environment/ament_prefix_path.sh
+-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/environment/path.sh
+-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/environment/path.dsv
+-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/local_setup.bash
+-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/local_setup.sh
+-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/local_setup.zsh
+-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/local_setup.dsv
+-- Installing: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/package.dsv
+-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/ament_index/resource_index/packages/usv_controller
+-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/cmake/usv_controllerConfig.cmake
+-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/cmake/usv_controllerConfig-version.cmake
+-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/package.xml

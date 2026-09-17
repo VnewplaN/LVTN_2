@@ -15,7 +15,6 @@
 /home/olive/LVTN_2/install/usv_description/share/usv_description/launch/__pycache__/gazebo.launch.cpython-310.pyc
 /home/olive/LVTN_2/install/usv_description/share/usv_description/launch/display.launch.py
 /home/olive/LVTN_2/install/usv_description/share/usv_description/launch/gazebo.launch.py
-/home/olive/LVTN_2/install/usv_description/share/usv_description/TUNING_NOTES.md
 /home/olive/LVTN_2/install/usv_description/share/ament_index/resource_index/package_run_dependencies/usv_description
 /home/olive/LVTN_2/install/usv_description/share/ament_index/resource_index/parent_prefix_path/usv_description
 /home/olive/LVTN_2/install/usv_description/share/usv_description/environment/ament_prefix_path.sh

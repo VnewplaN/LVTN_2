@@ -1,0 +1,15 @@
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:[m[K In member function ‘[01m[Kvoid ThrusterController::ControlLoop()[m[K’:
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:429:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontroller_initialized_[m[K’ was not declared in this scope
+  429 |         [01;31m[K}[m[K
+      |         [01;31m[K^[m[K                      
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:432:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kprevious_error_psi_[m[K’ was not declared in this scope
+  432 |     update_integral(
+      |                          [01;31m[K^[m[K                  
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:441:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kprevious_error_psi_[m[K’ was not declared in this scope
+  441 |     [01;31m[K// ----------------[m[K--------------------------
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/thruster_controller.dir/build.make:76: CMakeFiles/thruster_controller.dir/src/thruster_controller.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/state_reader.dir/build.make:76: CMakeFiles/state_reader.dir/src/state_reader.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/thruster_controller.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/state_reader.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

@@ -1,0 +1,70 @@
+[0.013s] Invoking command in '/home/olive/LVTN_2/build/usv_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_controller -- -j16 -l16
+[0.064s] Consolidate compiler generated dependencies of target thruster_controller
+[0.074s] [ 50%] Built target state_reader
+[0.077s] [ 75%] Building CXX object CMakeFiles/thruster_controller.dir/src/thruster_controller.cpp.o
+[2.465s] /home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:241:2: error: expected ‘;’ after class definition
+[2.466s]   241 | }
+[2.466s]       |  ^
+[2.466s]       |  ;
+[2.482s] /home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp: In constructor ‘ThrusterController::ThrusterController()’:
+[2.482s] /home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:71:58: error: ‘ControlLoop’ is not a member of ‘ThrusterController’
+[2.482s]    71 |                                     &ThrusterController::ControlLoop,
+[2.482s]       |                                                          ^~~~~~~~~~~
+[2.489s] /home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp: In function ‘void PublishWrench(double, double, double)’:
+[2.489s] /home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:247:28: error: ‘psi_’ was not declared in this scope
+[2.489s]   247 |         q.setRPY(0.0, 0.0, psi_+3.14/2);
+[2.489s]       |                            ^~~~
+[2.489s] /home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:266:28: error: invalid use of ‘this’ in non-member function
+[2.489s]   266 |         msg.header.stamp = this->now();
+[2.489s]       |                            ^~~~
+[2.492s] /home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:280:9: error: ‘pub’ was not declared in this scope
+[2.492s]   280 |         pub->publish(msg);
+[2.492s]       |         ^~~
+[2.500s] /home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp: In function ‘void ControlLoop()’:
+[2.500s] /home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:286:9: error: ‘keyboard_control_flag_’ was not declared in this scope
+[2.500s]   286 |     if (keyboard_control_flag_)
+[2.500s]       |         ^~~~~~~~~~~~~~~~~~~~~~
+[2.506s] /home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:288:9: error: ‘KeyboardControl’ was not declared in this scope
+[2.506s]   288 |         KeyboardControl();
+[2.506s]       |         ^~~~~~~~~~~~~~~
+[2.511s] /home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:290:13: error: ‘X_keyboard_’ was not declared in this scope
+[2.511s]   290 |             X_keyboard_,
+[2.512s]       |             ^~~~~~~~~~~
+[2.516s] /home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:291:13: error: ‘Y_keyboard_’ was not declared in this scope
+[2.517s]   291 |             Y_keyboard_,
+[2.517s]       |             ^~~~~~~~~~~
+[2.521s] /home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:292:13: error: ‘N_keyboard_’ was not declared in this scope
+[2.521s]   292 |             N_keyboard_);
+[2.521s]       |             ^~~~~~~~~~~
+[2.524s] /home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:297:22: error: ‘u_d_’ was not declared in this scope
+[2.525s]   297 |     double error_u = u_d_ - u_;
+[2.525s]       |                      ^~~~
+[2.527s] /home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:297:29: error: ‘u_’ was not declared in this scope
+[2.528s]   297 |     double error_u = u_d_ - u_;
+[2.528s]       |                             ^~
+[2.530s] /home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:298:22: error: ‘v_d_’ was not declared in this scope
+[2.531s]   298 |     double error_v = v_d_ - v_;
+[2.531s]       |                      ^~~~
+[2.533s] /home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:298:29: error: ‘v_’ was not declared in this scope
+[2.534s]   298 |     double error_v = v_d_ - v_;
+[2.534s]       |                             ^~
+[2.537s] /home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:300:24: error: ‘psi_d_’ was not declared in this scope
+[2.537s]   300 |     double error_psi = psi_d_ - psi_;
+[2.538s]       |                        ^~~~~~
+[2.541s] /home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:300:33: error: ‘psi_’ was not declared in this scope
+[2.541s]   300 |     double error_psi = psi_d_ - psi_;
+[2.541s]       |                                 ^~~~
+[2.541s] /home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:297:12: warning: unused variable ‘error_u’ [-Wunused-variable]
+[2.542s]   297 |     double error_u = u_d_ - u_;
+[2.542s]       |            ^~~~~~~
+[2.542s] /home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:298:12: warning: unused variable ‘error_v’ [-Wunused-variable]
+[2.542s]   298 |     double error_v = v_d_ - v_;
+[2.542s]       |            ^~~~~~~
+[2.542s] /home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp: At global scope:
+[2.543s] /home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:310:1: error: expected declaration before ‘}’ token
+[2.543s]   310 | };
+[2.543s]       | ^
+[5.207s] gmake[2]: *** [CMakeFiles/thruster_controller.dir/build.make:76: CMakeFiles/thruster_controller.dir/src/thruster_controller.cpp.o] Error 1
+[5.208s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/thruster_controller.dir/all] Error 2
+[5.208s] gmake: *** [Makefile:146: all] Error 2
+[5.211s] Invoked command in '/home/olive/LVTN_2/build/usv_controller' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_controller -- -j16 -l16

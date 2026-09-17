@@ -1,0 +1,147 @@
+[0.000000] (-) TimerEvent: {}
+[0.000322] (-) JobUnselected: {'identifier': 'usv_description'}
+[0.000558] (usv_controller) JobQueued: {'identifier': 'usv_controller', 'dependencies': OrderedDict()}
+[0.000584] (usv_controller) JobStarted: {'identifier': 'usv_controller'}
+[0.008770] (usv_controller) JobProgress: {'identifier': 'usv_controller', 'progress': 'cmake'}
+[0.009356] (usv_controller) JobProgress: {'identifier': 'usv_controller', 'progress': 'build'}
+[0.009969] (usv_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/olive/LVTN_2/build/usv_controller', '--', '-j16', '-l16'], 'cwd': '/home/olive/LVTN_2/build/usv_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'olive'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'x11'), ('IDF_TOOLS_INSTALL_CMD', '/home/olive/esp/esp-idf/install.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/olive'), ('IDF_PY_COMP_WORDBREAKS', ' \t\n"\'@><=;|&(:'), ('OLDPWD', '/home/olive'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('MANAGERPID', '3594'), ('SYSTEMD_EXEC_PID', '4824'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7775'), ('OPENOCD_SCRIPTS', '/home/olive/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/share/openocd/scripts'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'olive'), ('JOURNAL_STREAM', '8:30575'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'olive'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('IDF_DEACTIVATE_FILE_PATH', '/tmp/tmp5hjszt5ridf_606942'), ('ROS_LOCALHOST_ONLY', '0'), ('IDF_PATH', '/home/olive/esp/esp-idf'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/olive/esp/esp-idf/components/espcoredump:/home/olive/esp/esp-idf/components/partition_table:/home/olive/esp/esp-idf/components/app_update:/home/olive/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin:/home/olive/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin:/home/olive/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin:/home/olive/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin:/home/olive/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin:/home/olive/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin:/home/olive/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin:/home/olive/.espressif/python_env/idf5.5_py3.10_env/bin:/home/olive/esp/esp-idf/tools:/home/olive/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/msi:@/tmp/.ICE-unix/4392,unix/msi:/tmp/.ICE-unix/4392'), ('INVOCATION_ID', '6715c3448c6d4eedb16a8f210e9188bf'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('ESP_IDF_VERSION', '5.5'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('TERMINATOR_UUID', 'urn:uuid:d0fc5920-471c-415e-9434-eb917028e5e3'), ('QT_ACCESSIBILITY', '1'), ('IDF_PYTHON_ENV_PATH', '/home/olive/.espressif/python_env/idf5.5_py3.10_env'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IDF_TOOLS_EXPORT_CMD', '/home/olive/esp/esp-idf/export.sh'), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/olive/LVTN_2/build/usv_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('ESP_ROM_ELF_DIR', '/home/olive/.espressif/tools/esp-rom-elfs/20241011/'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.049199] (usv_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target thruster_controller\x1b[0m\n'}
+[0.060275] (usv_controller) StdoutLine: {'line': b'[ 50%] Built target state_reader\n'}
+[0.063916] (usv_controller) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/thruster_controller.dir/src/thruster_controller.cpp.o\x1b[0m\n'}
+[0.099791] (-) TimerEvent: {}
+[0.200252] (-) TimerEvent: {}
+[0.300675] (-) TimerEvent: {}
+[0.401206] (-) TimerEvent: {}
+[0.501861] (-) TimerEvent: {}
+[0.602293] (-) TimerEvent: {}
+[0.702686] (-) TimerEvent: {}
+[0.803122] (-) TimerEvent: {}
+[0.903484] (-) TimerEvent: {}
+[1.003860] (-) TimerEvent: {}
+[1.104233] (-) TimerEvent: {}
+[1.204667] (-) TimerEvent: {}
+[1.305008] (-) TimerEvent: {}
+[1.405440] (-) TimerEvent: {}
+[1.505920] (-) TimerEvent: {}
+[1.606451] (-) TimerEvent: {}
+[1.706903] (-) TimerEvent: {}
+[1.807407] (-) TimerEvent: {}
+[1.907865] (-) TimerEvent: {}
+[2.008375] (-) TimerEvent: {}
+[2.108869] (-) TimerEvent: {}
+[2.209377] (-) TimerEvent: {}
+[2.309851] (-) TimerEvent: {}
+[2.410420] (-) TimerEvent: {}
+[2.510821] (-) TimerEvent: {}
+[2.611281] (-) TimerEvent: {}
+[2.711752] (-) TimerEvent: {}
+[2.812221] (-) TimerEvent: {}
+[2.851478] (usv_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ThrusterController::ControlLoop()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.851697] (usv_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:348:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kerror_u\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.851778] (usv_controller) StderrLine: {'line': b'  348 |     double \x1b[01;35m\x1b[Kerror_u\x1b[m\x1b[K = u_d_ - u_;\n'}
+[2.851846] (usv_controller) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.851904] (usv_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:349:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kerror_v\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.851964] (usv_controller) StderrLine: {'line': b'  349 |     double \x1b[01;35m\x1b[Kerror_v\x1b[m\x1b[K = v_d_ - v_;\n'}
+[2.852028] (usv_controller) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.912379] (-) TimerEvent: {}
+[3.012839] (-) TimerEvent: {}
+[3.113378] (-) TimerEvent: {}
+[3.213822] (-) TimerEvent: {}
+[3.314311] (-) TimerEvent: {}
+[3.414766] (-) TimerEvent: {}
+[3.515270] (-) TimerEvent: {}
+[3.615699] (-) TimerEvent: {}
+[3.716232] (-) TimerEvent: {}
+[3.816682] (-) TimerEvent: {}
+[3.917184] (-) TimerEvent: {}
+[4.017775] (-) TimerEvent: {}
+[4.118238] (-) TimerEvent: {}
+[4.218797] (-) TimerEvent: {}
+[4.319271] (-) TimerEvent: {}
+[4.419739] (-) TimerEvent: {}
+[4.520181] (-) TimerEvent: {}
+[4.620696] (-) TimerEvent: {}
+[4.721114] (-) TimerEvent: {}
+[4.821569] (-) TimerEvent: {}
+[4.922076] (-) TimerEvent: {}
+[5.022601] (-) TimerEvent: {}
+[5.123026] (-) TimerEvent: {}
+[5.223573] (-) TimerEvent: {}
+[5.324079] (-) TimerEvent: {}
+[5.424501] (-) TimerEvent: {}
+[5.524938] (-) TimerEvent: {}
+[5.625417] (-) TimerEvent: {}
+[5.725822] (-) TimerEvent: {}
+[5.826245] (-) TimerEvent: {}
+[5.926656] (-) TimerEvent: {}
+[6.027087] (-) TimerEvent: {}
+[6.127568] (-) TimerEvent: {}
+[6.228020] (-) TimerEvent: {}
+[6.328486] (-) TimerEvent: {}
+[6.428925] (-) TimerEvent: {}
+[6.529409] (-) TimerEvent: {}
+[6.629857] (-) TimerEvent: {}
+[6.730285] (-) TimerEvent: {}
+[6.830765] (-) TimerEvent: {}
+[6.931212] (-) TimerEvent: {}
+[7.031640] (-) TimerEvent: {}
+[7.132089] (-) TimerEvent: {}
+[7.232531] (-) TimerEvent: {}
+[7.332930] (-) TimerEvent: {}
+[7.433404] (-) TimerEvent: {}
+[7.533874] (-) TimerEvent: {}
+[7.634335] (-) TimerEvent: {}
+[7.734807] (-) TimerEvent: {}
+[7.835198] (-) TimerEvent: {}
+[7.935687] (-) TimerEvent: {}
+[8.036204] (-) TimerEvent: {}
+[8.136698] (-) TimerEvent: {}
+[8.237208] (-) TimerEvent: {}
+[8.337763] (-) TimerEvent: {}
+[8.438288] (-) TimerEvent: {}
+[8.538782] (-) TimerEvent: {}
+[8.639172] (-) TimerEvent: {}
+[8.739569] (-) TimerEvent: {}
+[8.840033] (-) TimerEvent: {}
+[8.940511] (-) TimerEvent: {}
+[9.041045] (-) TimerEvent: {}
+[9.141509] (-) TimerEvent: {}
+[9.241880] (-) TimerEvent: {}
+[9.342275] (-) TimerEvent: {}
+[9.442685] (-) TimerEvent: {}
+[9.543101] (-) TimerEvent: {}
+[9.591652] (usv_controller) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable thruster_controller\x1b[0m\n'}
+[9.643279] (-) TimerEvent: {}
+[9.743630] (-) TimerEvent: {}
+[9.843994] (-) TimerEvent: {}
+[9.944384] (-) TimerEvent: {}
+[10.026133] (usv_controller) StdoutLine: {'line': b'[100%] Built target thruster_controller\n'}
+[10.038048] (usv_controller) CommandEnded: {'returncode': 0}
+[10.038739] (usv_controller) JobProgress: {'identifier': 'usv_controller', 'progress': 'install'}
+[10.044454] (-) TimerEvent: {}
+[10.047287] (usv_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/olive/LVTN_2/build/usv_controller'], 'cwd': '/home/olive/LVTN_2/build/usv_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'olive'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'x11'), ('IDF_TOOLS_INSTALL_CMD', '/home/olive/esp/esp-idf/install.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/olive'), ('IDF_PY_COMP_WORDBREAKS', ' \t\n"\'@><=;|&(:'), ('OLDPWD', '/home/olive'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('MANAGERPID', '3594'), ('SYSTEMD_EXEC_PID', '4824'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7775'), ('OPENOCD_SCRIPTS', '/home/olive/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/share/openocd/scripts'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'olive'), ('JOURNAL_STREAM', '8:30575'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'olive'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('IDF_DEACTIVATE_FILE_PATH', '/tmp/tmp5hjszt5ridf_606942'), ('ROS_LOCALHOST_ONLY', '0'), ('IDF_PATH', '/home/olive/esp/esp-idf'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/olive/esp/esp-idf/components/espcoredump:/home/olive/esp/esp-idf/components/partition_table:/home/olive/esp/esp-idf/components/app_update:/home/olive/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin:/home/olive/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin:/home/olive/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin:/home/olive/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin:/home/olive/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin:/home/olive/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin:/home/olive/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin:/home/olive/.espressif/python_env/idf5.5_py3.10_env/bin:/home/olive/esp/esp-idf/tools:/home/olive/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/msi:@/tmp/.ICE-unix/4392,unix/msi:/tmp/.ICE-unix/4392'), ('INVOCATION_ID', '6715c3448c6d4eedb16a8f210e9188bf'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('ESP_IDF_VERSION', '5.5'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('TERMINATOR_UUID', 'urn:uuid:d0fc5920-471c-415e-9434-eb917028e5e3'), ('QT_ACCESSIBILITY', '1'), ('IDF_PYTHON_ENV_PATH', '/home/olive/.espressif/python_env/idf5.5_py3.10_env'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IDF_TOOLS_EXPORT_CMD', '/home/olive/esp/esp-idf/export.sh'), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/olive/LVTN_2/build/usv_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('ESP_ROM_ELF_DIR', '/home/olive/.espressif/tools/esp-rom-elfs/20241011/'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[10.054248] (usv_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.054427] (usv_controller) StdoutLine: {'line': b'-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/config\n'}
+[10.054658] (usv_controller) StdoutLine: {'line': b'-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/config/config.yaml\n'}
+[10.054813] (usv_controller) StdoutLine: {'line': b'-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/launch\n'}
+[10.054909] (usv_controller) StdoutLine: {'line': b'-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/lib/usv_controller/state_reader\n'}
+[10.054969] (usv_controller) StdoutLine: {'line': b'-- Installing: /home/olive/LVTN_2/install/usv_controller/lib/usv_controller/thruster_controller\n'}
+[10.059082] (usv_controller) StdoutLine: {'line': b'-- Set runtime path of "/home/olive/LVTN_2/install/usv_controller/lib/usv_controller/thruster_controller" to ""\n'}
+[10.059417] (usv_controller) StdoutLine: {'line': b'-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/ament_index/resource_index/package_run_dependencies/usv_controller\n'}
+[10.059550] (usv_controller) StdoutLine: {'line': b'-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/ament_index/resource_index/parent_prefix_path/usv_controller\n'}
+[10.059673] (usv_controller) StdoutLine: {'line': b'-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/environment/ament_prefix_path.sh\n'}
+[10.059792] (usv_controller) StdoutLine: {'line': b'-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/environment/ament_prefix_path.dsv\n'}
+[10.059908] (usv_controller) StdoutLine: {'line': b'-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/environment/path.sh\n'}
+[10.060109] (usv_controller) StdoutLine: {'line': b'-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/environment/path.dsv\n'}
+[10.060221] (usv_controller) StdoutLine: {'line': b'-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/local_setup.bash\n'}
+[10.060337] (usv_controller) StdoutLine: {'line': b'-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/local_setup.sh\n'}
+[10.060453] (usv_controller) StdoutLine: {'line': b'-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/local_setup.zsh\n'}
+[10.060564] (usv_controller) StdoutLine: {'line': b'-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/local_setup.dsv\n'}
+[10.060670] (usv_controller) StdoutLine: {'line': b'-- Installing: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/package.dsv\n'}
+[10.060779] (usv_controller) StdoutLine: {'line': b'-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/ament_index/resource_index/packages/usv_controller\n'}
+[10.061044] (usv_controller) StdoutLine: {'line': b'-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/cmake/usv_controllerConfig.cmake\n'}
+[10.061368] (usv_controller) StdoutLine: {'line': b'-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/cmake/usv_controllerConfig-version.cmake\n'}
+[10.062146] (usv_controller) StdoutLine: {'line': b'-- Up-to-date: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/package.xml\n'}
+[10.062434] (usv_controller) CommandEnded: {'returncode': 0}
+[10.080948] (usv_controller) JobEnded: {'identifier': 'usv_controller', 'rc': 0}
+[10.082053] (-) EventReactorShutdown: {}

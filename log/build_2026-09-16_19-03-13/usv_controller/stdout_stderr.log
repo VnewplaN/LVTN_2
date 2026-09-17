@@ -1,0 +1,26 @@
+Consolidate compiler generated dependencies of target thruster_controller
+[ 25%] Building CXX object CMakeFiles/thruster_controller.dir/src/thruster_controller.cpp.o
+[ 75%] Built target state_reader
+/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:26:26: error: ‘nav_msgs’ was not declared in this scope
+   26 |     rclcpp::Subscription<nav_msgs::msg::Odometry>:: SharedPtr sub;
+      |                          ^~~~~~~~
+/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:26:49: error: template argument 1 is invalid
+   26 |     rclcpp::Subscription<nav_msgs::msg::Odometry>:: SharedPtr sub;
+      |                                                 ^
+/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:26:49: error: template argument 3 is invalid
+/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:26:49: error: template argument 4 is invalid
+/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:26:49: error: template argument 5 is invalid
+/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:26:53: error: expected ‘;’ at end of member declaration
+   26 |     rclcpp::Subscription<nav_msgs::msg::Odometry>:: SharedPtr sub;
+      |                                                     ^~~~~~~~~
+      |                                                              ;
+/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:26:63: error: ‘sub’ does not name a type
+   26 |     rclcpp::Subscription<nav_msgs::msg::Odometry>:: SharedPtr sub;
+      |                                                               ^~~
+/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:31:2: error: expected ‘;’ after class definition
+   31 | }
+      |  ^
+      |  ;
+gmake[2]: *** [CMakeFiles/thruster_controller.dir/build.make:76: CMakeFiles/thruster_controller.dir/src/thruster_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/thruster_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

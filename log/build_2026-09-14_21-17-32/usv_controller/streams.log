@@ -1,0 +1,54 @@
+[0.010s] Invoking command in '/home/olive/LVTN_2/build/usv_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_controller -- -j16 -l16
+[0.025s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.119s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[0.140s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.141s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.145s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.152s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.161s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.187s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.188s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.280s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.324s] -- Found tf2: 0.25.20 (/opt/ros/humble/share/tf2/cmake)
+[0.338s] -- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.353s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.427s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.428s] -- Configured cppcheck include dirs: 
+[0.428s] -- Configured cppcheck exclude dirs and/or files: 
+[0.428s] -- Added test 'lint_cmake' to check CMake code style
+[0.428s] -- Added test 'uncrustify' to check C / C++ code style
+[0.428s] -- Configured uncrustify additional arguments: 
+[0.428s] -- Added test 'xmllint' to check XML markup files
+[0.429s] -- Configuring done
+[0.437s] -- Generating done
+[0.440s] -- Build files have been written to: /home/olive/LVTN_2/build/usv_controller
+[0.462s] [35m[1mConsolidate compiler generated dependencies of target state_reader[0m
+[0.476s] [ 50%] [32mBuilding CXX object CMakeFiles/state_reader.dir/src/state_reader.cpp.o[0m
+[2.333s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:24:45:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.333s]    24 | av_msgs/msg/Odometry[01;31m[K>[m[K:: SharedPtr sub;
+[2.334s]       |                     [01;31m[K^[m[K
+[2.334s] 
+[2.334s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:24:45:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[2.334s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:24:45:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[2.334s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:24:45:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[2.334s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:24:49:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[2.335s]    24 | sgs/msg/Odometry>:: [01;31m[KSharedPtr[m[K sub;
+[2.335s]       |                     [01;31m[K^~~~~~~~~[m[K
+[2.335s]       |                              [32m[K;[m[K
+[2.335s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:24:59:[m[K [01;31m[Kerror: [m[K‘[01m[Ksub[m[K’ does not name a type
+[2.335s]    24 | /msg/Odometry>:: SharedPtr [01;31m[Ksub[m[K;
+[2.335s]       |                            [01;31m[K^~~[m[K
+[2.336s] 
+[2.340s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:[m[K In constructor ‘[01m[KStateReader::StateReader()[m[K’:
+[2.340s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:21:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksub[m[K’ was not declared in this scope; did you mean ‘[01m[Kfsub[m[K’?
+[2.340s]    21 |     [01;31m[Ksub[m[K = this->create_subscription<nav_msgs::msg::Odometry>(sub_topic_, 10, bind(&StateReader::subCallback(), this, _1));
+[2.341s]       |     [01;31m[K^~~[m[K
+[2.341s]       |     [32m[Kfsub[m[K
+[2.341s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:21:97:[m[K [01;31m[Kerror: [m[K‘[01m[KsubCallback[m[K’ is not a member of ‘[01m[KStateReader[m[K’
+[2.341s]    21 |  bind(&StateReader::[01;31m[KsubCallback[m[K(), this, _1));
+[2.341s]       |                     [01;31m[K^~~~~~~~~~~[m[K
+[2.341s] 
+[2.684s] gmake[2]: *** [CMakeFiles/state_reader.dir/build.make:76: CMakeFiles/state_reader.dir/src/state_reader.cpp.o] Error 1
+[2.684s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/state_reader.dir/all] Error 2
+[2.685s] gmake: *** [Makefile:146: all] Error 2
+[2.688s] Invoked command in '/home/olive/LVTN_2/build/usv_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_controller -- -j16 -l16

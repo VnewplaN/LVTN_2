@@ -318,9 +318,6 @@ message(STATUS "Execute custom install script")
 # install(DIRECTORY "meshes" "rviz" "urdf" "launch" "DESTINATION" "share/usv_description")
 ament_cmake_symlink_install_directory("/home/olive/LVTN_2/src/usv_description" DIRECTORY "meshes" "rviz" "urdf" "launch" "DESTINATION" "share/usv_description")
 
-# install(FILES "TUNING_NOTES.md" "DESTINATION" "share/usv_description")
-ament_cmake_symlink_install_files("/home/olive/LVTN_2/src/usv_description" FILES "TUNING_NOTES.md" "DESTINATION" "share/usv_description")
-
 # install(FILES "/home/olive/LVTN_2/build/usv_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/usv_description" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/olive/LVTN_2/src/usv_description" FILES "/home/olive/LVTN_2/build/usv_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/usv_description" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 

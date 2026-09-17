@@ -1,0 +1,9 @@
+[35m[1mConsolidate compiler generated dependencies of target state_reader[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/state_reader.dir/src/state_reader.cpp.o[0m
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Ktf2/utils.h: No such file or directory
+    2 | #include [01;31m[K"tf2/utils.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/state_reader.dir/build.make:76: CMakeFiles/state_reader.dir/src/state_reader.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/state_reader.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

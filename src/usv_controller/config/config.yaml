@@ -1,0 +1,15 @@
+state_reader:
+  ros__parameters:
+    sub_topic: /odom
+    pub_topic: /state_value
+    body_yaw_offset: 1.5707963267948966
+
+thruster_controller:
+  ros__parameters:
+    state_sub_topic: /state_value
+    traj_sub_topic: /trajectory_cmd
+    pub_topic: /world/industrial_sludge_pond/wrench
+    link_name: usv::usv_body
+    freq: 20 
+    keyboard_control_flag: false
+    wrench_step_scale: 50.0

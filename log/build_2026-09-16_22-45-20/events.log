@@ -1,0 +1,130 @@
+[0.000000] (-) TimerEvent: {}
+[0.000106] (-) JobUnselected: {'identifier': 'usv_description'}
+[0.000398] (usv_controller) JobQueued: {'identifier': 'usv_controller', 'dependencies': OrderedDict()}
+[0.000759] (usv_controller) JobStarted: {'identifier': 'usv_controller'}
+[0.010853] (usv_controller) JobProgress: {'identifier': 'usv_controller', 'progress': 'cmake'}
+[0.011616] (usv_controller) JobProgress: {'identifier': 'usv_controller', 'progress': 'build'}
+[0.012436] (usv_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/olive/LVTN_2/build/usv_controller', '--', '-j16', '-l16'], 'cwd': '/home/olive/LVTN_2/build/usv_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/olive/LVTN_2'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('CODEX_CI', '1'), ('USER', 'olive'), ('LC_TIME', 'vi_VN'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'codex_vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/home/olive/.local/opt/vscode-deb/usr/share/code/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'x11'), ('IDF_TOOLS_INSTALL_CMD', '/home/olive/esp/esp-idf/install.sh'), ('DEBUG', 'release'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/olive'), ('IDF_PY_COMP_WORDBREAKS', ' \t\n"\'@><=;|&(:'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/olive'), ('DESKTOP_SESSION', 'ubuntu'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-fc1f0b6c-1.11-main.sock'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('LC_MONETARY', 'vi_VN'), ('MANAGERPID', '3594'), ('LC_CTYPE', 'C.UTF-8'), ('SYSTEMD_EXEC_PID', '4824'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7775'), ('OPENOCD_SCRIPTS', '/home/olive/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/share/openocd/scripts'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('CODEX_PERMISSION_PROFILE', ':danger-full-access'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'olive'), ('JOURNAL_STREAM', '8:30575'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('USERNAME', 'olive'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('IDF_DEACTIVATE_FILE_PATH', '/tmp/tmp5hjszt5ridf_606942'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('IDF_PATH', '/home/olive/esp/esp-idf'), ('WINDOWPATH', '2'), ('PATH', '/home/olive/.local/bin:/home/olive/.codex/tmp/arg0/codex-arg06hY8Ov:/opt/ros/humble/bin:/home/olive/esp/esp-idf/components/espcoredump:/home/olive/esp/esp-idf/components/partition_table:/home/olive/esp/esp-idf/components/app_update:/home/olive/.espressif/tools/xtensa-esp-elf-gdb/16.3_20250913/xtensa-esp-elf-gdb/bin:/home/olive/.espressif/tools/riscv32-esp-elf-gdb/16.3_20250913/riscv32-esp-elf-gdb/bin:/home/olive/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin:/home/olive/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin:/home/olive/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20251107/riscv32-esp-elf/bin:/home/olive/.espressif/tools/esp32ulp-elf/2.38_20240113/esp32ulp-elf/bin:/home/olive/.espressif/tools/openocd-esp32/v0.12.0-esp32-20250707/openocd-esp32/bin:/home/olive/.espressif/python_env/idf5.5_py3.10_env/bin:/home/olive/esp/esp-idf/tools:/home/olive/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/olive/.vscode/extensions/openai.chatgpt-26.908.40401-linux-x64/bin/linux-x86_64'), ('SESSION_MANAGER', 'local/msi:@/tmp/.ICE-unix/4392,unix/msi:/tmp/.ICE-unix/4392'), ('CODEX_VERSION', '0.154.0-alpha.6.2'), ('CODEX_SESSION_ID', '01a0a7ef-a14e-7fd2-aeba-ea837983fbb3'), ('INVOCATION_ID', '6715c3448c6d4eedb16a8f210e9188bf'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('GH_PAGER', 'cat'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('ESP_IDF_VERSION', '5.5'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('TERMINATOR_UUID', 'urn:uuid:d0fc5920-471c-415e-9434-eb917028e5e3'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('NO_AT_BRIDGE', '1'), ('IDF_PYTHON_ENV_PATH', '/home/olive/.espressif/python_env/idf5.5_py3.10_env'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IDF_TOOLS_EXPORT_CMD', '/home/olive/esp/esp-idf/export.sh'), ('CODEX_THREAD_ID', '01a0a7ef-a14e-7fd2-aeba-ea837983fbb3'), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'vi_VN'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/olive/LVTN_2/build/usv_controller'), ('VSCODE_CLI', '1'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('VSCODE_CODE_CACHE_PATH', '/home/olive/.config/Code/CachedData/560a9dba96f961efea7b1612916f89e5d5d4d679'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('ESP_ROM_ELF_DIR', '/home/olive/.espressif/tools/esp-rom-elfs/20241011/'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('ELECTRON_NO_ATTACH_CONSOLE', '1'), ('VSCODE_PID', '8003'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.064576] (usv_controller) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target thruster_controller\n'}
+[0.074394] (usv_controller) StdoutLine: {'line': b'[ 50%] Built target state_reader\n'}
+[0.078089] (usv_controller) StdoutLine: {'line': b'[ 75%] Building CXX object CMakeFiles/thruster_controller.dir/src/thruster_controller.cpp.o\n'}
+[0.099660] (-) TimerEvent: {}
+[0.199911] (-) TimerEvent: {}
+[0.300273] (-) TimerEvent: {}
+[0.400623] (-) TimerEvent: {}
+[0.501010] (-) TimerEvent: {}
+[0.601256] (-) TimerEvent: {}
+[0.701488] (-) TimerEvent: {}
+[0.801786] (-) TimerEvent: {}
+[0.902074] (-) TimerEvent: {}
+[1.002434] (-) TimerEvent: {}
+[1.102752] (-) TimerEvent: {}
+[1.203018] (-) TimerEvent: {}
+[1.303321] (-) TimerEvent: {}
+[1.403658] (-) TimerEvent: {}
+[1.504030] (-) TimerEvent: {}
+[1.604375] (-) TimerEvent: {}
+[1.704696] (-) TimerEvent: {}
+[1.805048] (-) TimerEvent: {}
+[1.905327] (-) TimerEvent: {}
+[2.005563] (-) TimerEvent: {}
+[2.105876] (-) TimerEvent: {}
+[2.206179] (-) TimerEvent: {}
+[2.306489] (-) TimerEvent: {}
+[2.406762] (-) TimerEvent: {}
+[2.466079] (usv_controller) StderrLine: {'line': b'/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:241:2: error: expected \xe2\x80\x98;\xe2\x80\x99 after class definition\n'}
+[2.466501] (usv_controller) StderrLine: {'line': b'  241 | }\n'}
+[2.466735] (usv_controller) StderrLine: {'line': b'      |  ^\n'}
+[2.466939] (usv_controller) StderrLine: {'line': b'      |  ;\n'}
+[2.482434] (usv_controller) StderrLine: {'line': b'/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp: In constructor \xe2\x80\x98ThrusterController::ThrusterController()\xe2\x80\x99:\n'}
+[2.482640] (usv_controller) StderrLine: {'line': b'/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:71:58: error: \xe2\x80\x98ControlLoop\xe2\x80\x99 is not a member of \xe2\x80\x98ThrusterController\xe2\x80\x99\n'}
+[2.482722] (usv_controller) StderrLine: {'line': b'   71 |                                     &ThrusterController::ControlLoop,\n'}
+[2.482791] (usv_controller) StderrLine: {'line': b'      |                                                          ^~~~~~~~~~~\n'}
+[2.489288] (usv_controller) StderrLine: {'line': b'/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp: In function \xe2\x80\x98void PublishWrench(double, double, double)\xe2\x80\x99:\n'}
+[2.489515] (usv_controller) StderrLine: {'line': b'/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:247:28: error: \xe2\x80\x98psi_\xe2\x80\x99 was not declared in this scope\n'}
+[2.489608] (usv_controller) StderrLine: {'line': b'  247 |         q.setRPY(0.0, 0.0, psi_+3.14/2);\n'}
+[2.489714] (usv_controller) StderrLine: {'line': b'      |                            ^~~~\n'}
+[2.489804] (usv_controller) StderrLine: {'line': b'/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:266:28: error: invalid use of \xe2\x80\x98this\xe2\x80\x99 in non-member function\n'}
+[2.489892] (usv_controller) StderrLine: {'line': b'  266 |         msg.header.stamp = this->now();\n'}
+[2.489973] (usv_controller) StderrLine: {'line': b'      |                            ^~~~\n'}
+[2.492796] (usv_controller) StderrLine: {'line': b'/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:280:9: error: \xe2\x80\x98pub\xe2\x80\x99 was not declared in this scope\n'}
+[2.492971] (usv_controller) StderrLine: {'line': b'  280 |         pub->publish(msg);\n'}
+[2.493033] (usv_controller) StderrLine: {'line': b'      |         ^~~\n'}
+[2.500255] (usv_controller) StderrLine: {'line': b'/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp: In function \xe2\x80\x98void ControlLoop()\xe2\x80\x99:\n'}
+[2.500462] (usv_controller) StderrLine: {'line': b'/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:286:9: error: \xe2\x80\x98keyboard_control_flag_\xe2\x80\x99 was not declared in this scope\n'}
+[2.500612] (usv_controller) StderrLine: {'line': b'  286 |     if (keyboard_control_flag_)\n'}
+[2.500792] (usv_controller) StderrLine: {'line': b'      |         ^~~~~~~~~~~~~~~~~~~~~~\n'}
+[2.506627] (usv_controller) StderrLine: {'line': b'/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:288:9: error: \xe2\x80\x98KeyboardControl\xe2\x80\x99 was not declared in this scope\n'}
+[2.506916] (-) TimerEvent: {}
+[2.506967] (usv_controller) StderrLine: {'line': b'  288 |         KeyboardControl();\n'}
+[2.507118] (usv_controller) StderrLine: {'line': b'      |         ^~~~~~~~~~~~~~~\n'}
+[2.512146] (usv_controller) StderrLine: {'line': b'/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:290:13: error: \xe2\x80\x98X_keyboard_\xe2\x80\x99 was not declared in this scope\n'}
+[2.512297] (usv_controller) StderrLine: {'line': b'  290 |             X_keyboard_,\n'}
+[2.512368] (usv_controller) StderrLine: {'line': b'      |             ^~~~~~~~~~~\n'}
+[2.517195] (usv_controller) StderrLine: {'line': b'/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:291:13: error: \xe2\x80\x98Y_keyboard_\xe2\x80\x99 was not declared in this scope\n'}
+[2.517414] (usv_controller) StderrLine: {'line': b'  291 |             Y_keyboard_,\n'}
+[2.517510] (usv_controller) StderrLine: {'line': b'      |             ^~~~~~~~~~~\n'}
+[2.521936] (usv_controller) StderrLine: {'line': b'/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:292:13: error: \xe2\x80\x98N_keyboard_\xe2\x80\x99 was not declared in this scope\n'}
+[2.522185] (usv_controller) StderrLine: {'line': b'  292 |             N_keyboard_);\n'}
+[2.522308] (usv_controller) StderrLine: {'line': b'      |             ^~~~~~~~~~~\n'}
+[2.525193] (usv_controller) StderrLine: {'line': b'/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:297:22: error: \xe2\x80\x98u_d_\xe2\x80\x99 was not declared in this scope\n'}
+[2.525433] (usv_controller) StderrLine: {'line': b'  297 |     double error_u = u_d_ - u_;\n'}
+[2.525554] (usv_controller) StderrLine: {'line': b'      |                      ^~~~\n'}
+[2.528064] (usv_controller) StderrLine: {'line': b'/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:297:29: error: \xe2\x80\x98u_\xe2\x80\x99 was not declared in this scope\n'}
+[2.528355] (usv_controller) StderrLine: {'line': b'  297 |     double error_u = u_d_ - u_;\n'}
+[2.528506] (usv_controller) StderrLine: {'line': b'      |                             ^~\n'}
+[2.531146] (usv_controller) StderrLine: {'line': b'/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:298:22: error: \xe2\x80\x98v_d_\xe2\x80\x99 was not declared in this scope\n'}
+[2.531398] (usv_controller) StderrLine: {'line': b'  298 |     double error_v = v_d_ - v_;\n'}
+[2.531602] (usv_controller) StderrLine: {'line': b'      |                      ^~~~\n'}
+[2.534082] (usv_controller) StderrLine: {'line': b'/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:298:29: error: \xe2\x80\x98v_\xe2\x80\x99 was not declared in this scope\n'}
+[2.534327] (usv_controller) StderrLine: {'line': b'  298 |     double error_v = v_d_ - v_;\n'}
+[2.534455] (usv_controller) StderrLine: {'line': b'      |                             ^~\n'}
+[2.537758] (usv_controller) StderrLine: {'line': b'/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:300:24: error: \xe2\x80\x98psi_d_\xe2\x80\x99 was not declared in this scope\n'}
+[2.538149] (usv_controller) StderrLine: {'line': b'  300 |     double error_psi = psi_d_ - psi_;\n'}
+[2.538352] (usv_controller) StderrLine: {'line': b'      |                        ^~~~~~\n'}
+[2.541820] (usv_controller) StderrLine: {'line': b'/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:300:33: error: \xe2\x80\x98psi_\xe2\x80\x99 was not declared in this scope\n'}
+[2.542067] (usv_controller) StderrLine: {'line': b'  300 |     double error_psi = psi_d_ - psi_;\n'}
+[2.542191] (usv_controller) StderrLine: {'line': b'      |                                 ^~~~\n'}
+[2.542303] (usv_controller) StderrLine: {'line': b'/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:297:12: warning: unused variable \xe2\x80\x98error_u\xe2\x80\x99 [-Wunused-variable]\n'}
+[2.542418] (usv_controller) StderrLine: {'line': b'  297 |     double error_u = u_d_ - u_;\n'}
+[2.542555] (usv_controller) StderrLine: {'line': b'      |            ^~~~~~~\n'}
+[2.542708] (usv_controller) StderrLine: {'line': b'/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:298:12: warning: unused variable \xe2\x80\x98error_v\xe2\x80\x99 [-Wunused-variable]\n'}
+[2.542865] (usv_controller) StderrLine: {'line': b'  298 |     double error_v = v_d_ - v_;\n'}
+[2.543006] (usv_controller) StderrLine: {'line': b'      |            ^~~~~~~\n'}
+[2.543163] (usv_controller) StderrLine: {'line': b'/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp: At global scope:\n'}
+[2.543349] (usv_controller) StderrLine: {'line': b'/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:310:1: error: expected declaration before \xe2\x80\x98}\xe2\x80\x99 token\n'}
+[2.543496] (usv_controller) StderrLine: {'line': b'  310 | };\n'}
+[2.543633] (usv_controller) StderrLine: {'line': b'      | ^\n'}
+[2.607074] (-) TimerEvent: {}
+[2.707301] (-) TimerEvent: {}
+[2.807536] (-) TimerEvent: {}
+[2.907836] (-) TimerEvent: {}
+[3.008226] (-) TimerEvent: {}
+[3.108511] (-) TimerEvent: {}
+[3.208888] (-) TimerEvent: {}
+[3.309229] (-) TimerEvent: {}
+[3.409575] (-) TimerEvent: {}
+[3.509922] (-) TimerEvent: {}
+[3.610217] (-) TimerEvent: {}
+[3.710492] (-) TimerEvent: {}
+[3.810794] (-) TimerEvent: {}
+[3.911077] (-) TimerEvent: {}
+[4.011371] (-) TimerEvent: {}
+[4.111629] (-) TimerEvent: {}
+[4.211912] (-) TimerEvent: {}
+[4.312234] (-) TimerEvent: {}
+[4.412587] (-) TimerEvent: {}
+[4.512939] (-) TimerEvent: {}
+[4.613207] (-) TimerEvent: {}
+[4.713435] (-) TimerEvent: {}
+[4.813692] (-) TimerEvent: {}
+[4.913952] (-) TimerEvent: {}
+[5.014245] (-) TimerEvent: {}
+[5.114601] (-) TimerEvent: {}
+[5.207776] (usv_controller) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/thruster_controller.dir/build.make:76: CMakeFiles/thruster_controller.dir/src/thruster_controller.cpp.o] Error 1\n'}
+[5.208312] (usv_controller) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/thruster_controller.dir/all] Error 2\n'}
+[5.208456] (usv_controller) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[5.211345] (usv_controller) CommandEnded: {'returncode': 2}
+[5.214777] (-) TimerEvent: {}
+[5.233685] (usv_controller) JobEnded: {'identifier': 'usv_controller', 'rc': 2}
+[5.244611] (-) EventReactorShutdown: {}

@@ -18,6 +18,7 @@ def generate_launch_description():
     #convert xacro to standard urdf xml
     usv_description = ParameterValue(Command(["xacro ", LaunchConfiguration("usv_model")]),
                                      value_type=str)
+
     #run state publisher executable (link illustate)
     robot_state_publisher_node = Node(
                                       package="robot_state_publisher",

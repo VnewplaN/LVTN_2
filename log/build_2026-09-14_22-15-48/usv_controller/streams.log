@@ -1,0 +1,18 @@
+[0.009s] Invoking command in '/home/olive/LVTN_2/build/usv_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_controller -- -j16 -l16
+[0.036s] [35m[1mConsolidate compiler generated dependencies of target thruster_controller[0m
+[0.043s] [ 25%] [32mBuilding CXX object CMakeFiles/thruster_controller.dir/src/thruster_controller.cpp.o[0m
+[0.046s] [ 50%] [32mBuilding CXX object CMakeFiles/state_reader.dir/src/state_reader.cpp.o[0m
+[0.049s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[0.049s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:3:3:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ has not been declared
+[0.049s]     3 |   [01;31m[Krclcpp[m[K::init(argc, argv);
+[0.049s]       |   [01;31m[K^~~~~~[m[K
+[0.049s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:5:3:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ has not been declared
+[0.049s]     5 |   [01;31m[Krclcpp[m[K::shutdown();
+[0.049s]       |   [01;31m[K^~~~~~[m[K
+[0.049s] gmake[2]: *** [CMakeFiles/thruster_controller.dir/build.make:76: CMakeFiles/thruster_controller.dir/src/thruster_controller.cpp.o] Error 1
+[0.050s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/thruster_controller.dir/all] Error 2
+[0.050s] gmake[1]: *** Waiting for unfinished jobs....
+[7.523s] [ 75%] [32m[1mLinking CXX executable state_reader[0m
+[7.814s] [ 75%] Built target state_reader
+[7.814s] gmake: *** [Makefile:146: all] Error 2
+[7.816s] Invoked command in '/home/olive/LVTN_2/build/usv_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_controller -- -j16 -l16

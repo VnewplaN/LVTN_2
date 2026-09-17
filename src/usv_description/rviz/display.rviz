@@ -118,9 +118,15 @@ Visualization Manager:
           Value: true
         lidar_front:
           Value: true
+        map:
+          Value: true
+        odom:
+          Value: true
         pontoon_left:
           Value: true
         pontoon_right:
+          Value: true
+        pump:
           Value: true
         thruster_frame:
           Value: true
@@ -140,24 +146,28 @@ Visualization Manager:
       Show Axes: true
       Show Names: false
       Tree:
-        usv_body:
-          lidar_back:
-            {}
-          lidar_front:
-            {}
-          pontoon_left:
-            {}
-          pontoon_right:
-            {}
-          thruster_frame:
-            thruster_front_left:
-              {}
-            thruster_front_right:
-              {}
-            thruster_rear_left:
-              {}
-            thruster_rear_right:
-              {}
+        map:
+          odom:
+            usv_body:
+              lidar_back:
+                {}
+              lidar_front:
+                {}
+              pontoon_left:
+                {}
+              pontoon_right:
+                {}
+              pump:
+                {}
+              thruster_frame:
+                thruster_front_left:
+                  {}
+                thruster_front_right:
+                  {}
+                thruster_rear_left:
+                  {}
+                thruster_rear_right:
+                  {}
       Update Interval: 0
       Value: true
     - Class: rviz_default_plugins/TF
@@ -169,9 +179,15 @@ Visualization Manager:
           Value: true
         lidar_front:
           Value: true
+        map:
+          Value: true
+        odom:
+          Value: true
         pontoon_left:
           Value: true
         pontoon_right:
+          Value: true
+        pump:
           Value: true
         thruster_frame:
           Value: true
@@ -191,24 +207,28 @@ Visualization Manager:
       Show Axes: true
       Show Names: false
       Tree:
-        usv_body:
-          lidar_back:
-            {}
-          lidar_front:
-            {}
-          pontoon_left:
-            {}
-          pontoon_right:
-            {}
-          thruster_frame:
-            thruster_front_left:
-              {}
-            thruster_front_right:
-              {}
-            thruster_rear_left:
-              {}
-            thruster_rear_right:
-              {}
+        map:
+          odom:
+            usv_body:
+              lidar_back:
+                {}
+              lidar_front:
+                {}
+              pontoon_left:
+                {}
+              pontoon_right:
+                {}
+              pump:
+                {}
+              thruster_frame:
+                thruster_front_left:
+                  {}
+                thruster_front_right:
+                  {}
+                thruster_rear_left:
+                  {}
+                thruster_rear_right:
+                  {}
       Update Interval: 0
       Value: true
     - Alpha: 1
@@ -360,10 +380,31 @@ Visualization Manager:
       Use Fixed Frame: true
       Use rainbow: true
       Value: true
+    - Alpha: 0.699999988079071
+      Class: rviz_default_plugins/Map
+      Color Scheme: map
+      Draw Behind: false
+      Enabled: true
+      Name: Map
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        Filter size: 10
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /map
+      Update Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /map_updates
+      Use Timestamp: false
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: usv_body
+    Fixed Frame: map
     Frame Rate: 30
   Name: root
   Tools:
@@ -442,5 +483,5 @@ Window Geometry:
   Views:
     collapsed: true
   Width: 925
-  X: 280
-  Y: 81
+  X: 837
+  Y: 27

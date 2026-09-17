@@ -1,0 +1,62 @@
+[0.021s] Invoking command in '/home/olive/LVTN_2/build/usv_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/olive/LVTN_2/src/usv_controller -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/olive/LVTN_2/install/usv_controller
+[0.035s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.162s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.170s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[0.204s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.207s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.214s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.226s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.241s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.285s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.288s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.461s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.522s] -- Found tf2: 0.25.20 (/opt/ros/humble/share/tf2/cmake)
+[0.544s] -- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.572s] -- Found tf2_geometry_msgs: 0.25.20 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.581s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.584s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.702s] -- Found ros_gz_interfaces: 0.244.25 (/opt/ros/humble/share/ros_gz_interfaces/cmake)
+[0.737s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.854s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.855s] -- Configured cppcheck include dirs: 
+[0.855s] -- Configured cppcheck exclude dirs and/or files: 
+[0.855s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.856s] -- Added test 'lint_cmake' to check CMake code style
+[0.857s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.858s] -- Added test 'uncrustify' to check C / C++ code style
+[0.858s] -- Configured uncrustify additional arguments: 
+[0.858s] -- Added test 'xmllint' to check XML markup files
+[0.860s] -- Configuring done
+[0.885s] -- Generating done
+[0.896s] -- Build files have been written to: /home/olive/LVTN_2/build/usv_controller
+[0.907s] Invoked command in '/home/olive/LVTN_2/build/usv_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/olive/LVTN_2/src/usv_controller -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/olive/LVTN_2/install/usv_controller
+[0.908s] Invoking command in '/home/olive/LVTN_2/build/usv_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_controller -- -j16 -l16
+[0.954s] Consolidate compiler generated dependencies of target thruster_controller
+[0.961s] Consolidate compiler generated dependencies of target state_reader
+[0.973s] [ 50%] Built target thruster_controller
+[0.982s] [100%] Built target state_reader
+[1.002s] Invoked command in '/home/olive/LVTN_2/build/usv_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_controller -- -j16 -l16
+[1.004s] Invoking command in '/home/olive/LVTN_2/build/usv_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/olive/LVTN_2/build/usv_controller
+[1.017s] -- Install configuration: ""
+[1.018s] -- Execute custom install script
+[1.019s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/config/config.yaml
+[1.019s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/launch/controller.launch.py
+[1.019s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/launch/state.launch.py
+[1.019s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_controller/lib/usv_controller/state_reader
+[1.019s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_controller/lib/usv_controller/thruster_controller
+[1.020s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_controller/share/ament_index/resource_index/package_run_dependencies/usv_controller
+[1.020s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_controller/share/ament_index/resource_index/parent_prefix_path/usv_controller
+[1.020s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/environment/ament_prefix_path.sh
+[1.021s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/environment/ament_prefix_path.dsv
+[1.021s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/environment/path.sh
+[1.021s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/environment/path.dsv
+[1.021s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/local_setup.bash
+[1.021s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/local_setup.sh
+[1.022s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/local_setup.zsh
+[1.022s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/local_setup.dsv
+[1.022s] -- Symlinking: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/package.dsv
+[1.037s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_controller/share/ament_index/resource_index/packages/usv_controller
+[1.038s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/cmake/usv_controllerConfig.cmake
+[1.038s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/cmake/usv_controllerConfig-version.cmake
+[1.038s] -- Up-to-date symlink: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/package.xml
+[1.041s] Invoked command in '/home/olive/LVTN_2/build/usv_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/olive/LVTN_2/build/usv_controller

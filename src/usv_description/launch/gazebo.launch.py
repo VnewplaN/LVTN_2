@@ -124,6 +124,9 @@ def generate_launch_description():
         "/model/usv/joint_state"
         "@sensor_msgs/msg/JointState["
         "gz.msgs.Model",
+
+        "/world/industrial_sludge_pond/set_pose"
+        "@ros_gz_interfaces/srv/SetEntityPose",
     ],
 
     remappings=[

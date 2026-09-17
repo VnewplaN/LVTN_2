@@ -1,0 +1,7 @@
+[31mCMake Error at CMakeLists.txt:9:
+  Parse error.  Expected a command name, got unquoted argument with text ".".
+
+[0m
+-- Configuring incomplete, errors occurred!
+See also "/home/olive/LVTN_2/build/usv_controller/CMakeFiles/CMakeOutput.log".
+gmake: *** [Makefile:267: cmake_check_build_system] Error 1

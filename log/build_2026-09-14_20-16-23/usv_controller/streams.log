@@ -1,0 +1,9 @@
+[0.013s] Invoking command in '/home/olive/LVTN_2/build/usv_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_controller -- -j16 -l16
+[0.026s] [31mCMake Error at CMakeLists.txt:9:
+[0.026s]   Parse error.  Expected a command name, got unquoted argument with text ".".
+[0.026s] 
+[0.026s] [0m
+[0.026s] -- Configuring incomplete, errors occurred!
+[0.026s] See also "/home/olive/LVTN_2/build/usv_controller/CMakeFiles/CMakeOutput.log".
+[0.027s] gmake: *** [Makefile:267: cmake_check_build_system] Error 1
+[0.029s] Invoked command in '/home/olive/LVTN_2/build/usv_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_controller -- -j16 -l16

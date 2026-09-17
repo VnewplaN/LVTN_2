@@ -1,0 +1,27 @@
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:24:45:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   24 | av_msgs/msg/Odometry[01;31m[K>[m[K:: SharedPtr sub;
+      |                     [01;31m[K^[m[K
+
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:24:45:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:24:45:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:24:45:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:24:49:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   24 | sgs/msg/Odometry>:: [01;31m[KSharedPtr[m[K sub;
+      |                     [01;31m[K^~~~~~~~~[m[K
+      |                              [32m[K;[m[K
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:24:59:[m[K [01;31m[Kerror: [m[K‘[01m[Ksub[m[K’ does not name a type
+   24 | /msg/Odometry>:: SharedPtr [01;31m[Ksub[m[K;
+      |                            [01;31m[K^~~[m[K
+
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:[m[K In constructor ‘[01m[KStateReader::StateReader()[m[K’:
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:21:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksub[m[K’ was not declared in this scope; did you mean ‘[01m[Kfsub[m[K’?
+   21 |     [01;31m[Ksub[m[K = this->create_subscription<nav_msgs::msg::Odometry>(sub_topic_, 10, bind(&StateReader::subCallback(), this, _1));
+      |     [01;31m[K^~~[m[K
+      |     [32m[Kfsub[m[K
+[01m[K/home/olive/LVTN_2/src/usv_controller/src/state_reader.cpp:21:108:[m[K [01;31m[Kerror: [m[Klvalue required as unary ‘[01m[K&[m[K’ operand
+   21 | [01;31m[KeReader::subCallback()[m[K, this, _1));
+      | [01;31m[K~~~~~~~~~~~~~~~~~~~~^~[m[K
+
+gmake[2]: *** [CMakeFiles/state_reader.dir/build.make:76: CMakeFiles/state_reader.dir/src/state_reader.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/state_reader.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,43 @@
+/home/olive/LVTN_2/src/usv_navigation/src/laser_scan_merger.cpp: In constructor ‘LaserScanMerger::LaserScanMerger()’:
+/home/olive/LVTN_2/src/usv_navigation/src/laser_scan_merger.cpp:33:31: error: no matching function for call to ‘max(int, long int)’
+   33 |     output_samples_ = std::max(360, this->declare_parameter<int>("output_samples", 2880));
+      |                       ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/11/algorithm:61,
+                 from /home/olive/LVTN_2/src/usv_navigation/src/laser_scan_merger.cpp:1:
+/usr/include/c++/11/bits/stl_algobase.h:254:5: note: candidate: ‘template<class _Tp> constexpr const _Tp& std::max(const _Tp&, const _Tp&)’
+  254 |     max(const _Tp& __a, const _Tp& __b)
+      |     ^~~
+/usr/include/c++/11/bits/stl_algobase.h:254:5: note:   template argument deduction/substitution failed:
+/home/olive/LVTN_2/src/usv_navigation/src/laser_scan_merger.cpp:33:31: note:   deduced conflicting types for parameter ‘const _Tp’ (‘int’ and ‘long int’)
+   33 |     output_samples_ = std::max(360, this->declare_parameter<int>("output_samples", 2880));
+      |                       ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/11/algorithm:61,
+                 from /home/olive/LVTN_2/src/usv_navigation/src/laser_scan_merger.cpp:1:
+/usr/include/c++/11/bits/stl_algobase.h:300:5: note: candidate: ‘template<class _Tp, class _Compare> constexpr const _Tp& std::max(const _Tp&, const _Tp&, _Compare)’
+  300 |     max(const _Tp& __a, const _Tp& __b, _Compare __comp)
+      |     ^~~
+/usr/include/c++/11/bits/stl_algobase.h:300:5: note:   template argument deduction/substitution failed:
+/home/olive/LVTN_2/src/usv_navigation/src/laser_scan_merger.cpp:33:31: note:   deduced conflicting types for parameter ‘const _Tp’ (‘int’ and ‘long int’)
+   33 |     output_samples_ = std::max(360, this->declare_parameter<int>("output_samples", 2880));
+      |                       ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/11/algorithm:62,
+                 from /home/olive/LVTN_2/src/usv_navigation/src/laser_scan_merger.cpp:1:
+/usr/include/c++/11/bits/stl_algo.h:3461:5: note: candidate: ‘template<class _Tp> constexpr _Tp std::max(std::initializer_list<_Tp>)’
+ 3461 |     max(initializer_list<_Tp> __l)
+      |     ^~~
+/usr/include/c++/11/bits/stl_algo.h:3461:5: note:   template argument deduction/substitution failed:
+/home/olive/LVTN_2/src/usv_navigation/src/laser_scan_merger.cpp:33:31: note:   mismatched types ‘std::initializer_list<_Tp>’ and ‘int’
+   33 |     output_samples_ = std::max(360, this->declare_parameter<int>("output_samples", 2880));
+      |                       ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/11/algorithm:62,
+                 from /home/olive/LVTN_2/src/usv_navigation/src/laser_scan_merger.cpp:1:
+/usr/include/c++/11/bits/stl_algo.h:3467:5: note: candidate: ‘template<class _Tp, class _Compare> constexpr _Tp std::max(std::initializer_list<_Tp>, _Compare)’
+ 3467 |     max(initializer_list<_Tp> __l, _Compare __comp)
+      |     ^~~
+/usr/include/c++/11/bits/stl_algo.h:3467:5: note:   template argument deduction/substitution failed:
+/home/olive/LVTN_2/src/usv_navigation/src/laser_scan_merger.cpp:33:31: note:   mismatched types ‘std::initializer_list<_Tp>’ and ‘int’
+   33 |     output_samples_ = std::max(360, this->declare_parameter<int>("output_samples", 2880));
+      |                       ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gmake[2]: *** [CMakeFiles/laser_scan_merger.dir/build.make:76: CMakeFiles/laser_scan_merger.dir/src/laser_scan_merger.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/laser_scan_merger.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

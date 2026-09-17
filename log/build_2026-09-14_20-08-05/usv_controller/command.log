@@ -1,0 +1,2 @@
+Invoking command in '/home/olive/LVTN_2/build/usv_controller': /usr/bin/cmake /home/olive/LVTN_2/src/usv_controller -DCMAKE_INSTALL_PREFIX=/home/olive/LVTN_2/install/usv_controller
+Invoked command in '/home/olive/LVTN_2/build/usv_controller' returned '1': /usr/bin/cmake /home/olive/LVTN_2/src/usv_controller -DCMAKE_INSTALL_PREFIX=/home/olive/LVTN_2/install/usv_controller

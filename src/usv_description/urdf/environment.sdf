@@ -159,75 +159,10 @@
     </model>
 
     <!-- Irregular deposits protruding above the base sludge. -->
-    <model name="sludge_deposit_1">
-      <static>true</static>
-      <pose>-23 17 -5.82 0 0 0</pose>
-      <link name="link">
-        <collision name="collision">
-          <geometry><cylinder><radius>9</radius><length>0.36</length></cylinder></geometry>
-        </collision>
-        <visual name="visual">
-          <geometry><cylinder><radius>9</radius><length>0.36</length></cylinder></geometry>
-          <material><ambient>0.08 0.03 0.008 1</ambient><diffuse>0.16 0.06 0.012 1</diffuse></material>
-        </visual>
-      </link>
-    </model>
 
-    <model name="sludge_deposit_2">
-      <static>true</static>
-      <pose>20 22 -5.76 0 0 0</pose>
-      <link name="link">
-        <collision name="collision">
-          <geometry><cylinder><radius>6.5</radius><length>0.48</length></cylinder></geometry>
-        </collision>
-        <visual name="visual">
-          <geometry><cylinder><radius>6.5</radius><length>0.48</length></cylinder></geometry>
-          <material><ambient>0.12 0.05 0.01 1</ambient><diffuse>0.23 0.09 0.018 1</diffuse></material>
-        </visual>
-      </link>
-    </model>
 
-    <model name="sludge_deposit_3">
-      <static>true</static>
-      <pose>12 -25 -5.84 0 0 0.45</pose>
-      <link name="link">
-        <collision name="collision">
-          <geometry><box><size>19 9 0.32</size></box></geometry>
-        </collision>
-        <visual name="visual">
-          <geometry><box><size>19 9 0.32</size></box></geometry>
-          <material><ambient>0.07 0.028 0.006 1</ambient><diffuse>0.15 0.055 0.01 1</diffuse></material>
-        </visual>
-      </link>
-    </model>
 
-    <model name="sludge_deposit_4">
-      <static>true</static>
-      <pose>-14 -20 -5.78 0 0 0</pose>
-      <link name="link">
-        <collision name="collision">
-          <geometry><cylinder><radius>5</radius><length>0.44</length></cylinder></geometry>
-        </collision>
-        <visual name="visual">
-          <geometry><cylinder><radius>5</radius><length>0.44</length></cylinder></geometry>
-          <material><ambient>0.11 0.042 0.008 1</ambient><diffuse>0.21 0.075 0.014 1</diffuse></material>
-        </visual>
-      </link>
-    </model>
 
-    <model name="sludge_deposit_5">
-      <static>true</static>
-      <pose>34 -9 -5.88 0 0 -0.3</pose>
-      <link name="link">
-        <collision name="collision">
-          <geometry><box><size>13 6 0.24</size></box></geometry>
-        </collision>
-        <visual name="visual">
-          <geometry><box><size>13 6 0.24</size></box></geometry>
-          <material><ambient>0.09 0.035 0.007 1</ambient><diffuse>0.18 0.065 0.012 1</diffuse></material>
-        </visual>
-      </link>
-    </model>
 
 <!--
   Water geometry is visual-only.
@@ -279,9 +214,9 @@
       <static>true</static>
       <pose>0 50.3 -3 0 0 0</pose>
       <link name="link">
-        <collision name="collision"><geometry><box><size>112 0.6 6.5</size></box></geometry></collision>
+        <collision name="collision"><geometry><box><size>112 0.6 8</size></box></geometry></collision>
         <visual name="visual">
-          <geometry><box><size>112 0.6 6.5</size></box></geometry>
+          <geometry><box><size>112 0.6 8</size></box></geometry>
           <material><ambient>0.19 0.11 0.04 1</ambient><diffuse>0.36 0.22 0.08 1</diffuse></material>
         </visual>
       </link>
@@ -291,9 +226,9 @@
       <static>true</static>
       <pose>0 -50.3 -3 0 0 0</pose>
       <link name="link">
-        <collision name="collision"><geometry><box><size>112 0.6 6.5</size></box></geometry></collision>
+        <collision name="collision"><geometry><box><size>112 0.6 8</size></box></geometry></collision>
         <visual name="visual">
-          <geometry><box><size>112 0.6 6.5</size></box></geometry>
+          <geometry><box><size>112 0.6 8</size></box></geometry>
           <material><ambient>0.19 0.11 0.04 1</ambient><diffuse>0.36 0.22 0.08 1</diffuse></material>
         </visual>
       </link>
@@ -303,9 +238,9 @@
       <static>true</static>
       <pose>50.3 0 -3 0 0 0</pose>
       <link name="link">
-        <collision name="collision"><geometry><box><size>0.6 112 6.5</size></box></geometry></collision>
+        <collision name="collision"><geometry><box><size>0.6 112 8</size></box></geometry></collision>
         <visual name="visual">
-          <geometry><box><size>0.6 112 6.5</size></box></geometry>
+          <geometry><box><size>0.6 112 8</size></box></geometry>
           <material><ambient>0.19 0.11 0.04 1</ambient><diffuse>0.36 0.22 0.08 1</diffuse></material>
         </visual>
       </link>
@@ -315,9 +250,9 @@
       <static>true</static>
       <pose>-50.3 0 -3 0 0 0</pose>
       <link name="link">
-        <collision name="collision"><geometry><box><size>0.6 112 6.5</size></box></geometry></collision>
+        <collision name="collision"><geometry><box><size>0.6 112 8</size></box></geometry></collision>
         <visual name="visual">
-          <geometry><box><size>0.6 112 6.5</size></box></geometry>
+          <geometry><box><size>0.6 112 8</size></box></geometry>
           <material><ambient>0.19 0.11 0.04 1</ambient><diffuse>0.36 0.22 0.08 1</diffuse></material>
         </visual>
       </link>
@@ -360,59 +295,11 @@
     </model>
 
     <!-- Small south-side starting dock extending over the water. -->
-    <model name="usv_dock">
-      <static>true</static>
-      <pose>-30 -47 0.25 0 0 0</pose>
-      <link name="dock_link">
-        <collision name="deck_collision"><geometry><box><size>4 12 0.4</size></box></geometry></collision>
-        <visual name="deck_visual">
-          <geometry><box><size>4 12 0.4</size></box></geometry>
-          <material><ambient>0.25 0.13 0.04 1</ambient><diffuse>0.48 0.27 0.08 1</diffuse></material>
-        </visual>
-      </link>
-    </model>
 
-    <model name="dock_posts">
-      <static>true</static>
-      <link name="posts_link">
-        <collision name="post_1_collision"><pose>-31.4 -43 -3 0 0 0</pose><geometry><cylinder><radius>0.18</radius><length>6</length></cylinder></geometry></collision>
-        <visual name="post_1_visual"><pose>-31.4 -43 -3 0 0 0</pose><geometry><cylinder><radius>0.18</radius><length>6</length></cylinder></geometry><material><ambient>0.18 0.08 0.02 1</ambient><diffuse>0.35 0.16 0.04 1</diffuse></material></visual>
-        <collision name="post_2_collision"><pose>-28.6 -43 -3 0 0 0</pose><geometry><cylinder><radius>0.18</radius><length>6</length></cylinder></geometry></collision>
-        <visual name="post_2_visual"><pose>-28.6 -43 -3 0 0 0</pose><geometry><cylinder><radius>0.18</radius><length>6</length></cylinder></geometry><material><ambient>0.18 0.08 0.02 1</ambient><diffuse>0.35 0.16 0.04 1</diffuse></material></visual>
-      </link>
-    </model>
 
     <!-- Lightweight static navigation obstacles. -->
-    <model name="red_buoy">
-      <static>true</static><pose>18 12 0.4 0 0 0</pose>
-      <link name="link">
-        <collision name="collision"><geometry><cylinder><radius>0.35</radius><length>0.8</length></cylinder></geometry></collision>
-        <visual name="visual"><geometry><cylinder><radius>0.35</radius><length>0.8</length></cylinder></geometry><material><ambient>0.75 0.03 0.01 1</ambient><diffuse>1 0.08 0.02 1</diffuse></material></visual>
-      </link>
-    </model>
 
-    <model name="yellow_buoy">
-      <static>true</static><pose>-20 18 0.4 0 0 0</pose>
-      <link name="link">
-        <collision name="collision"><geometry><cylinder><radius>0.35</radius><length>0.8</length></cylinder></geometry></collision>
-        <visual name="visual"><geometry><cylinder><radius>0.35</radius><length>0.8</length></cylinder></geometry><material><ambient>0.85 0.45 0.01 1</ambient><diffuse>1 0.72 0.03 1</diffuse></material></visual>
-      </link>
-    </model>
 
-    <model name="orange_buoy">
-      <static>true</static><pose>30 -28 0.4 0 0 0</pose>
-      <link name="link">
-        <collision name="collision"><geometry><cylinder><radius>0.35</radius><length>0.8</length></cylinder></geometry></collision>
-        <visual name="visual"><geometry><cylinder><radius>0.35</radius><length>0.8</length></cylinder></geometry><material><ambient>0.9 0.18 0.01 1</ambient><diffuse>1 0.32 0.02 1</diffuse></material></visual>
-      </link>
-    </model>
 
-    <model name="navigation_pole">
-      <static>true</static><pose>5 -22 -2.5 0 0 0</pose>
-      <link name="link">
-        <collision name="collision"><geometry><cylinder><radius>0.16</radius><length>7</length></cylinder></geometry></collision>
-        <visual name="visual"><geometry><cylinder><radius>0.16</radius><length>7</length></cylinder></geometry><material><ambient>0.22 0.10 0.025 1</ambient><diffuse>0.42 0.20 0.05 1</diffuse></material></visual>
-      </link>
-    </model>
   </world>
 </sdf>

@@ -1,0 +1,24 @@
+Consolidate compiler generated dependencies of target state_reader
+[ 50%] Building CXX object CMakeFiles/state_reader.dir/src/state_reader.cpp.o
+[100%] Linking CXX executable state_reader
+[100%] Built target state_reader
+-- Install configuration: ""
+-- Installing: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/config
+-- Installing: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/config/config.yaml
+-- Installing: /home/olive/LVTN_2/install/usv_controller/lib/usv_controller/state_reader
+-- Set runtime path of "/home/olive/LVTN_2/install/usv_controller/lib/usv_controller/state_reader" to ""
+-- Installing: /home/olive/LVTN_2/install/usv_controller/share/ament_index/resource_index/package_run_dependencies/usv_controller
+-- Installing: /home/olive/LVTN_2/install/usv_controller/share/ament_index/resource_index/parent_prefix_path/usv_controller
+-- Installing: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/environment/ament_prefix_path.sh
+-- Installing: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/environment/ament_prefix_path.dsv
+-- Installing: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/environment/path.sh
+-- Installing: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/environment/path.dsv
+-- Installing: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/local_setup.bash
+-- Installing: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/local_setup.sh
+-- Installing: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/local_setup.zsh
+-- Installing: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/local_setup.dsv
+-- Installing: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/package.dsv
+-- Installing: /home/olive/LVTN_2/install/usv_controller/share/ament_index/resource_index/packages/usv_controller
+-- Installing: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/cmake/usv_controllerConfig.cmake
+-- Installing: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/cmake/usv_controllerConfig-version.cmake
+-- Installing: /home/olive/LVTN_2/install/usv_controller/share/usv_controller/package.xml

@@ -1,0 +1,60 @@
+[0.018s] Invoking command in '/home/olive/LVTN_2/build/usv_navigation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_navigation -- -j16 -l16
+[0.052s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.217s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[0.259s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.262s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.269s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.280s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.295s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.331s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.332s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.475s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.545s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.580s] -- Found tf2: 0.25.20 (/opt/ros/humble/share/tf2/cmake)
+[0.585s] -- Found tf2_ros: 0.25.20 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.686s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.813s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.813s] -- Configured cppcheck include dirs: 
+[0.814s] -- Configured cppcheck exclude dirs and/or files: 
+[0.814s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.815s] -- Added test 'lint_cmake' to check CMake code style
+[0.815s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.816s] -- Added test 'uncrustify' to check C / C++ code style
+[0.816s] -- Configured uncrustify additional arguments: 
+[0.816s] -- Added test 'xmllint' to check XML markup files
+[0.817s] -- Configuring done
+[0.836s] -- Generating done
+[0.844s] -- Build files have been written to: /home/olive/LVTN_2/build/usv_navigation
+[0.888s] Consolidate compiler generated dependencies of target laser_scan_merger
+[0.895s] [ 25%] Building CXX object CMakeFiles/mapping_route.dir/src/mapping_route.cpp.o
+[0.905s] [ 75%] Built target laser_scan_merger
+[11.787s] [100%] Linking CXX executable mapping_route
+[12.349s] [100%] Built target mapping_route
+[12.364s] Invoked command in '/home/olive/LVTN_2/build/usv_navigation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_navigation -- -j16 -l16
+[12.380s] Invoking command in '/home/olive/LVTN_2/build/usv_navigation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/olive/LVTN_2/build/usv_navigation
+[12.389s] -- Install configuration: ""
+[12.390s] -- Up-to-date: /home/olive/LVTN_2/install/usv_navigation/lib/usv_navigation/laser_scan_merger
+[12.390s] -- Installing: /home/olive/LVTN_2/install/usv_navigation/lib/usv_navigation/mapping_route
+[12.393s] -- Set runtime path of "/home/olive/LVTN_2/install/usv_navigation/lib/usv_navigation/mapping_route" to ""
+[12.394s] -- Up-to-date: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/launch
+[12.394s] -- Up-to-date: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/launch/slam.launch.py
+[12.395s] -- Up-to-date: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/config
+[12.395s] -- Up-to-date: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/config/slam.yaml
+[12.395s] -- Up-to-date: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/maps
+[12.395s] -- Up-to-date: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/maps/README.md
+[12.395s] -- Installing: /home/olive/LVTN_2/install/usv_navigation/share/ament_index/resource_index/package_run_dependencies/usv_navigation
+[12.395s] -- Up-to-date: /home/olive/LVTN_2/install/usv_navigation/share/ament_index/resource_index/parent_prefix_path/usv_navigation
+[12.396s] -- Up-to-date: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/environment/ament_prefix_path.sh
+[12.396s] -- Installing: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/environment/ament_prefix_path.dsv
+[12.397s] -- Up-to-date: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/environment/path.sh
+[12.398s] -- Installing: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/environment/path.dsv
+[12.399s] -- Up-to-date: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/local_setup.bash
+[12.399s] -- Up-to-date: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/local_setup.sh
+[12.400s] -- Up-to-date: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/local_setup.zsh
+[12.400s] -- Installing: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/local_setup.dsv
+[12.402s] -- Installing: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/package.dsv
+[12.402s] -- Up-to-date: /home/olive/LVTN_2/install/usv_navigation/share/ament_index/resource_index/packages/usv_navigation
+[12.402s] -- Up-to-date: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/cmake/usv_navigationConfig.cmake
+[12.403s] -- Up-to-date: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/cmake/usv_navigationConfig-version.cmake
+[12.404s] -- Installing: /home/olive/LVTN_2/install/usv_navigation/share/usv_navigation/package.xml
+[12.405s] Invoked command in '/home/olive/LVTN_2/build/usv_navigation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/olive/LVTN_2/build/usv_navigation

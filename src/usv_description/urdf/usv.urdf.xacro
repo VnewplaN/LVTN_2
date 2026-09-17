@@ -301,15 +301,21 @@
     <joint name="lidar_joint_front" type="fixed">
         <parent link="usv_body"/>
         <child link="lidar_front"/>
-        <origin xyz="-0.735 0.885 0.08" rpy="0 0 ${PI/4}"/>
+        <origin xyz="-0.735 0.885 0.50" rpy="0 0 ${PI/4}"/>
     </joint>
 
     <joint name="lidar_joint_back" type="fixed">
         <parent link="usv_body"/>
         <child link="lidar_back"/>
-        <origin xyz="0.735 -0.885 0.08" rpy="0 0 ${PI/4}"/>
+        <origin xyz="0.735 -0.885 0.50" rpy="0 0 ${PI/4}"/>
     </joint>
+    <joint name="usv_body_to_pump" type="fixed">
+         <parent link="usv_body"/>
+        <child link="pump"/>
 
+        <origin xyz="0 0.630 0.4875" rpy="0 0 0"/>
+    </joint>
+    <!--
     <joint name="usv_body_to_pump" type="prismatic">
          <parent link="usv_body"/>
         <child link="pump"/>
@@ -324,5 +330,5 @@
             effort="5000"
             velocity="0.1"/>
     </joint>
-
+-->
 </robot>

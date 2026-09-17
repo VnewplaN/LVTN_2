@@ -1,0 +1,3 @@
+Consolidate compiler generated dependencies of target thruster_controller
+[ 50%] Built target state_reader
+[ 75%] Building CXX object CMakeFiles/thruster_controller.dir/src/thruster_controller.cpp.o

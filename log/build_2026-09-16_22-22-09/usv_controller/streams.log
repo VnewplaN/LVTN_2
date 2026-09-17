@@ -1,0 +1,35 @@
+[0.011s] Invoking command in '/home/olive/LVTN_2/build/usv_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_controller -- -j16 -l16
+[0.040s] [35m[1mConsolidate compiler generated dependencies of target thruster_controller[0m
+[0.049s] [ 50%] Built target state_reader
+[0.052s] [ 75%] [32mBuilding CXX object CMakeFiles/thruster_controller.dir/src/thruster_controller.cpp.o[0m
+[1.952s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:[m[K In member function ‘[01m[Kvoid ThrusterController::PublishWrench()[m[K’:
+[1.952s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:236:22:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Ktf2::Vector3 force_world[m[K’
+[1.952s]   236 |         tf2::Vector3 [01;31m[Kforce_world[m[K = tf2::quatRotate(q, force_body);
+[1.952s]       |                      [01;31m[K^~~~~~~~~~~[m[K
+[1.952s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:234:22:[m[K [01;36m[Knote: [m[K‘[01m[Ktf2::Vector3 force_world[m[K’ previously declared here
+[1.952s]   234 |         tf2::Vector3 [01;36m[Kforce_world[m[K = tf2::quatRotate(q, force_body);
+[1.952s]       |                      [01;36m[K^~~~~~~~~~~[m[K
+[1.952s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:[m[K In member function ‘[01m[Kvoid ThrusterController::ControlLoop()[m[K’:
+[1.952s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:263:22:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KThrusterController::PublishWrench(double&, double&, double&)[m[K’
+[1.952s]   263 |         [01;31m[KPublishWrench([m[K
+[1.952s]       |         [01;31m[K~~~~~~~~~~~~~^[m[K
+[1.952s]   264 | [01;31m[K            X_keyboard_,[m[K
+[1.952s]       |             [01;31m[K~~~~~~~~~~~~[m[K
+[1.952s]   265 | [01;31m[K            Y_keyboard_,[m[K
+[1.952s]       |             [01;31m[K~~~~~~~~~~~~[m[K
+[1.952s]   266 | [01;31m[K            N_keyboard_)[m[K;
+[1.952s]       |             [01;31m[K~~~~~~~~~~~~[m[K
+[1.953s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:219:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid ThrusterController::PublishWrench()[m[K’
+[1.953s]   219 |     void [01;36m[KPublishWrench[m[K(){
+[1.953s]       |          [01;36m[K^~~~~~~~~~~~~[m[K
+[1.953s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:219:10:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 3 provided
+[1.953s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:271:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kerror_u[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[1.953s]   271 |     double [01;35m[Kerror_u[m[K = u_d_ - u_;
+[1.953s]       |            [01;35m[K^~~~~~~[m[K
+[1.953s] [01m[K/home/olive/LVTN_2/src/usv_controller/src/thruster_controller.cpp:272:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kerror_v[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[1.953s]   272 |     double [01;35m[Kerror_v[m[K = v_d_ - v_;
+[1.953s]       |            [01;35m[K^~~~~~~[m[K
+[3.949s] gmake[2]: *** [CMakeFiles/thruster_controller.dir/build.make:76: CMakeFiles/thruster_controller.dir/src/thruster_controller.cpp.o] Error 1
+[3.949s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/thruster_controller.dir/all] Error 2
+[3.950s] gmake: *** [Makefile:146: all] Error 2
+[3.952s] Invoked command in '/home/olive/LVTN_2/build/usv_controller' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/olive/LVTN_2/build/usv_controller -- -j16 -l16

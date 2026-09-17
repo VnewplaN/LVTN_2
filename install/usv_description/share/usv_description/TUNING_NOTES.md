@@ -1,1 +1,0 @@
-/home/olive/LVTN_2/src/usv_description/TUNING_NOTES.md
