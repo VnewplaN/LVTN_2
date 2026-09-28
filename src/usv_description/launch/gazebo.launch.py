@@ -28,9 +28,18 @@ def generate_launch_description():
         description="Absolute path to robot urdf file",
     )
     spawn_z_arg = DeclareLaunchArgument("spawn_z", default_value="0.2817")
+    # Default pose is the first coverage waypoint expressed in Gazebo world.
+    # The link yaw is approximately zero because the controller's bow heading
+    # includes the model's +pi/2 body_yaw_offset.
+    spawn_x_arg = DeclareLaunchArgument("spawn_x", default_value="-41.0515")
+    spawn_y_arg = DeclareLaunchArgument("spawn_y", default_value="-46.7840")
+    spawn_yaw_arg = DeclareLaunchArgument("spawn_yaw", default_value="-0.00351")
     spawn_roll_arg = DeclareLaunchArgument("spawn_roll", default_value="0.0")
     spawn_pitch_arg = DeclareLaunchArgument("spawn_pitch", default_value="0.0")
     spawn_z = LaunchConfiguration("spawn_z")
+    spawn_x = LaunchConfiguration("spawn_x")
+    spawn_y = LaunchConfiguration("spawn_y")
+    spawn_yaw = LaunchConfiguration("spawn_yaw")
     spawn_roll = LaunchConfiguration("spawn_roll")
     spawn_pitch = LaunchConfiguration("spawn_pitch")
 
@@ -86,9 +95,9 @@ def generate_launch_description():
             "-name",
             "usv",
             "-x",
-            "-25.0",
+            spawn_x,
             "-y",
-            "-40.0",
+            spawn_y,
             # Initial guess only; graded buoyancy determines
             # the final hydrostatic draft.
             "-z",
@@ -98,7 +107,7 @@ def generate_launch_description():
             "-P",
             spawn_pitch,
             "-Y",
-            "0.0",
+            spawn_yaw,
         ],
     )
 
@@ -159,6 +168,9 @@ def generate_launch_description():
             gazebo_resource_path,
             usv_model,
             spawn_z_arg,
+            spawn_x_arg,
+            spawn_y_arg,
+            spawn_yaw_arg,
             spawn_roll_arg,
             spawn_pitch_arg,
             robot_state_publisher_node,

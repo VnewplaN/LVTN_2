@@ -184,16 +184,10 @@ class ThrusterController : public rclcpp::Node
             return;
         }
 
-        // Supported command forms:
-        // [u_d]                 -> surge, zero sway, hold current heading
-        // [u_d, v_d]            -> surge/sway, hold current heading
-        // [u_d, v_d, psi_d]     -> surge/sway and explicit heading
         u_d_ = msg->data[0];
         v_d_ = msg->data.size() >= 2 ? msg->data[1] : 0.0;
         psi_d_ = msg->data.size() >= 3 ? msg->data[2] : psi_;
-        // Do not reset PID memory here. trajectory_node publishes continuously
-        // (20 Hz); resetting on every message prevents the integral terms from
-        // accumulating and leaves a permanent velocity error.
+        
         trajectory_received_ = true;
     }
 
@@ -213,7 +207,7 @@ class ThrusterController : public rclcpp::Node
                 // Forward
                 case 'w':
                 case 'W':
-                    X_keyboard_ = 1000.0;
+                    X_keyboard_ = 200.0;
                     x_key_active_ = true;
                     last_x_key_time_ = current_time;
                     break;
@@ -221,7 +215,7 @@ class ThrusterController : public rclcpp::Node
                 // Backward
                 case 's':
                 case 'S':
-                    X_keyboard_ = -1000.0;
+                    X_keyboard_ = -200.0;
                     x_key_active_ = true;
                     last_x_key_time_ = current_time;
                     break;
@@ -229,7 +223,7 @@ class ThrusterController : public rclcpp::Node
                 // Left
                 case 'a':
                 case 'A':
-                    Y_keyboard_ = 1000.0;
+                    Y_keyboard_ = 200.0;
                     y_key_active_ = true;
                     last_y_key_time_ = current_time;                   
                     break;
@@ -237,7 +231,7 @@ class ThrusterController : public rclcpp::Node
                 // Right
                 case 'd':
                 case 'D':
-                    Y_keyboard_ = -1000.0;
+                    Y_keyboard_ = -200.0;
                     y_key_active_ = true;
                     last_y_key_time_ = current_time;      
                     break;
@@ -245,7 +239,7 @@ class ThrusterController : public rclcpp::Node
                 // Counter-clockwise
                 case 'q':
                 case 'Q':
-                    N_keyboard_ = 500.0;
+                    N_keyboard_ = 100.0;
                     n_key_active_ = true;
                     last_n_key_time_ = current_time;    
                     break;
@@ -253,7 +247,7 @@ class ThrusterController : public rclcpp::Node
                 // Clockwise
                 case 'e':
                 case 'E':
-                    N_keyboard_ = -500.0;
+                    N_keyboard_ = -100.0;
                     n_key_active_ = true;
                     last_n_key_time_ = current_time; 
                     break;
@@ -407,17 +401,17 @@ class ThrusterController : public rclcpp::Node
 
 
     // Surge PI
-    const double Kp_u = 441.348;
-    const double Ki_u = 117.693;
+    const double Kp_u = 2795.207;
+    const double Ki_u = 2942.323;
 
     // Sway PI
-    const double Kp_v = 500.000;
-    const double Ki_v = 612.500;
+    const double Kp_v = 3750.00;
+    const double Ki_v = 5000.00;
 
     // Heading PID
-    const double Kp_psi = 523.152;
-    const double Ki_psi = 74.736;
-    const double Kd_psi = 280.260;
+    const double Kp_psi = 12144.6;
+    const double Ki_psi = 41104.8;
+    const double Kd_psi = 37368.0;
 
 
     const double max_force = 10000.0;

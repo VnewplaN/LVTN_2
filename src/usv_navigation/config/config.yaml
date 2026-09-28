@@ -1,0 +1,64 @@
+laser_scan_merger:
+  ros__parameters:
+    sub_lidar_1: /lidar/front/scan
+    sub_lidar_2: /lidar/back/scan
+    pub_topic: /lidar/merged_scan
+    output_samples: 2880
+    horizontal_virtual_frame: 10
+    vertical_virtual_frame: 20
+    use_virtual_boundary: false
+    max_sync_delta: 0.04
+    self_filter_radius: 2.0
+
+map_auto_mapping:
+  ros__parameters:
+    state_sub_topic: /state_value
+    lidar_sub_topic: /lidar/merged_scan
+    pub_topic: /trajectory_cmd
+    lidar_front_angle: 1.5707963267948966
+    sector_half_width: 0.2617993877991494
+    desired_edge_distance: 3.0
+    edge_detect_distance: 8.0
+    safe_front_distance: 4.0
+    search_speed: 0.5
+    mapping_speed: 0.8
+    turn_speed: 0.15
+    distance_gain: 0.25
+    parallel_gain: 0.35
+    max_heading_correction: 0.5
+    turn_angle: 1.5707963267948966
+    minimum_loop_distance: 30.0
+    loop_close_radius: 2.0
+    stop_when_loop_closed: true
+    auto_save_map: true
+    map_save_path: /home/olive/LVTN_2/src/usv_navigation/maps/usv_map
+    world_frame: world
+    map_frame: map
+    odom_frame: odom
+    world_equals_odom: true
+
+coverage_planner:
+  ros__parameters:
+    sub_topic: /map
+    pub_topic: /coverage_path
+
+    min_x: -47.0
+    max_x: 47.0
+    min_y: -47.0
+    max_y: 47.0
+    track_spacing: 0.25
+    map_margin: 3.0
+
+trajectory_node:
+  ros__parameters:
+    state_topic: /state_value
+    path_topic: /coverage_path
+    pub_topic: /trajectory_cmd
+    control_frame: odom
+    path_speed: 0.5
+    waypoint_acceptance: 0.10
+    alos_lookahead_min: 1.0
+    alos_lookahead_max: 5.0
+    alos_lookahead_gain: 0.5
+    alos_adaptation_gain: 0.02
+    alos_max_sideslip: 0.35

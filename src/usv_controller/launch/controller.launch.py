@@ -24,6 +24,14 @@ def generate_launch_description():
         },
     ]
 
+    state_reader = Node(
+        package="usv_controller",
+        executable="state_reader",
+        name="state_reader",
+        output="screen",
+        parameters=[config_path, {"use_sim_time": True}],
+    )
+
     # ros2 launch gives a normal child process a pipe on stdin. Open a real
     # terminal so read(STDIN_FILENO, ...) can receive keyboard input.
     keyboard_controller = Node(
@@ -52,6 +60,7 @@ def generate_launch_description():
                 default_value="false",
                 description="Open a terminal for keyboard input",
             ),
+            state_reader,
             keyboard_controller,
             automatic_controller,
         ]

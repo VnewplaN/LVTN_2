@@ -1,14 +1,16 @@
 #include <algorithm>
 #include <cmath>
+#include <functional>
 #include <memory>
 #include <string>
-#include <utility>
-#include <vector>
 
 #include "geometry_msgs/msg/pose_stamped.hpp"
 #include "nav_msgs/msg/occupancy_grid.hpp"
 #include "nav_msgs/msg/path.hpp"
 #include "rclcpp/rclcpp.hpp"
+
+using namespace std;
+using namespace placeholders;
 
 class CoveragePlanner : public rclcpp::Node
 {
@@ -16,428 +18,160 @@ public:
   CoveragePlanner()
   : Node("coverage_planner")
   {
-    map_topic_ = declare_parameter<std::string>("map_topic", "/map");
-    path_topic_ = declare_parameter<std::string>("path_topic", "/coverage_path");
-    path_frame_ = declare_parameter<std::string>("path_frame", "odom");
-    pond_half_extent_ =
-      std::clamp(declare_parameter<double>("pond_half_extent", 47.0), 1.0, 49.0);
+    declare_parameter<std::string>("sub_topic", "/map");
+    declare_parameter<std::string>("pub_topic", "/coverage_path");
 
-    track_spacing_ =
-      std::max(0.05, declare_parameter<double>("track_spacing", 0.25));
+    declare_parameter<double>("min_x", -47.0);
+    declare_parameter<double>("max_x", 47.0);
+    declare_parameter<double>("min_y", -47.0);
+    declare_parameter<double>("max_y", 47.0);
+    declare_parameter<double>("track_spacing", 0.25);
+    declare_parameter<double>("map_margin", 3.0);
 
-    waypoint_spacing_ =
-      std::max(0.05, declare_parameter<double>("waypoint_spacing", 0.25));
+    sub_topic_ = get_parameter("sub_topic").as_string();
+    pub_topic_ = get_parameter("pub_topic").as_string();
 
-    clearance_ =
-      std::max(0.0, declare_parameter<double>("clearance", 2.0));
+    min_x_ = get_parameter("min_x").as_double();
+    max_x_ = get_parameter("max_x").as_double();
+    min_y_ = get_parameter("min_y").as_double();
+    max_y_ = get_parameter("max_y").as_double();
+    track_spacing_ = get_parameter("track_spacing").as_double();
+    map_margin_ = get_parameter("map_margin").as_double();
 
-    occupied_threshold_ =
-      declare_parameter<int>("occupied_threshold", 65);
+    rclcpp::QoS map_qos(1);
+    map_qos.reliable();
+    map_qos.transient_local();
 
-    min_lane_length_ =
-      std::max(0.5, declare_parameter<double>("min_lane_length", 2.0));
+    rclcpp::QoS path_qos(1);
+    path_qos.reliable();
+    path_qos.transient_local();
 
-    path_pub_ =
-      create_publisher<nav_msgs::msg::Path>(
-        path_topic_,
-        rclcpp::QoS(1).transient_local().reliable());
+    sub_ = create_subscription<nav_msgs::msg::OccupancyGrid>(
+      sub_topic_,
+      map_qos,
+    bind(
+        &CoveragePlanner::mapCallback,
+        this,
+      _1));
 
-    map_sub_ =
-      create_subscription<nav_msgs::msg::OccupancyGrid>(
-        map_topic_,
-        rclcpp::QoS(1).transient_local().reliable(),
-        std::bind(
-          &CoveragePlanner::mapCallback,
-          this,
-          std::placeholders::_1));
-
-    RCLCPP_INFO(
-      get_logger(),
-      "Coverage planner started - waiting for saved /map");
+    pub_ = create_publisher<nav_msgs::msg::Path>(
+      pub_topic_,
+      path_qos);
   }
 
 private:
-  bool worldToCell(
-    double wx,
-    double wy,
-    int & mx,
-    int & my) const
-  {
-    if (!map_) {
-      return false;
+    string sub_topic_;
+    string pub_topic_;
+
+    double min_x_;
+    double max_x_;
+    double min_y_;
+    double max_y_;
+    double track_spacing_;
+    double map_margin_;
+
+    bool path_published_{false};
+
+    rclcpp::Subscription<nav_msgs::msg::OccupancyGrid>::SharedPtr sub_;
+    rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr pub_;
+    void addPose(nav_msgs::msg::Path &path, double x, double y, double yaw ){
+        geometry_msgs::msg::PoseStamped pose;
+
+        pose.header = path.header;
+        pose.pose.position.x = x;
+        pose.pose.position.y = y;
+        pose.pose.position.z = 0.0;
+
+        pose.pose.orientation.z = sin(yaw / 2.0);
+        pose.pose.orientation.w = cos(yaw / 2.0);
+
+        path.poses.push_back(pose);
     }
 
-    // Current saved map has zero origin yaw.
-    const double res = map_->info.resolution;
-
-    mx = static_cast<int>(
-      std::floor(
-        (wx - map_->info.origin.position.x) / res));
-
-    my = static_cast<int>(
-      std::floor(
-        (wy - map_->info.origin.position.y) / res));
-
-    return
-      mx >= 0 &&
-      my >= 0 &&
-      mx < static_cast<int>(map_->info.width) &&
-      my < static_cast<int>(map_->info.height);
-  }
-
-  bool cellFree(int mx, int my) const
-  {
-    if (
-      mx < 0 ||
-      my < 0 ||
-      mx >= static_cast<int>(map_->info.width) ||
-      my >= static_cast<int>(map_->info.height))
+    void mapCallback(
+    const nav_msgs::msg::OccupancyGrid::ConstSharedPtr msg)
     {
-      return false;
-    }
-
-    const auto value =
-      map_->data[
-        static_cast<std::size_t>(my) *
-        map_->info.width +
-        static_cast<std::size_t>(mx)];
-
-    // Unknown (-1) is unsafe.
-    return value >= 0 && value < occupied_threshold_;
-  }
-
-  bool pointSafe(double wx, double wy) const
-  {
-    int mx, my;
-
-    if (!worldToCell(wx, wy, mx, my)) {
-      return false;
-    }
-
-    if (!cellFree(mx, my)) {
-      return false;
-    }
-
-    if (clearance_ <= 0.0) {
-      return true;
-    }
-
-    const double res = map_->info.resolution;
-
-    const int radius =
-      static_cast<int>(
-        std::ceil(clearance_ / res));
-
-    // Sample clearance area approximately every 0.10 m.
-    const int step =
-      std::max(
-        1,
-        static_cast<int>(
-          std::round(0.10 / res)));
-
-    for (int dy = -radius; dy <= radius; dy += step)
-    {
-      for (int dx = -radius; dx <= radius; dx += step)
-      {
-        const double d =
-          std::hypot(
-            dx * res,
-            dy * res);
-
-        if (d > clearance_) {
-          continue;
-        }
-
-        if (!cellFree(mx + dx, my + dy)) {
-          return false;
-        }
-      }
-    }
-
-    return true;
-  }
-
-  geometry_msgs::msg::PoseStamped makePose(
-    double x,
-    double y,
-    const std::string & frame,
-    const rclcpp::Time & stamp) const
-  {
-    geometry_msgs::msg::PoseStamped p;
-
-    p.header.frame_id = frame;
-    p.header.stamp = stamp;
-
-    p.pose.position.x = x;
-    p.pose.position.y = y;
-    p.pose.position.z = 0.0;
-
-    p.pose.orientation.x = 0.0;
-    p.pose.orientation.y = 0.0;
-    p.pose.orientation.z = 0.0;
-    p.pose.orientation.w = 1.0;
-
-    return p;
-  }
-
-  std::vector<std::pair<double, double>> findSafeRuns(
-    double x,
-    double y_min,
-    double y_max) const
-  {
-    std::vector<std::pair<double, double>> runs;
-    bool in_run = false;
-    double current_start = 0.0;
-    double previous_y = y_min;
-
-    for (
-      double y = y_min;
-      y <= y_max + 1e-9;
-      y += waypoint_spacing_)
-    {
-      const bool safe = pointSafe(x, y);
-
-      if (safe && !in_run)
-      {
-        current_start = y;
-        in_run = true;
-      }
-
-      if (!safe && in_run)
-      {
-        const double current_end = previous_y;
-        if (current_end - current_start >= min_lane_length_) {
-          runs.emplace_back(current_start, current_end);
-        }
-        in_run = false;
-      }
-
-      previous_y = y;
-    }
-
-    if (in_run)
-    {
-      if (y_max - current_start >= min_lane_length_) {
-        runs.emplace_back(current_start, y_max);
-      }
-    }
-    return runs;
-  }
-
-  void generateCoverage()
-  {
-    // The occupancy-grid image may be rectangular because map_saver crops to
-    // observed cells. It is not the physical pond boundary. The simulated pond
-    // is a 100 x 100 m square centred at odom (0, 0), so keep a 3 m safety
-    // margin and generate the path directly in odom coordinates.
-    const double x_min = -pond_half_extent_;
-    const double x_max = pond_half_extent_;
-    const double y_min = -pond_half_extent_;
-    const double y_max = pond_half_extent_;
-
-    if (x_max <= x_min || y_max <= y_min)
-    {
-      RCLCPP_ERROR(
+    RCLCPP_INFO_ONCE(
         get_logger(),
-        "Invalid pond working boundary");
-      return;
+        "Map: %u x %u | resolution=%.3f | origin=(%.2f, %.2f) | cells=%zu",
+        msg->info.width,
+        msg->info.height,
+        msg->info.resolution,
+        msg->info.origin.position.x,
+        msg->info.origin.position.y,
+        msg->data.size());
+
+    if (path_published_) {
+        return;
+    }
+
+    if (track_spacing_ <= 0.0 || map_margin_ < 0.0) {
+        RCLCPP_ERROR(
+          get_logger(), "track_spacing must be > 0 and map_margin must be >= 0");
+        return;
+    }
+    const double map_min_x = msg->info.origin.position.x + map_margin_;
+    const double map_min_y = msg->info.origin.position.y + map_margin_;
+    const double map_max_x = msg->info.origin.position.x +
+    static_cast<double>(msg->info.width) * msg->info.resolution - map_margin_;
+    const double map_max_y = msg->info.origin.position.y +
+    static_cast<double>(msg->info.height) * msg->info.resolution - map_margin_;
+
+    const double coverage_min_x = max(min_x_, map_min_x);
+    const double coverage_max_x = min(max_x_, map_max_x);
+    const double coverage_min_y = max(min_y_, map_min_y);
+    const double coverage_max_y = min(max_y_, map_max_y);
+
+    if (coverage_min_x >= coverage_max_x || coverage_min_y >= coverage_max_y) {
+        RCLCPP_ERROR(
+          get_logger(),
+          "Coverage bounds are empty after clamping to the map (margin=%.2f m)",
+          map_margin_);
+        return;
     }
 
     nav_msgs::msg::Path path;
+    path.header.stamp = now();
+    path.header.frame_id = msg->header.frame_id;
 
-    const std::string frame = path_frame_;
+    bool move_up = true;
+    size_t lane_count = 0;
 
-    // This is a static global path. A zero timestamp tells TF/RViz to use the
-    // latest map<->odom transform, including when SLAM publishes TF after the
-    // path itself has already been generated.
-    const rclcpp::Time stamp(0, 0, RCL_ROS_TIME);
-
-    path.header.frame_id = frame;
-    path.header.stamp = stamp;
-
-    bool upward = true;
-    int lane_count = 0;
-
-    /*
-     * Start from right side.
-     *
-     * Lane 1 : bottom -> top
-     * Lane 2 : top -> bottom
-     * Lane 3 : bottom -> top
-     */
-    for (
-      double x = x_max;
-      x >= x_min - 1e-9;
-      x -= track_spacing_)
+    for (double x = coverage_min_x;
+      x <= coverage_max_x + 1.0e-6; x += track_spacing_)
     {
-      const double lane_y_min = y_min;
-      const double lane_y_max = y_max;
-
-      if (upward)
-      {
-        path.poses.push_back(makePose(x, lane_y_min, frame, stamp));
-        path.poses.push_back(makePose(x, lane_y_max, frame, stamp));
-      }
-      else
-      {
-        path.poses.push_back(makePose(x, lane_y_max, frame, stamp));
-        path.poses.push_back(makePose(x, lane_y_min, frame, stamp));
-      }
-
-      upward = !upward;
-      ++lane_count;
+    if (move_up) {
+        addPose(path, x, coverage_min_y, M_PI_2);
+        addPose(path, x, coverage_max_y, M_PI_2);
+    } else {
+        addPose(path, x, coverage_max_y, -M_PI_2);
+        addPose(path, x, coverage_min_y, -M_PI_2);
     }
 
-    if (path.poses.size() < 2)
-    {
-      RCLCPP_ERROR(
-        get_logger(),
-        "No valid coverage lanes found");
-      return;
+    move_up = !move_up;
+    ++lane_count;
     }
-
-    path_pub_->publish(path);
-    generated_ = true;
-
-    const auto & start =
-      path.poses.front().pose.position;
-
-    const auto & end =
-      path.poses.back().pose.position;
+    pub_->publish(path);
+    path_published_ = true;
 
     RCLCPP_INFO(
-      get_logger(),
-      "============================================");
-
-    RCLCPP_INFO(
-      get_logger(),
-      "FINAL MAP-BASED ZIGZAG GENERATED");
-
-    RCLCPP_INFO(
-      get_logger(),
-      "Map              : %u x %u",
-      map_->info.width,
-      map_->info.height);
-
-    RCLCPP_INFO(
-      get_logger(),
-      "Resolution       : %.3f m",
-      map_->info.resolution);
-
-    RCLCPP_INFO(
-      get_logger(),
-      "Origin           : (%.2f, %.2f)",
-      map_->info.origin.position.x,
-      map_->info.origin.position.y);
-
-    RCLCPP_INFO(
-      get_logger(),
-      "Working boundary : X[%.2f, %.2f] Y[%.2f, %.2f]",
-      x_min,
-      x_max,
-      y_min,
-      y_max);
-
-    RCLCPP_INFO(
-      get_logger(),
-      "Pond margin      : %.2f m",
-      50.0 - pond_half_extent_);
-
-    RCLCPP_INFO(
-      get_logger(),
-      "Track spacing    : %.2f m",
-      track_spacing_);
-
-    RCLCPP_INFO(
-      get_logger(),
-      "Waypoint spacing : %.2f m",
-      waypoint_spacing_);
-
-    RCLCPP_INFO(
-      get_logger(),
-      "Number of lanes  : %d",
-      lane_count);
-
-    RCLCPP_INFO(
-      get_logger(),
-      "Number of poses  : %zu",
-      path.poses.size());
-
-    RCLCPP_INFO(
-      get_logger(),
-      "Start            : (%.2f, %.2f)",
-      start.x,
-      start.y);
-
-    RCLCPP_INFO(
-      get_logger(),
-      "End              : (%.2f, %.2f)",
-      end.x,
-      end.y);
-
-    RCLCPP_INFO(
-      get_logger(),
-      "Published        : %s",
-      path_topic_.c_str());
-
-    RCLCPP_INFO(
-      get_logger(),
-      "============================================");
-  }
-
-  void mapCallback(
-    const nav_msgs::msg::OccupancyGrid::SharedPtr msg)
-  {
-    if (generated_) {
-      return;
+    get_logger(),
+    "Published coverage path: %zu lanes, %zu poses, spacing=%.2f m, "
+    "bounds=[%.2f, %.2f] x [%.2f, %.2f]",
+    lane_count,
+    path.poses.size(),
+    track_spacing_,
+    coverage_min_x,
+    coverage_max_x,
+    coverage_min_y,
+    coverage_max_y);
     }
-
-    map_ = msg;
-
-    RCLCPP_INFO(
-      get_logger(),
-      "Saved map received: %u x %u | resolution=%.3f | "
-      "origin=(%.2f, %.2f)",
-      map_->info.width,
-      map_->info.height,
-      map_->info.resolution,
-      map_->info.origin.position.x,
-      map_->info.origin.position.y);
-
-    generateCoverage();
-  }
-
-  std::string map_topic_;
-  std::string path_topic_;
-  std::string path_frame_;
-
-  double track_spacing_;
-  double waypoint_spacing_;
-  double clearance_;
-  double min_lane_length_;
-  double pond_half_extent_;
-
-  int occupied_threshold_;
-
-  bool generated_{false};
-
-  nav_msgs::msg::OccupancyGrid::SharedPtr map_;
-
-  rclcpp::Subscription<
-    nav_msgs::msg::OccupancyGrid>::SharedPtr map_sub_;
-
-  rclcpp::Publisher<
-    nav_msgs::msg::Path>::SharedPtr path_pub_;
 };
 
 int main(int argc, char ** argv)
 {
   rclcpp::init(argc, argv);
-
-  rclcpp::spin(
-  std::make_shared<CoveragePlanner>());
-
+  rclcpp::spin(std::make_shared<CoveragePlanner>());
   rclcpp::shutdown();
-
   return 0;
 }
